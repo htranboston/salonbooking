@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:762af97d8818ca2a37547361e73d9c3f
+SUMMARY:salonbooking - 03 Dec 2020 15:00
+DTSTART;TZID=+00:00:20201203T150000
+DTEND;TZID=+00:00:20201203T160000
+DESCRIPTION:Salon name: salonbooking \n\nSalon address: Main Street 123 \n\nSalon phone: 00391122334455 \n\nSalon email: htexhibitdesign@gmail.com \n\nBooked services:\nManicure: 15:00 ➝ 15:00\nMassage: 15:00 ➝ 15:00\n\nBooking notes:\nNone\n\nBooking status: Confirmed
+LOCATION:Main Street 123
+END:VEVENT
+END:VCALENDAR
