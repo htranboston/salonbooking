@@ -10,7 +10,7 @@ function sln_createSelect2Full($) {
     $('.sln-select-wrapper select').select2({
         tags: "true",
         width: '100%'
-    }).focus(function () {
+    }).on('focus', function () {
         $(this).select2('open');
     });
     $('.sln-select select').each(function() {

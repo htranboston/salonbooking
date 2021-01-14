@@ -1,0 +1,30 @@
+2280.821 (7) Opened log file at time: Tue, 12 Jan 2021 01:40:01 +0000 on https://salonbooking.htswipe.com
+2280.821 (7) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 8.4M | 2M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+2280.822 (7) Free space on disk containing Updraft's temporary directory: 202.6 MB
+2280.825 (7) Backup run: resumption=7, nonce=6cb20b8871bf, file_nonce=6cb20b8871bf begun at=1610413320 (2281s ago), job type=backup
+2280.826 (7) Scheduling a resumption (8) after 300 seconds (1610415901) in case this run gets aborted
+2280.834 (7) Checking if we have a zip executable available
+2280.834 (7) Creation of backups of directories: already finished
+2280.835 (7) Saving backup status to database (elements: 8)
+2280.844 (7) Database dump (WordPress DB): Creation was completed already
+2280.845 (7) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+2280.846 (7) backup_2021-01-11-2002_On_Booking_6cb20b8871bf-plugins.zip: plugins: Note: This file was not marked as successfully uploaded, but does not exist on the local filesystem; now marking as uploaded (/var/www/salon/wp-content/updraft/backup_2021-01-11-2002_On_Booking_6cb20b8871bf-plugins.zip)
+2280.847 (7) Recording as successfully uploaded: backup_2021-01-11-2002_On_Booking_6cb20b8871bf-plugins.zip
+2280.848 (7) backup_2021-01-11-2002_On_Booking_6cb20b8871bf-themes.zip: themes: Note: This file was not marked as successfully uploaded, but does not exist on the local filesystem; now marking as uploaded (/var/www/salon/wp-content/updraft/backup_2021-01-11-2002_On_Booking_6cb20b8871bf-themes.zip)
+2280.848 (7) Recording as successfully uploaded: backup_2021-01-11-2002_On_Booking_6cb20b8871bf-themes.zip
+2280.851 (7) backup_2021-01-11-2002_On_Booking_6cb20b8871bf-uploads.zip: uploads: Note: This file was not marked as successfully uploaded, but does not exist on the local filesystem; now marking as uploaded (/var/www/salon/wp-content/updraft/backup_2021-01-11-2002_On_Booking_6cb20b8871bf-uploads.zip)
+2280.851 (7) Recording as successfully uploaded: backup_2021-01-11-2002_On_Booking_6cb20b8871bf-uploads.zip
+2280.852 (7) backup_2021-01-11-2002_On_Booking_6cb20b8871bf-others.zip: others: Note: This file was not marked as successfully uploaded, but does not exist on the local filesystem; now marking as uploaded (/var/www/salon/wp-content/updraft/backup_2021-01-11-2002_On_Booking_6cb20b8871bf-others.zip)
+2280.853 (7) Recording as successfully uploaded: backup_2021-01-11-2002_On_Booking_6cb20b8871bf-others.zip
+2280.854 (7) backup_2021-01-11-2002_On_Booking_6cb20b8871bf-db.gz: db: This file is not ours to upload and has been/will be handled by another job.
+2280.854 (7) Saving backup history. Total backup size: Unknown
+2280.855 (7) Resume backup (6cb20b8871bf, 7): finish run
+2280.856 (7) There were no more files that needed uploading
+2280.857 (7) PHP event: code E_NOTICE: Undefined index: googledrive (line 3921, wp-content/plugins/updraftplus/class-updraftplus.php)
+2280.859 (7) There were no errors in the uploads, so the 'resume' event (8) is being unscheduled
+2280.860 (7) No email will be sent - this backup set was empty.
+2280.860 (7) The backup apparently succeeded and is now complete
+0000.000 (7) Opened log file at time: Tue, 12 Jan 2021 01:40:02 +0000 on https://salonbooking.htswipe.com
+0000.001 (7) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 8.7M | 2M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.001 (7) Free space on disk containing Updraft's temporary directory: 202.6 MB
+0000.001 (7) This backup task (6cb20b8871bf) is either complete or began over 2 days ago: ending (1610415602.8635, ) (existing jobdata keys: )

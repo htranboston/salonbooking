@@ -7,30 +7,30 @@ jQuery(function($) {
     /*
     $('#booking-accept, #booking-refuse').click(function(){
        $('#post_status').val($(this).data('status'));
-       $('#save-post').click();
+       $('#save-post').trigger('click');
 */
     if (window.frameElement) {
         $("html").addClass("in-iframe");
     }
-    $("#booking-accept, #booking-refuse").click(function() {
+    $("#booking-accept, #booking-refuse").on('click', function() {
         $("#_sln_booking_status").val($(this).data("status"));
-        $("#save-post").click();
+        $("#save-post").trigger('click');
     });
 
-    $(".sln-toolbox-trigger").click(function(event) {
+    $(".sln-toolbox-trigger").on('click', function(event) {
         $(this)
             .parent()
             .toggleClass("open");
         event.preventDefault();
     });
-    $(".sln-toolbox-trigger-mob").click(function(event) {
+    $(".sln-toolbox-trigger-mob").on('click', function(event) {
         $(this)
             .parent()
             .find(".sln-toolbox")
             .toggleClass("open");
         event.preventDefault();
     });
-    $(".sln-box-info-trigger button").click(function(event) {
+    $(".sln-box-info-trigger button").on('click', function(event) {
         $(this)
             .parent()
             .parent()
@@ -38,7 +38,7 @@ jQuery(function($) {
             .toggleClass("sln-box--info-visible");
         event.preventDefault();
     });
-    $(".sln-box-info-content:after").click(function(event) {
+    $(".sln-box-info-content:after").on('click', function(event) {
         event.preventDefault();
     });
     if ($(".sln-admin-sidebar").length) {
@@ -55,7 +55,7 @@ jQuery(function($) {
             },
         });
     }
-    $("[data-action=change-service-type]").change(function() {
+    $("[data-action=change-service-type]").on('change', function() {
         var $this = $(this);
         var $target = $($this.attr("data-target"));
         var $exclusive = $("#exclusive_service");
@@ -69,7 +69,7 @@ jQuery(function($) {
         }
     });
 
-    $("[data-action=change-secondary-service-mode]").change(function() {
+    $("[data-action=change-secondary-service-mode]").on('change', function() {
         var $this = $(this);
         var $target = $($this.attr("data-target"));
         if ($this.val() === "service") {
@@ -97,38 +97,36 @@ jQuery(function($) {
     //  alert('test al');
     //});
     function premiumVersionBanner() {
-        $(".sln-admin-banner--trigger, .sln-admin-banner--close").click(
-            function(event) {
-                $(".sln-admin-banner").toggleClass("sln-admin-banner--inview");
-                event.preventDefault();
-            }
-        );
+	$(".sln-admin-banner--trigger, .sln-admin-banner--close").on('click',
+	    function(event) {
+		$(".sln-admin-banner").toggleClass("sln-admin-banner--inview");
+		event.preventDefault();
+	    }
+	);
     }
-    $(window).bind("load", function() {
-        if ($("#sln-salon--admin.sln-calendar--wrapper--loading").length) {
-            $(".sln-calendar--wrapper--sub").css("opacity", "1");
-            $(".sln-calendar--wrapper").removeClass(
-                "sln-calendar--wrapper--loading sln-calendar--wrapper"
-            );
-        }
-        if ($(".sln-calendar--wrapper").length) {
-            $(".sln-calendar--wrapper--sub").css("opacity", "1");
-            $(".sln-calendar--wrapper").removeClass(
-                "sln-calendar--wrapper--loading"
-            );
-        }
-        if ($(window).width() < 1024) {
-            premiumVersionBanner();
-        }
-    });
+    if ($("#sln-salon--admin.sln-calendar--wrapper--loading").length) {
+	$(".sln-calendar--wrapper--sub").css("opacity", "1");
+	$(".sln-calendar--wrapper").removeClass(
+	    "sln-calendar--wrapper--loading sln-calendar--wrapper"
+	);
+    }
+    if ($(".sln-calendar--wrapper").length) {
+	$(".sln-calendar--wrapper--sub").css("opacity", "1");
+	$(".sln-calendar--wrapper").removeClass(
+	    "sln-calendar--wrapper--loading"
+	);
+    }
+    if ($(window).width() < 1024) {
+	premiumVersionBanner();
+    }
 
-    if ($("#import-customers-drag").size() > 0) {
+    if ($("#import-customers-drag").length > 0) {
         initImporter($("#import-customers-drag"), "Customers");
     }
-    if ($("#import-services-drag").size() > 0) {
+    if ($("#import-services-drag").length > 0) {
         initImporter($("#import-services-drag"), "Services");
     }
-    if ($("#import-assistants-drag").size() > 0) {
+    if ($("#import-assistants-drag").length > 0) {
         initImporter($("#import-assistants-drag"), "Assistants");
     }
 
@@ -272,7 +270,7 @@ function initImporter($item, mode) {
 
     jQuery(
         "[data-action=sln_import][data-target=" + $importArea.attr("id") + "]"
-    ).click(function() {
+    ).on('click', function() {
         var $importBtn = jQuery(this);
         $importBtn.button("loading");
         if (!$importArea.file) {
@@ -323,11 +321,11 @@ function initImporter($item, mode) {
                     validImportMatching();
                     $modal
                         .find("[data-action=sln_import_matching_select]")
-                        .change(changeImportMatching);
+                        .on('change', changeImportMatching);
 
                     jQuery("[data-action=sln_import_matching]")
-                        .unbind("click")
-                        .click(function() {
+                        .off("click")
+                        .on('click', function() {
                             if (!validImportMatching()) {
                                 return false;
                             }

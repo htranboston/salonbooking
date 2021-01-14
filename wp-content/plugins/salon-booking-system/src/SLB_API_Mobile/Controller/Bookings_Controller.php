@@ -82,6 +82,7 @@ class Bookings_Controller extends REST_Controller
 			    SLN_Enum_BookingStatus::PAID,
 			    SLN_Enum_BookingStatus::PAY_LATER,
 			    SLN_Enum_BookingStatus::CONFIRMED,
+			    SLN_Enum_BookingStatus::PENDING,
 			),
                     ),
                     'order'      => array(
@@ -115,6 +116,7 @@ class Bookings_Controller extends REST_Controller
             array(
                 'methods'   => WP_REST_Server::CREATABLE,
                 'callback'  => array( $this, 'create_item' ),
+		'permission_callback' => '__return_true',
                 'args'	    => $this->get_endpoint_args_for_item_schema( WP_REST_Server::CREATABLE ),
             ),
             'schema' => array( $this, 'get_public_item_schema' ),
@@ -131,6 +133,28 @@ class Bookings_Controller extends REST_Controller
                         'type'              => 'integer',
                         'validate_callback' => array($this, 'rest_validate_request_arg'),
 			'required'          => true,
+                    ),
+		    'statuses' => array(
+			'description'       => __('Booking statuses.', 'salon-booking-system'),
+			'type'              => 'array',
+			'items'		    => array(
+			    'type' => 'string',
+			    'enum' => array(
+				SLN_Enum_BookingStatus::PENDING_PAYMENT,
+				SLN_Enum_BookingStatus::PENDING,
+				SLN_Enum_BookingStatus::ERROR,
+				SLN_Enum_BookingStatus::PAID,
+				SLN_Enum_BookingStatus::PAY_LATER,
+				SLN_Enum_BookingStatus::CANCELED,
+				SLN_Enum_BookingStatus::CONFIRMED,
+			    ),
+			),
+			'default' => array(
+			    SLN_Enum_BookingStatus::PAID,
+			    SLN_Enum_BookingStatus::PAY_LATER,
+			    SLN_Enum_BookingStatus::CONFIRMED,
+			    SLN_Enum_BookingStatus::PENDING,
+			),
                     ),
                 ),
             ),
@@ -486,11 +510,7 @@ class Bookings_Controller extends REST_Controller
 	    'orderby'	    => 'sln_booking_date sln_booking_time',
 	    'order'	    => 'ASC',
 	    'post_type'	    => self::POST_TYPE,
-	    'post_status'   => array(
-		SLN_Enum_BookingStatus::PAID,
-		SLN_Enum_BookingStatus::PAY_LATER,
-		SLN_Enum_BookingStatus::CONFIRMED,
-	    ),
+	    'post_status'   => $request->get_param('statuses'),
 	);
 
 	if ($from_date === $to_date) {

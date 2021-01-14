@@ -3,7 +3,7 @@ Contributors: Salon Booking System
 Tags: booking, reservations, barber shop, hair salon, beauty center, spas, scheduling, appointment, availability calendar, booking calendar, online reservation, schedule, PayPal appointment, appointment calendar, booking software, reservation plugin, booking engine, booking plugin
 Requires at least: 4.1
 Tested up to: 5.5
-Stable tag: 4.9.6
+Stable tag: 4.9.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -314,6 +314,13 @@ Look at this guide: https://www.salonbookingsystem.com/divi-theme-accordions-iss
 
 
 == Changelog ==
+
+15.12.2020
+
+* Fixed issue of the double email notifications when adding from back-end
+* Fixed issue on mobile app "Pending" reservation list
+* Added a booking ID inside the Stripe payment transaction description
+
 
 01.12.2020
 

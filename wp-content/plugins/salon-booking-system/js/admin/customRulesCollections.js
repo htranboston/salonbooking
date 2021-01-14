@@ -20,7 +20,7 @@ jQuery(function() {
             jQuery(jQuery(this).data("unhide")).addClass("sln-box--appeared");
         }
     });
-    jQuery("[data-unhide]").change();
+    jQuery("[data-unhide]").trigger('change');
 
     jQuery("body").on(
         "change",
@@ -41,13 +41,13 @@ function bindRemoveFunction() {
 
 function bindRemove() {
     jQuery('button[data-collection="remove"]')
-        .unbind("click", bindRemoveFunction)
+        .off("click", bindRemoveFunction)
         .on("click", bindRemoveFunction);
 }
 
 function bindDisableSecondShift() {
     jQuery(".sln-disable-second-shift input")
-        .unbind("change", bindDisableSecondShiftFunction)
+	.off("change", bindDisableSecondShiftFunction)
         .on("change", bindDisableSecondShiftFunction);
 }
 
@@ -67,7 +67,7 @@ function initBookingRules(elem) {
     var count = prototype.data("count");
     prototype.remove();
 
-    jQuery('button[data-collection="addnew"]', elem).click(function(e) {
+    jQuery('button[data-collection="addnew"]', elem).on('click', function(e) {
         count++;
         e.preventDefault();
         wrapper.append(html.replace(/__new__/g, count));
@@ -77,7 +77,7 @@ function initBookingRules(elem) {
         initDatepickers(jQuery);
         initTimepickers(jQuery);
         customSliderRange(jQuery, jQuery(".slider-range"));
-        jQuery("[data-unhide]", elem).change();
+        jQuery("[data-unhide]", elem).trigger('change');
         jQuery(".sln-booking-rule:last-child input").prop( "checked", true );
     });
     bindRemove();
@@ -91,7 +91,7 @@ function initBookingHolidayRules(elem) {
     var wrapper = elem.find(".sln-booking-holiday-rules-wrapper");
     prototype.remove();
 
-    jQuery('button[data-collection="addnewholiday"]', elem).click(function(e) {
+    jQuery('button[data-collection="addnewholiday"]', elem).on('click', function(e) {
         e.preventDefault();
         wrapper.append(html.replace(/__new__/g, count));
         count++;

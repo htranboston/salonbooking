@@ -7,8 +7,8 @@ jQuery(function ($) {
     if ($('#sln_booking-details').length) {
         sln_adminDate($);
     }
-    $('#calculate-total').click(sln_calculateTotal);
-    $('#_sln_booking_amount,#_sln_booking_deposit').change(function(){
+    $('#calculate-total').on('click', sln_calculateTotal);
+    $('#_sln_booking_amount,#_sln_booking_deposit').on('change', function(){
         var tot = $('#_sln_booking_amount').val();
         var bookingDeposit = $('#_sln_booking_deposit').val();
         $('#_sln_booking_remainedAmount').val((+bookingDeposit > 0.0 ? (tot - bookingDeposit > 0.0 ? tot - bookingDeposit : 0) : 0).toFixed(2));
@@ -34,12 +34,12 @@ jQuery(function ($) {
     if (sln_isShowOnlyBookingElements($)) {
         sln_showOnlyBookingElements($);
     }
-    
+
         $('#_sln_booking_service_select').on('select2:open',function(){
-            sln_checkServices_on_preselection($);               
+            sln_checkServices_on_preselection($);
         });
         $('#_sln_booking_attendant_select').on('select2:open',function(){
-            sln_checkAttendants_on_preselection($);               
+            sln_checkAttendants_on_preselection($);
         })
 
 });
@@ -73,7 +73,7 @@ function sln_validateEmail(email) {
 
 function sln_prepareToValidatingBooking($) {
     var form = $('.sln-booking-user-field').closest('form');
-    $(form).submit(sln_validateBooking);
+    $(form).on('submit', sln_validateBooking);
 }
 
 function sln_validateBooking() {
@@ -188,7 +188,7 @@ function customBookingUser($) {
                             var el = $((sln_customer_fields.indexOf(key) === -1 ? '#_sln_booking_' : '#_sln_') + key);
                             el.is(':checkbox') ? el.prop( "checked", value ) : el.val(value);
                             if(el.is('select')){
-                                el.change()
+                                el.trigger('change')
                             }
                         }
                     });
@@ -323,7 +323,7 @@ function sln_adminDate($) {
         selectElem.val(value);
     }
 
-    $('#_sln_booking_date, #_sln_booking_time').change(function () {
+    $('#_sln_booking_date, #_sln_booking_time').on('change', function () {
         validate(this);
     });
     validate($('#_sln_booking_date'));
@@ -346,12 +346,12 @@ function sln_manageAddNewService($) {
         return line;
     }
 
-    $('button[data-collection="addnewserviceline"]').click(function (e) {
+    $('button[data-collection="addnewserviceline"]').on('click', function (e) {
         e.stopPropagation();
         e.preventDefault();
         var serviceVal = Number($('#_sln_booking_service_select').val());
         var attendantVal = $('#_sln_booking_attendant_select').val();
-        if (((attendantVal == undefined || attendantVal == '') && $('#_sln_booking_attendant_select option').size() > 1) ||
+        if (((attendantVal == undefined || attendantVal == '') && $('#_sln_booking_attendant_select option').length > 1) ||
             $('.sln-booking-service-line select').find('option[value="' + serviceVal + '"]:selected').length
         ) {
             return false;
@@ -370,7 +370,7 @@ function sln_manageAddNewService($) {
                     added = true;
                 }
             }
-        }); 
+        });
 
         if (!added) {
             $('.sln-booking-service-action').before(line);
@@ -386,7 +386,7 @@ function sln_manageAddNewService($) {
             selectHtml += '<option value="" selected >n.d.</option>';
         }
 
-        $('#_sln_booking_attendants_' + serviceVal).html(selectHtml).change();
+        $('#_sln_booking_attendants_' + serviceVal).html(selectHtml).trigger('change');
 
         if ($('#salon-step-date').data('isnew'))
             sln_calculateTotal();
@@ -438,7 +438,7 @@ function sln_checkServices_on_preselection($) {
                     return error_ids.indexOf($(this).attr('data-value')) !== -1
                 }) : false;
                 if(elems) elems.text(function(){ return $(this).text()+' '+sln_customBookingUser.not_available_string }).parent().css({backgroundColor:'#ffa203',color:'#fff'});
-                
+
             }
         }
     });
@@ -488,12 +488,12 @@ function sln_processServices($, services) {
 function sln_manageCheckServices($) {
 
     if (typeof servicesData == 'string') {
-        servicesData = $.parseJSON(servicesData);
+        servicesData = JSON.parse(servicesData);
     }
     if (typeof attendantsData == 'string') {
-        attendantsData = $.parseJSON(attendantsData);
+        attendantsData = JSON.parse(attendantsData);
     }
-    $('#_sln_booking_service_select').change(function () {
+    $('#_sln_booking_service_select').on('change', function () {
         var html = '';
         if (servicesData[$(this).val()] != undefined) {
             $.each(servicesData[$(this).val()].attendants, function (index, value) {
@@ -501,19 +501,19 @@ function sln_manageCheckServices($) {
             });
         }
         $('#_sln_booking_attendant_select option:not(:first)').remove();
-        $('#_sln_booking_attendant_select').append(html).change();
-    }).change();
+        $('#_sln_booking_attendant_select').append(html).trigger('change');
+    }).trigger('change');
 
     sln_bindRemoveBookingsServices();
     sln_bindChangeAttendantSelects();
-} 
+}
 
 
 function sln_bindRemoveBookingsServices() {
     function sln_bindRemoveBookingsServicesFunction() {
         if (jQuery('#salon-step-date').data('isnew'))
             sln_calculateTotal();
-        if (jQuery('#_sln_booking_service_select').size()) {
+        if (jQuery('#_sln_booking_service_select').length) {
             sln_checkServices(jQuery);
         }
         return false;
@@ -521,7 +521,7 @@ function sln_bindRemoveBookingsServices() {
 
     bindRemove();
     jQuery('button[data-collection="remove"]')
-        .unbind('click', sln_bindRemoveBookingsServicesFunction)
+        .off('click', sln_bindRemoveBookingsServicesFunction)
         .on('click', sln_bindRemoveBookingsServicesFunction);
 }
 
@@ -531,13 +531,13 @@ function sln_bindChangeAttendantSelects() {
     }
 
     jQuery('select[data-attendant]')
-        .unbind('change', bindChangeAttendantSelectsFunction)
+	.off('change', bindChangeAttendantSelectsFunction)
         .on('change', bindChangeAttendantSelectsFunction);
 }
 
 function sln_initResendNotification(){
     var $ = jQuery;
-    $('#resend-notification-submit').click(function () {
+    $('#resend-notification-submit').on('click', function () {
         var data = "post_id=" + $('#post_ID').val() + "&emailto=" + $('#resend-notification').val() + "&message=" + $('#resend-notification-text').val() + "&action=salon&method=ResendNotification&security=" + salon.ajax_nonce + '&' + $.param(salonCustomBookingUser.resend_notification_params);
         var validatingMessage = '<img src="' + salon.loading + '" alt="loading .." width="16" height="16" /> ';
         $('#resend-notification-message').html(validatingMessage);
@@ -559,7 +559,7 @@ function sln_initResendNotification(){
 
 function sln_initResendPaymentSubmit(){
     var $ = jQuery;
-    $('#resend-payment-submit').click(function () {
+    $('#resend-payment-submit').on('click', function () {
         var data = "post_id=" + $('#post_ID').val() + "&emailto=" + $('#resend-payment').val() + "&action=salon&method=ResendPaymentNotification&security=" + salon.ajax_nonce + '&' + $.param(salonCustomBookingUser.resend_payment_params);
         var validatingMessage = '<img src="' + salon.loading + '" alt="loading .." width="16" height="16" /> ';
         $('#resend-payment-message').html(validatingMessage);

@@ -225,20 +225,20 @@ class SLN_Helper_Availability
         if($isAttendant_booked && $can_multiple){
             $plugin = SLN_Plugin::getInstance();
             $setts = $plugin->getSettings();
-            
-            $services = $this->getDayBookings()->getAttendantServiceIdsByHour($attendant->getId(),$time->format('H'), $time->format('i')); 
+
+            $services = $this->getDayBookings()->getAttendantServiceIdsByHour($attendant->getId(),$time->format('H'), $time->format('i'));
             if(!empty($services) && is_array($services))
             foreach($services as $service_id){
                 $service = new SLN_Wrapper_Service($service_id);
                 $unit = $service->getUnitPerHour();
                 $limit = $unit ? $unit : $setts->get('parallels_hour');
-                $busy = $isAttendant_booked && $ids[$attendant->getId()] >= $limit;    
+                $busy = $isAttendant_booked && $ids[$attendant->getId()] >= $limit;
             }
-            
+
         }else{
-            $busy = $isAttendant_booked && $ids[$attendant->getId()] >= 0;    
+            $busy = $isAttendant_booked && $ids[$attendant->getId()] >= 0;
         }
-        
+
         if ( $busy ) {
             return SLN_Helper_Availability_ErrorHelper::doAttendantBusy($attendant, $time);
         }
@@ -316,7 +316,7 @@ class SLN_Helper_Availability
         $hItems  = $this->getHolidaysItems();
         if($checkDuration) {
             $duration = $service->getDuration();
-            $check = (!$avItems->isValidDatetimeDuration($time, $duration) || !$hItems->isValidDatetimeDuration($time, $duration)); 
+            $check = (!$avItems->isValidDatetimeDuration($time, $duration) || !$hItems->isValidDatetimeDuration($time, $duration));
         } else {
             $check = (!$avItems->isValidDatetime($time) || !$hItems->isValidDatetime($time));
         }
@@ -608,7 +608,7 @@ class SLN_Helper_Availability
         return array($error);
     }
 
-    public function getAvailableAttendantForService($availAtts = null, SLN_Wrapper_Booking_Service $bookingService)
+    public function getAvailableAttendantForService($availAtts = null, SLN_Wrapper_Booking_Service $bookingService = null)
     {
         $intersect = $this->getAvailableAttsIdsForBookingService($bookingService);
         if (is_null($availAtts)) {

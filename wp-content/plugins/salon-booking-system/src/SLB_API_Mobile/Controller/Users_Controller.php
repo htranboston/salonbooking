@@ -20,6 +20,7 @@ class Users_Controller extends REST_Controller
             array(
                 'methods'   => WP_REST_Server::EDITABLE,
                 'callback'  => array( $this, 'update_item' ),
+		'permission_callback' => '__return_true',
                 'args'	    => $this->get_endpoint_args_for_item_schema( WP_REST_Server::EDITABLE ),
             ),
             'schema' => array( $this, 'get_public_item_schema' ),

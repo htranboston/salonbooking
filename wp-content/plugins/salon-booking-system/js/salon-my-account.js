@@ -54,7 +54,7 @@ var slnMyAccount = {
                     slnMyAccount.setActiveTab();
                     jQuery('.nav-tabs a').on('show.bs.tab', slnMyAccount.setActiveHash);
                     jQuery('#salon-my-account-profile-form input[name="action"]').val('salon');
-                    jQuery('#salon-my-account-profile-form').submit(slnMyAccount.updateProfile);
+                    jQuery('#salon-my-account-profile-form').on('submit', slnMyAccount.updateProfile);
 
 		    var items = {intervals: {}};
 
@@ -243,7 +243,7 @@ var slnMyAccount = {
                     jQuery("#ratingModal #step2").css('display', 'block');
 
                     jQuery('#ratingModal .close').delay(2000).queue(function () {
-                        jQuery(this).click();
+                        jQuery(this).trigger('click');
                         slnMyAccount.loadContent();
                         jQuery(this).dequeue();
                     });
@@ -298,7 +298,7 @@ var slnMyAccount = {
     },
 
     init: function () {
-        if (jQuery('#sln-salon-my-account-content').size()) {
+        if (jQuery('#sln-salon-my-account-content').length) {
             this.loadContent();
         }
         else /*if (jQuery('[name=post_type]').val() == 'sln_booking')*/ {

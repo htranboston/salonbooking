@@ -53,21 +53,21 @@ function initSalonCalendar($, ajaxUrl, ajaxDay, templatesUrl,defaultView,firstDa
 var DayCalendarHolydays = {
     "createButton":false,
     "selection":[],
-    "blocked":false,    
+    "blocked":false,
     "rules":false,
     "selecting":false,
     "startEl":false,
-    "mousedown": function(e){    
+    "mousedown": function(e){
         if(!$(e.target).hasClass('cal-day-hour-part'))return;
-        DayCalendarHolydays.clearSelection();        
-        DayCalendarHolydays.selectEl($(this));        
+        DayCalendarHolydays.clearSelection();
+        DayCalendarHolydays.selectEl($(this));
         //$(' .cal-day-hour-part').on('mouseover', DayCalendarHolydays.mouseover);
         //$('body').on('mouseover', DayCalendarHolydays.bodyBlock);
     },
     "bodyBlock":function(e){
         var target = $(e.target);
         if(!(target.hasClass('cal-day-panel') || target.parents('#cal-day-panel').length))
-        
+
         {
             DayCalendarHolydays.blocked = true;
             var event = jQuery.Event('click');
@@ -77,13 +77,13 @@ var DayCalendarHolydays = {
         }
     },
     "mouseup": function(e){
-        DayCalendarHolydays.selecting=false;  
+        DayCalendarHolydays.selecting=false;
         //$(' .cal-day-hour-part').off('mouseover', DayCalendarHolydays.mouseover);
         //$('body').off('mouseover', DayCalendarHolydays.bodyBlock);
 
         //console.log(DayCalendarHolydays.selection);
         //var filtered = Object.keys(DayCalendarHolydays.selection)
-        //.map(function(x){ return parseInt(x) }),   
+        //.map(function(x){ return parseInt(x) }),
 
         var firstEl = DayCalendarHolydays.startEl,
         lastEl = $(e);
@@ -98,15 +98,15 @@ var DayCalendarHolydays = {
             $(this).addClass('selected');
             DayCalendarHolydays.selection[parseInt($(this).index())]= $(this);
         });
-        
+
         var button = DayCalendarHolydays.createPopUp(1,firstEl,lastEl,DayCalendarHolydays.selection);
-        button.click(DayCalendarHolydays.blockSelection)
+        button.on('click', DayCalendarHolydays.blockSelection)
         setTimeout(function(){$(' .cal-day-hour-part.selected').on('click', DayCalendarHolydays.clearSelection)},0);
         $(document).on('click', DayCalendarHolydays.clickOutside);
     },
     "mouseover": function(e){
         if(DayCalendarHolydays.blocked) return
-        if($(this).hasClass("blocked")) 
+        if($(this).hasClass("blocked"))
             {
                 DayCalendarHolydays.blocked = true;
                 var event = jQuery.Event('click');
@@ -114,7 +114,7 @@ var DayCalendarHolydays = {
             $('body').trigger(event);
                 return false;
             }
-        else DayCalendarHolydays.selectEl($(this));        
+        else DayCalendarHolydays.selectEl($(this));
     },
     "selectEl": function ($el){
         $el.addClass('selected');
@@ -132,10 +132,10 @@ var DayCalendarHolydays = {
         }
     },
     "startSelection":function(e){
-         DayCalendarHolydays.clearSelection();        
+         DayCalendarHolydays.clearSelection();
          DayCalendarHolydays.startEl = $(e.target).closest('.cal-day-hour-part');
-        DayCalendarHolydays.selectEl($(e.target).closest('.cal-day-hour-part'));    
-        DayCalendarHolydays.selecting=true;    
+        DayCalendarHolydays.selectEl($(e.target).closest('.cal-day-hour-part'));
+        DayCalendarHolydays.selecting=true;
         //$(' .cal-day-hour-part').on('mouseover', DayCalendarHolydays.mouseover);
         //$('body').on('mouseover', DayCalendarHolydays.bodyBlock);
     },
@@ -170,12 +170,12 @@ var DayCalendarHolydays = {
             }else{
                 lastD = lastB .attr('data-event-date');
             }
-            
+
             var final = !endDay ? lastEl.next().children('button[data-action="add-event-by-date"]') : $('button[data-action="add-event-by-date"]').first(),
             lastT =  final.attr('data-event-time');
         var single = firstD+firstT === lastD+lastB.attr('data-event-time');
 
-        var top = single ? (firstEl.position().top + ( firstEl.height() /2)) : firstEl.position().top+ (((lastEl.position().top + lastEl.height() ) - firstEl.position().top)/2) ;    
+        var top = single ? (firstEl.position().top + ( firstEl.height() /2)) : firstEl.position().top+ (((lastEl.position().top + lastEl.height() ) - firstEl.position().top)/2) ;
         var button = $('<button class=" '+( status ? ' create-holydays ': ' remove-holydays ')+' calendar-holydays-button"></button>');
         button.text((status ?  holidays_rules_locale.block :  holidays_rules_locale.unblock)+' '+(single? holidays_rules_locale.single: holidays_rules_locale.multiple));
         button.css({
@@ -201,8 +201,8 @@ var DayCalendarHolydays = {
         var target = $(this);
         DayCalendarHolydays.callAjax('Remove',function(data){
             if(data.rules === undefined) return;
-            DayCalendarHolydays.rules= data.rules;       
-            var els = target.data().els;        
+            DayCalendarHolydays.rules= data.rules;
+            var els = target.data().els;
             Object.keys(els).forEach(function(key){ $(els[key]).removeClass("blocked") })
             target.remove()
         },target.data().selection);
@@ -224,7 +224,7 @@ var DayCalendarHolydays = {
             button.toggleClass('create-holydays remove-holydays')
             .text(holidays_rules_locale.unblock+' '+(DayCalendarHolydays.selection.length > 1 ? holidays_rules_locale.single: holidays_rules_locale.multiple))
             .off('click')
-            .click(DayCalendarHolydays.unblockPop);
+            .on('click', DayCalendarHolydays.unblockPop);
         })
     },
     "callAjax": function(action,cb,target){
@@ -250,14 +250,14 @@ var DayCalendarHolydays = {
         var p_rules = window.daily_rules;
         if(!DayCalendarHolydays.rules) DayCalendarHolydays.rules =  Object.keys(p_rules).map(function (key) { return p_rules[key]; });
 
-        
+
         var rules = DayCalendarHolydays.rules.filter(function(e){
             return !!e && e.from_date === calendar.options.day
         });
         rules.forEach(function(rule){
             if(rule.from_time === '') rule.from_time = "9:00";
             var endTomorrow = rule.to_date !== calendar.options.day;
-            var firstEl = $('button[data-event-time="'+rule.from_time+'"]'),            
+            var firstEl = $('button[data-event-time="'+rule.from_time+'"]'),
             lastEl = $('button[data-event-time="'+rule.to_time+'"]');
             if(!firstEl.length) firstEl = $('button[data-event-time]').first();
             if(endTomorrow || !lastEl.length) lastEl = $('button[data-event-time]').last();
@@ -275,11 +275,11 @@ var DayCalendarHolydays = {
             els.addClass("blocked")
             var button = DayCalendarHolydays.createPopUp(0,firstEl,endTomorrow ? lastEl : lastEl.prev(),els, rule);
             button.off('click')
-            .click(DayCalendarHolydays.unblockPop);
+            .on('click', DayCalendarHolydays.unblockPop);
         })
-    }    
+    }
 };
-    
+
     var options = {
 		time_start:         $('#calendar').data('timestart'),
 		time_end:           $('#calendar').data('timeend'),
@@ -315,11 +315,11 @@ var DayCalendarHolydays = {
 
                 if(dd<10) {
                     dd = '0'+dd
-                } 
+                }
 
                 if(mm<10) {
                     mm = '0'+mm
-                } 
+                }
 
                 today = yyyy + '-' + mm + '-' + dd ;
                 return today;
@@ -360,13 +360,13 @@ var DayCalendarHolydays = {
     //$('.cal-month-day.cal-day-inmonth [data-toggle="tooltip"]').click(function(e) {
     $(document).on("click", ".cal-month-day.cal-day-inmonth span", function (e) {
         e.preventDefault();
-        $('.tooltip').hide(); 
-        
+        $('.tooltip').hide();
+
     });
 
     var calendar = $('#calendar').calendar(options);
 
-    $(document).on('keyup',"#sln-calendar-booking-search",function(e){ 
+    $(document).on('keyup',"#sln-calendar-booking-search",function(e){
         var code = e.which;
         if(code==13)e.preventDefault();
         if(code==32||code==13||code==188||code==186){
@@ -387,7 +387,7 @@ var DayCalendarHolydays = {
               var el = this;
               var search = $(el).val().trim();
               var canContinue = search.length > 2 || /^\d+$/.test(search);
-              if(!canContinue){ 
+              if(!canContinue){
                   return;
               }
               $('#search-results-list').html('<div class="sln-loader-wrapper"><div class="sln-loader">Loading...</div></div>').addClass('opened');
@@ -420,7 +420,7 @@ var DayCalendarHolydays = {
               });
           }.bind(this), 500);
     }
-    $('body').click(function(e){
+    $('body').on('click', function(e){
         var list = $('#search-results-list.opened');
         if(
             list.length
@@ -432,24 +432,24 @@ var DayCalendarHolydays = {
 
     $('.btn-group button[data-calendar-nav]').each(function () {
         var $this = $(this);
-        $this.click(function () {
+        $this.on('click', function () {
             calendar.navigate($this.data('calendar-nav'));
         });
     });
 
     $('.btn-group button[data-calendar-view]').each(function () {
         var $this = $(this);
-        $this.click(function () {
+        $this.on('click', function () {
             calendar.view($this.data('calendar-view'));
         });
     });
 
-    $('#sln-calendar-user-field').change(function() {
+    $('#sln-calendar-user-field').on('change', function() {
         calendar.options._customer = parseInt($(this).val());
         calendar._render();
         calendar.options.onAfterViewLoad.call(calendar, calendar.options.view);
     });
-    $('#sln-calendar-services-field').change(function() {
+    $('#sln-calendar-services-field').on('change', function() {
         var _events = $(this).val();
         if (Array.isArray(_events)) {
             _events = _events.map(parseInt);
@@ -463,7 +463,7 @@ var DayCalendarHolydays = {
         calendar.options.onAfterViewLoad.call(calendar, calendar.options.view);
     });
 
-    $('#sln-calendar-assistants-mode-switch').change(function() {
+    $('#sln-calendar-assistants-mode-switch').on('change', function() {
         calendar.options._assistants_mode = $(this).is(':checked');
         $.ajax({
             url: salon.ajax_url + '&action=salon&method=SwitchAssistantMode&_assistants_mode='+calendar.options._assistants_mode,

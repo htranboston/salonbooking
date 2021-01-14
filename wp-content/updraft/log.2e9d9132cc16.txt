@@ -1,0 +1,145 @@
+0000.000 (0) Opened log file at time: Wed, 13 Jan 2021 21:18:01 +0000 on https://salonbooking.htswipe.com
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 37.8M | 2M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.003 (0) Free space on disk containing Updraft's temporary directory: 79.1 MB
+0000.009 (0) Tasks: Backup files:  (schedule: manual) Backup DB: 1 (schedule: daily)
+0000.011 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.020 (0) Requesting semaphore lock (d) (apparently via scheduler: last_scheduled_action_called_at=1610486282, seconds_ago=86399)
+0000.021 (0) Set semaphore last lock (d) time to 2021-01-13 21:18:01
+0000.023 (0) Semaphore lock (d) complete
+0000.025 (0) Backup run: resumption=0, nonce=2e9d9132cc16, file_nonce=2e9d9132cc16 begun at=1610572681 (0s ago), job type=backup
+0000.031 (0) Scheduling a resumption (1) after 300 seconds (1610572981) in case this run gets aborted
+0000.049 (0) This backup run is not intended for files - skipping
+0000.050 (0) Beginning creation of database dump (WordPress DB)
+0000.051 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.052 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.166 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCRE (truncated - 1249 bytes total)
+0000.170 (0) Binary mysqldump: error (code: 5)
+0000.190 (0) Table wp_options: Total expected rows (approximate): 265
+0000.248 (0) Table wp_options: Rows added in this batch (next record: 10217): 261 (uncompressed bytes in this segment=874061) in 0.06 seconds
+0000.251 (0) Table wp_options: finishing file(s) (2, 114.4 KB)
+0000.256 (0) Table wp_users: Total expected rows (approximate): 6
+0000.258 (0) Table wp_users: Rows added in this batch (next record: 7): 6 (uncompressed bytes in this segment=2253) in 0.00 seconds
+0000.260 (0) Table wp_users: finishing file(s) (2, 1 KB)
+0000.263 (0) Table wp_usermeta: Total expected rows (approximate): 135
+0000.266 (0) Table wp_usermeta: Rows added in this batch (next record: 255): 135 (uncompressed bytes in this segment=6700) in 0.00 seconds
+0000.268 (0) Table wp_usermeta: finishing file(s) (2, 2.2 KB)
+0000.272 (0) Table wp_actionscheduler_actions: Total expected rows (approximate): 15
+0000.274 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 126): 15 (uncompressed bytes in this segment=5818) in 0.00 seconds
+0000.276 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 1.1 KB)
+0000.277 (0) Table wp_actionscheduler_claims: Total expected rows (approximate): 0
+0000.280 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=635) in 0.00 seconds
+0000.282 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0000.284 (0) Table wp_actionscheduler_groups: Total expected rows (approximate): 2
+0000.286 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=711) in 0.00 seconds
+0000.288 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0000.290 (0) Table wp_actionscheduler_logs: Total expected rows (approximate): 45
+0000.293 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 69): 45 (uncompressed bytes in this segment=4781) in 0.00 seconds
+0000.297 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 1 KB)
+0000.299 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0000.301 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=685) in 0.00 seconds
+0000.304 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.306 (0) Table wp_comments: Total expected rows (approximate): 2
+0000.309 (0) Table wp_comments: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=2308) in 0.00 seconds
+0000.312 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0000.315 (0) Table wp_links: Total expected rows (approximate): 0
+0000.317 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1310) in 0.00 seconds
+0000.319 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0000.324 (0) Table wp_postmeta: Total expected rows (approximate): 575
+0000.331 (0) Table wp_postmeta: Rows added in this batch (next record: 1559): 575 (uncompressed bytes in this segment=49016) in 0.01 seconds
+0000.338 (0) Table wp_postmeta: finishing file(s) (2, 7.8 KB)
+0000.339 (0) Table wp_posts: Total expected rows (approximate): 109
+0000.347 (0) Table wp_posts: Rows added in this batch (next record: 248): 109 (uncompressed bytes in this segment=38471) in 0.01 seconds
+0000.352 (0) Table wp_posts: finishing file(s) (2, 5.4 KB)
+0000.356 (0) Table wp_term_relationships: Total expected rows (approximate): 6
+0000.358 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 6 (uncompressed bytes in this segment=769) in 0.00 seconds
+0000.360 (0) Table wp_term_relationships: finishing file(s) (2, 0.4 KB)
+0000.363 (0) Table wp_term_taxonomy: Total expected rows (approximate): 4
+0000.367 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1055) in 0.00 seconds
+0000.369 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0000.370 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0000.372 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=658) in 0.00 seconds
+0000.376 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0000.377 (0) Table wp_terms: Total expected rows (approximate): 4
+0000.379 (0) Table wp_terms: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=835) in 0.00 seconds
+0000.384 (0) Table wp_terms: finishing file(s) (2, 0.5 KB)
+0000.386 (0) Table wp_wpmailsmtp_tasks_meta: Total expected rows (approximate): 11
+0000.387 (0) Table wp_wpmailsmtp_tasks_meta: Rows added in this batch (next record: 11): 11 (uncompressed bytes in this segment=1570) in 0.00 seconds
+0000.391 (0) Table wp_wpmailsmtp_tasks_meta: finishing file(s) (2, 0.6 KB)
+0000.393 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_options.table.tmpr10218.gz (1/17): adding to final database dump
+0000.444 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_options.table.gz (2/17): adding to final database dump
+0000.446 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_users.table.tmpr8.gz (3/17): adding to final database dump
+0000.447 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_users.table.gz (4/17): adding to final database dump
+0000.449 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_usermeta.table.tmpr256.gz (5/17): adding to final database dump
+0000.450 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_usermeta.table.gz (6/17): adding to final database dump
+0000.452 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_actionscheduler_actions.table.tmpr127.gz (7/17): adding to final database dump
+0000.456 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_actionscheduler_actions.table.gz (8/17): adding to final database dump
+0000.456 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_actionscheduler_claims.table.tmpr0.gz (9/17): adding to final database dump
+0000.457 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_actionscheduler_claims.table.gz (10/17): adding to final database dump
+0000.457 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_actionscheduler_groups.table.tmpr3.gz (11/17): adding to final database dump
+0000.458 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_actionscheduler_groups.table.gz (12/17): adding to final database dump
+0000.458 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_actionscheduler_logs.table.tmpr70.gz (13/17): adding to final database dump
+0000.459 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_actionscheduler_logs.table.gz (14/17): adding to final database dump
+0000.459 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_commentmeta.table.tmpr0.gz (15/17): adding to final database dump
+0000.460 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_commentmeta.table.gz (16/17): adding to final database dump
+0000.463 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_comments.table.tmpr3.gz (17/17): adding to final database dump
+0000.464 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_comments.table.gz (18/17): adding to final database dump
+0000.464 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_links.table.tmpr0.gz (19/17): adding to final database dump
+0000.465 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_links.table.gz (20/17): adding to final database dump
+0000.465 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_postmeta.table.tmpr1560.gz (21/17): adding to final database dump
+0000.467 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_postmeta.table.gz (22/17): adding to final database dump
+0000.469 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_posts.table.tmpr249.gz (23/17): adding to final database dump
+0000.471 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_posts.table.gz (24/17): adding to final database dump
+0000.475 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_term_relationships.table.tmpr100001.gz (25/17): adding to final database dump
+0000.476 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_term_relationships.table.gz (26/17): adding to final database dump
+0000.476 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_term_taxonomy.table.tmpr5.gz (27/17): adding to final database dump
+0000.477 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_term_taxonomy.table.gz (28/17): adding to final database dump
+0000.477 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_termmeta.table.tmpr0.gz (29/17): adding to final database dump
+0000.478 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_termmeta.table.gz (30/17): adding to final database dump
+0000.478 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_terms.table.tmpr5.gz (31/17): adding to final database dump
+0000.478 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_terms.table.gz (32/17): adding to final database dump
+0000.479 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_wpmailsmtp_tasks_meta.table.tmpr12.gz (33/17): adding to final database dump
+0000.479 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db-table-wp_wpmailsmtp_tasks_meta.table.gz (34/17): adding to final database dump
+0000.492 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db.gz: finished writing out complete database file (104 KB)
+0000.499 (0) Total database tables backed up: 17 (backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db.gz, size: 136594, sha1: 3ccccf654ec71a7eb629a9fda96f86cfdf0f4a06, sha256: dea73c2c2e70ad685284415405eaeeed0a4bc0bcdb2165a384d456e03aff0d24)
+0000.505 (0) backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db.gz: db: This file has not yet been successfully uploaded: will queue
+0000.506 (0) Saving backup history. Total backup size: 133.4 KB
+0000.507 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0000.513 (0) Cloud backup selection (1/1): email with instance (1/1) (last)
+0000.513 (0) Beginning dispatch of backup to remote (email)
+0000.514 (0) Email: backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db.gz: email to: htexh...
+0002.342 (0) Recording as successfully uploaded: backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db.gz
+0002.343 (0) Deleting local file: backup_2021-01-13-1618_On_Booking_2e9d9132cc16-db.gz: OK
+0002.344 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0002.345 (0) Number of backup sets in history: 4; groups (db): 1
+0002.345 (0) Examining (for databases) backup set with group_id=0, nonce=2e9d9132cc16, datestamp=1610572681 (Jan 13 2021 21:18:01)
+0002.346 (0) This backup set is the backup set just made, so will not be deleted.
+0002.346 (0) Examining (for databases) backup set with group_id=0, nonce=2fcf2aa4e6f9, datestamp=1610486282 (Jan 12 2021 21:18:02)
+0002.346 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.346 (0) Examining (for databases) backup set with group_id=0, nonce=bf3e5b703318, datestamp=1610427114 (Jan 12 2021 04:51:54)
+0002.346 (0) 1610427114: db: this set includes a database (backup_2021-01-11-2351_On_Booking_bf3e5b703318-db.gz); db count is now 2
+0002.346 (0) 1610427114: db: over retain limit (2); will delete this database
+0002.346 (0) Delete file: backup_2021-01-11-2351_On_Booking_bf3e5b703318-db.gz, service=email
+0002.347 (0) This backup set is now empty; will remove from history
+0002.347 (0) Deleting log file (log.bf3e5b703318.txt)
+0002.348 (0) Examining (for databases) backup set with group_id=0, nonce=607957cb7f57, datestamp=1610425250 (Jan 12 2021 04:20:50)
+0002.348 (0) This backup set (1610425250) was an 'Always Keep' backup, so it will not be pruned. Skipping.
+0002.348 (0) Number of backup sets in history: 3; groups (files): 1
+0002.348 (0) Examining (for files) backup set with nonce=2e9d9132cc16, datestamp=1610572681 (Jan 13 2021 21:18:01)
+0002.348 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.349 (0) Examining (for files) backup set with nonce=2fcf2aa4e6f9, datestamp=1610486282 (Jan 12 2021 21:18:02)
+0002.349 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.349 (0) Examining (for files) backup set with nonce=607957cb7f57, datestamp=1610425250 (Jan 12 2021 04:20:50)
+0002.349 (0) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0002.349 (0) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0002.349 (0) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0002.349 (0) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0002.349 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0002.349 (0) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0002.351 (0) Resume backup (2e9d9132cc16, 0): finish run
+0002.352 (0) Decremented the semaphore (d) by 1
+0002.352 (0) Semaphore (d) unlocked
+0002.352 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0002.354 (0) Fetching RSS news feed
+0002.709 (0) Fetched RSS news feed; result is a: SimplePie
+0002.733 (0) Sending email ('Database only (files were not part of this particular schedule)') report (attachments: 0, size: 0 KB) to: htexh...
+0003.076 (0) The backup apparently succeeded and is now complete

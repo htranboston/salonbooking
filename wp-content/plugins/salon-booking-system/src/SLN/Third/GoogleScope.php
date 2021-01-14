@@ -79,7 +79,7 @@ class SLN_GoogleScope {
         ?>
         <script>
             jQuery(document).ready(function () {
-                jQuery('#sln_synch').click(function () {
+                jQuery('#sln_synch').on('click', function () {
                     var $button = jQuery(this);
                     $button.addClass('disabled').after('<div class="load-spinner"><img src="<?php echo get_site_url() . '/wp-admin/images/wpspin_light.gif'; ?>" /></div>');
                     var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
@@ -96,7 +96,7 @@ class SLN_GoogleScope {
                         jQuery('.load-spinner').remove();
                     });
                 });
-                jQuery('#sln_del').click(function () {
+                jQuery('#sln_del').on('click', function () {
                     var $button = jQuery(this);
                     $button.addClass('disabled').after('<div class="load-spinner"><img src="<?php echo get_site_url() . '/wp-admin/images/wpspin_light.gif'; ?>" /></div>');
                     var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
@@ -635,7 +635,7 @@ class SLN_GoogleScope {
     public static function date3339($timestamp = 0, $offset = 0) {
         //$timezone = SLN_DateTime::getWpTimezoneString();
         $date = new SLN_DateTime();
-        $date->setTimestamp($timestamp);    
+        $date->setTimestamp($timestamp);
         return $date->format(DateTime::RFC3339);
 /*
         $seconds = $date->format('Z');

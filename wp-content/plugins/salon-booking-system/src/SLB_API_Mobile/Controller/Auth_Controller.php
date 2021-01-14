@@ -36,6 +36,7 @@ class Auth_Controller extends REST_Controller
             array(
                 'methods'   => WP_REST_Server::READABLE,
                 'callback'  => array( $this, 'login' ),
+		'permission_callback' => '__return_true',
             ),
         ) );
 
@@ -43,6 +44,7 @@ class Auth_Controller extends REST_Controller
             array(
                 'methods'   => WP_REST_Server::CREATABLE,
                 'callback'  => array( $this, 'logout' ),
+		'permission_callback' => '__return_true',
             ),
         ) );
     }

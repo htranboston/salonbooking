@@ -217,7 +217,7 @@
 
 <script>
 	jQuery(function($){
-		jQuery('#wpbody #tools-textarea').click(function() {
+		jQuery('#wpbody #tools-textarea').on('click', function() {
 			jQuery('#tools-textarea').select();
 		});
 

@@ -8,7 +8,7 @@
 </style>
 <script type="text/javascript">
     jQuery(function () {
-        jQuery('#_sln_booking_status, #post_status').change(function () {
+        jQuery('#_sln_booking_status, #post_status').on('change', function () {
             jQuery('#_sln_booking_status, #post_status').val(jQuery(this).val());
         });
     });

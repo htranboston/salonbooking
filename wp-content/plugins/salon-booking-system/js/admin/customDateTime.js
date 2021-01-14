@@ -1,7 +1,7 @@
 function initDatepickers($) {
     $('.sln_datepicker input').each(function () {
         var $this = $(this);
-        $this.focusin(function() {
+        $this.on('focusin', function() {
             if ($($this).hasClass('started') || $($this).attr('id').indexOf('__new__') > 0) {
                 return;
             } else {
@@ -40,7 +40,7 @@ function initDatepickers($) {
 function initTimepickers($) {
     $('.sln_timepicker input').each(function () {
         var $this = $(this);
-        $this.focusin(function() {
+        $this.on('focusin', function() {
             if ($($this).hasClass('started') || $($this).attr('id').indexOf('__new__') > 0) {
                 return;
             } else {

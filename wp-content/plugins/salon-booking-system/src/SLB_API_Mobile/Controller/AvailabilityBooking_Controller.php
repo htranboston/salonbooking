@@ -41,6 +41,7 @@ class AvailabilityBooking_Controller extends REST_Controller
             array(
                 'methods'  => WP_REST_Server::READABLE,
                 'callback' => array($this, 'get_availability_date_time'),
+		'permission_callback' => '__return_true',
             ),
         ) );
 
@@ -94,6 +95,7 @@ class AvailabilityBooking_Controller extends REST_Controller
             array(
                 'methods'  => WP_REST_Server::CREATABLE,
                 'callback' => array($this, 'get_availability_services'),
+		'permission_callback' => '__return_true',
             ),
         ) );
 
@@ -147,6 +149,7 @@ class AvailabilityBooking_Controller extends REST_Controller
             array(
                 'methods'  => WP_REST_Server::CREATABLE,
                 'callback' => array($this, 'get_availability_assistants'),
+		'permission_callback' => '__return_true',
             ),
         ) );
     }

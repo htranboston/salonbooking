@@ -413,7 +413,7 @@
 
 		setDaysOfWeekDisabled: function (daysOfWeekDisabled) {
 			this.daysOfWeekDisabled = daysOfWeekDisabled || [];
-			if (!$.isArray(this.daysOfWeekDisabled)) {
+			if (!Array.isArray(this.daysOfWeekDisabled)) {
 				this.daysOfWeekDisabled = this.daysOfWeekDisabled.split(/,\s*/);
 			}
 			this.daysOfWeekDisabled = $.map(this.daysOfWeekDisabled, function (d) {
@@ -1015,7 +1015,7 @@
 				element = this.element.find('input');
 			}
 			if (element) {
-				element.change();
+				element.trigger('change');
 				if (this.autoclose && (!which || which == 'date')) {
 					//this.hide();
 				}
@@ -1221,7 +1221,7 @@
 					element = this.element.find('input');
 				}
 				if (element) {
-					element.change();
+					element.trigger('change');
 				}
 				this.element.trigger({
 					type: 'changeDate',

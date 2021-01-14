@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:19fd68156bc2dfcf03d9ee9ca3a4be03
+SUMMARY:Salon Booking Demo - 13 Jan 2021 4:30pm
+DTSTART;TZID=America/New_York:20210113T163000
+DTEND;TZID=America/New_York:20210113T170000
+DESCRIPTION:Salon name: Salon Booking Demo \n\nSalon address: Main Street 123 \n\nSalon phone: 6178988070 \n\nSalon email: huy.m.tran@gmail.com \n\nBooked services:\nBasic Medicure: 4:30pm ➝ 5:00pm - Jennifer Eng\n\nBooking notes:\nNone\n\nBooking status: Confirmed
+LOCATION:Main Street 123
+END:VEVENT
+END:VCALENDAR

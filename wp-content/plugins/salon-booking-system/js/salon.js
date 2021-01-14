@@ -42,7 +42,7 @@ function sln_init($) {
         sln_stepDate($);
     } else {
         if ($("#salon-step-details").length) {
-            $("a.tec-link").click(function(e) {
+            $("a.tec-link").on('click', function(e) {
                 e.preventDefault();
                 var href = $(this).attr("href");
                 var locHref = window.location.href;
@@ -64,8 +64,8 @@ function sln_init($) {
                 }
             } else {
                 jQuery("[data-salon-click=fb_login]")
-                    .unbind("click")
-                    .click(function() {
+                    .off("click")
+                    .on('click', function() {
                         FB.login(
                             function() {
                                 facebookLogin();
@@ -77,7 +77,7 @@ function sln_init($) {
                     });
             }
         }
-        $('[data-salon-toggle="next"]').click(function(e) {
+        $('[data-salon-toggle="next"]').on('click', function(e) {
             var form = $(this).closest("form");
             $(
                 "#sln-salon input.sln-invalid,#sln-salon textarea.sln-invalid,#sln-salon select.sln-invalid"
@@ -103,7 +103,7 @@ function sln_init($) {
             return false;
         });
     }
-    $('[data-salon-toggle="direct"]').click(function(e) {
+    $('[data-salon-toggle="direct"]').on('click', function(e) {
         e.preventDefault();
 	var form = $(this).closest("form");
         sln_loadStep($, form.serialize() + "&" + $(this).data("salon-data"));
@@ -112,7 +112,7 @@ function sln_init($) {
 
     // CHECKBOXES
     $("#sln-salon input:checkbox").each(function() {
-        $(this).change(function() {
+        $(this).on('change', function() {
             if ($(this).is(":checked")) {
                 $(this)
                     .parent()
@@ -126,7 +126,7 @@ function sln_init($) {
     });
     // RADIOBOXES
     $("#sln-salon input:radio").each(function() {
-        $(this).click(function() {
+        $(this).on('click', function() {
             //var selector = '.is-checked input[name="' + jQuery(this).attr('name').replace(/([\[\]])/g, '\\\\$1') + '"]';
             var name = jQuery(this).attr("name");
             jQuery(".is-checked").each(function() {
@@ -144,7 +144,7 @@ function sln_init($) {
         });
     });
 
-    $(".sln-edit-text").change(function() {
+    $(".sln-edit-text").on('change', function() {
         var data =
             "key=" +
             $(this).attr("id") +
@@ -208,7 +208,7 @@ function sln_init($) {
 		$(this).closest('form').removeClass('sln-guest-checkout-form');
             }
         })
-        .change();
+        .trigger('change');
 
     sln_createRatings(true, "star");
 
@@ -380,13 +380,13 @@ function sln_stepDate($) {
                     "&" +
                     $("#sln-step-submit").data("salon-data")
             );
-        else $("#sln-step-submit").click();
+        else $("#sln-step-submit").trigger('click');
     }
 
-    $("#sln_date, #sln_time").change(function() {
+    $("#sln_date, #sln_time").on('change', function() {
         validate(this, false);
     });
-    $("#salon-step-date").submit(function() {
+    $("#salon-step-date").on('submit', function() {
         if (!isValid) {
             validate(this, true);
         } else {
@@ -424,13 +424,13 @@ function sln_serviceTotal($) {
 
     function checkServices($) {
         var form, data;
-        if ($("#salon-step-services").size()) {
+        if ($("#salon-step-services").length) {
             form = $("#salon-step-services");
             data =
                 form.serialize() +
                 "&action=salon&method=CheckServices&part=primaryServices&security=" +
                 salon.ajax_nonce;
-        } else if ($("#salon-step-secondary").size()) {
+        } else if ($("#salon-step-secondary").length) {
             form = $("#salon-step-secondary");
             data =
                 form.serialize() +
@@ -470,15 +470,15 @@ function sln_serviceTotal($) {
                                 checkbox
                                     .attr("checked", false)
                                     .attr("disabled", "disabled")
-                                    .change();
+                                    .trigger('change');
                                 errorsArea.html(alertBox);
                             } else if (value.status == 0) {
                                 checkbox
                                     .attr("checked", false)
                                     .attr("disabled", false)
-                                    .change();
+                                    .trigger('change');
                             } else if (value.status == 1) {
-                                checkbox.attr("checked", true).change();
+                                checkbox.attr("checked", true).trigger('change');
                             }
                         });
                     evalTot();
@@ -487,7 +487,7 @@ function sln_serviceTotal($) {
         });
     }
 
-    $checkboxes.click(function() {
+    $checkboxes.on('click', function() {
         checkServices($);
     });
     checkServices($);
@@ -836,8 +836,8 @@ function initTimepickers($, data) {
 
     function reattachEvents() {
         $(".sln-datetimepicker-close")
-            .unbind("click")
-            .click(function() {
+            .off("click")
+            .on('click', function() {
                 $(".datetimepicker.sln-datetimepicker").hide();
             });
     }
@@ -860,8 +860,8 @@ function facebookInit() {
         FB.AppEvents.logPageView();
 
         jQuery("[data-salon-click=fb_login]")
-            .unbind("click")
-            .click(function() {
+            .off("click")
+            .on('click', function() {
                 FB.login(
                     function() {
                         facebookLogin();
@@ -905,7 +905,7 @@ function facebookLogin() {
                 auth.accessToken +
                 '" />'
         );
-        $form.find("[name=submit_details]").click();
+        $form.find("[name=submit_details]").trigger('click');
         return;
     }
 
@@ -935,7 +935,7 @@ function facebookLogin() {
 }
 
 function salonBookingCalendarInit() {
-    if (jQuery("#sln-salon-booking-calendar-shortcode").size() === 0) {
+    if (jQuery("#sln-salon-booking-calendar-shortcode").length === 0) {
         return;
     }
     salonBookingCalendarInitTooltip();
@@ -1068,7 +1068,7 @@ jQuery(function($) {
 // DIVI THEME ACCORDION FIX SNIPPET
 jQuery(function($) {
     if ($("body.theme-Divi").length || $("body.et_divi_theme").length) {
-        $(".sln-panel-heading").unbind("click");
+        $(".sln-panel-heading").off("click");
     }
 });
 // DIVI THEME ACCORDION FIX SNIPPET // END

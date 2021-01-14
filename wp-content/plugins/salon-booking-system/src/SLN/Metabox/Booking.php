@@ -148,7 +148,8 @@ class SLN_Metabox_Booking extends SLN_Metabox_Abstract
         $booking->evalDuration();
 
         if(!$is_modified) {
-            if($old_booking_services != $booking->getMeta('services')) {
+            if($this->prevStatus != 'auto-draft' && 
+            $old_booking_services != $booking->getMeta('services')) {
                 $is_modified = true;
             }
         }
@@ -229,9 +230,13 @@ class SLN_Metabox_Booking extends SLN_Metabox_Abstract
         $this->addCustomerRole($booking);
         $booking->reload();
         if ($this->prevStatus != $booking->getStatus()) {
-            $m = $this->getPlugin()->messages();
-            $m->setDisabled(false);
-            $m->sendByStatus($booking, $booking->getStatus());
+	    if ($this->prevStatus === 'auto-draft') {
+		$m = $this->getPlugin()->messages();
+		$m->setDisabled(false);
+		$m->sendByStatus($booking, $booking->getStatus());
+	    } else {
+		$is_modified = true;
+	    }
         }
         if($is_modified) {
             $m = $this->getPlugin()->messages();

@@ -674,7 +674,7 @@
       var colorpicker = this;
       $.each(this.options.colorSelectors, function(name, color) {
         var $btn = $('<i />').css('background-color', color).data('class', name);
-        $btn.click(function() {
+        $btn.on('click', function() {
           colorpicker.setValue($(this).css('background-color'));
         });
         colorpicker.picker.find('.colorpicker-selectors').append($btn);

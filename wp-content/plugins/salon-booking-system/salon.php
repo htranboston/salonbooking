@@ -3,7 +3,7 @@
 /*
 Plugin Name: Salon Booking Wordpress Plugin - Free Version
 Description: Let your customers book you services through your website. Perfect for hairdressing salons, barber shops and beauty centers.
-Version: 4.9.6
+Version: 4.9.8
 Plugin URI: http://salonbookingsystem.com/
 Author: Salon Booking System
 Author URI: http://salonbookingsystem.com/
@@ -14,7 +14,7 @@ Domain Path: /languages
 define('SLN_PLUGIN_BASENAME', plugin_basename(__FILE__));
 define('SLN_PLUGIN_DIR', untrailingslashit(dirname(__FILE__)));
 define('SLN_PLUGIN_URL', untrailingslashit(plugins_url('', __FILE__)));
-define('SLN_VERSION', '4.9.6');
+define('SLN_VERSION', '4.9.8');
 define('SLN_STORE_URL', 'https://salonbookingsystem.com');
 define('SLN_AUTHOR', 'Salon Booking');
 define('SLN_ITEM_SLUG', 'salon-booking-wordpress-plugin');

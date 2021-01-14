@@ -167,7 +167,7 @@ foreach ($items as $key => $label) {
                value="1"  <?php echo $value ? 'checked="checked"' : '' ?> <?php echo self::attrs($settings) ?>/>
     <?php
 }
-	static public function fieldCheckboxButton($name, $value = false, $label, $settings = array()) {
+	static public function fieldCheckboxButton($name, $value = false, $label = '', $settings = array()) {
 		?>
         <input type="checkbox" class="big-check-base big-check-onoff" name="<?php echo $name ?>" id="<?php echo self::makeID($name) ?>"
                value="1"  <?php echo $value ? 'checked="checked"' : '' ?> <?php echo self::attrs($settings) ?>/>
@@ -175,7 +175,7 @@ foreach ($items as $key => $label) {
     <?php
 }
 
-	static public function fieldCheckboxSwitch($name, $value = false, $labelOn, $labelOff, $settings = array()) {
+	static public function fieldCheckboxSwitch($name, $value = false, $labelOn = '', $labelOff = '', $settings = array()) {
 		?>
         <input type="checkbox" name="<?php echo $name ?>" id="<?php echo self::makeID($name) ?>"
                value="1"  <?php echo $value ? 'checked="checked"' : '' ?> <?php echo self::attrs($settings) ?>/>

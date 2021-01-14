@@ -56,6 +56,7 @@ class AvailabilityServices_Controller extends REST_Controller
             array(
                 'methods'  => WP_REST_Server::READABLE,
                 'callback' => array($this, 'get_primary_services'),
+		'permission_callback' => '__return_true',
             ),
         ) );
 
@@ -97,6 +98,7 @@ class AvailabilityServices_Controller extends REST_Controller
             array(
                 'methods'  => WP_REST_Server::READABLE,
                 'callback' => array($this, 'get_secondary_services'),
+		'permission_callback' => '__return_true',
             ),
         ) );
 

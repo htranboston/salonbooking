@@ -142,6 +142,6 @@ function sln_dataAttendant($){
         $.each(servicesData[serviceVal].attendants, function( index, value ) {
             selectHtml += '<option value="'+ value +'" ' + (value == attendantVal ? 'selected' : '') + ' >' + attendantsData[value] + '</option>';
         });
-        $(this).html(selectHtml).change();
+        $(this).html(selectHtml).trigger('change');
     });
 }

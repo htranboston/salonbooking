@@ -1,0 +1,53 @@
+0000.002 () Opened log file at time: Tue, 12 Jan 2021 04:09:51 +0000 on https://salonbooking.htswipe.com
+0000.002 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 20.3M | 8M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.002 () Free space on disk containing Updraft's temporary directory: 177.8 MB
+0000.001 () Opened log file at time: Tue, 12 Jan 2021 04:09:53 +0000 on https://salonbooking.htswipe.com
+0000.001 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 16.1M | 2M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.001 () Free space on disk containing Updraft's temporary directory: 177.8 MB
+0000.012 () Ensuring WP_Filesystem is setup for a restore
+0000.013 () WP_Filesystem is setup and ready for a restore
+0000.015 () Restore job started. Entities to restore: db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_actionscheduler_actions","wp_actionscheduler_claims","wp_actionscheduler_groups","wp_actionscheduler_logs","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms","wp_wpmailsmtp_tasks_meta"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.016 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.017 () Entity: db
+0000.017 () restore_backup(backup_file=backup_2021-01-11-2305_On_Booking_4281f35a2f93-db.gz, type=db, info=a:0:{}, last_one=1)
+0000.017 () Unpacking backup... (backup_2021-01-11-2305_On_Booking_4281f35a2f93-db.gz, 0.2 Mb)
+0000.017 () Database successfully unpacked
+0000.017 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.017 () Using direct MySQL access; value of use_mysqli is: 1
+0000.018 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.051 () Tried to raise max_allowed_packet from 4 MB to 32 MB, but failed (Access denied; you need (at least one of) the SUPER privilege(s) for this operation, b:0;)
+0000.051 () Max packet size: 4 MB
+0000.051 () Entering maintenance mode
+0000.052 () Enabling Maintenance mode&#8230;
+0000.055 () Backup of: https://salonbooking.htswipe.com
+0000.055 () Content URL: https://salonbooking.htswipe.com/wp-content
+0000.055 () Uploads URL: https://salonbooking.htswipe.com/wp-content/uploads
+0000.055 () Old table prefix: wp_
+0000.055 () Site information: multisite=0
+0000.056 () Site information: sql_mode=NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.057 () New table prefix: wp_
+0000.059 () Processing table (MyISAM): wp_options
+0000.096 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0000.103 () Processing table (MyISAM): wp_users
+0000.112 () Processing table (MyISAM): wp_usermeta
+0000.131 () Processing table (InnoDB): wp_actionscheduler_actions
+0000.176 () Processing table (InnoDB): wp_actionscheduler_claims
+0000.202 () Processing table (InnoDB): wp_actionscheduler_groups
+0000.231 () Processing table (InnoDB): wp_actionscheduler_logs
+0000.260 () Processing table (MyISAM): wp_commentmeta
+0000.264 () Processing table (MyISAM): wp_comments
+0000.269 () Processing table (MyISAM): wp_links
+0000.274 () Processing table (MyISAM): wp_postmeta
+0000.284 () Processing table (MyISAM): wp_posts
+0000.292 () Processing table (MyISAM): wp_term_relationships
+0000.297 () Processing table (MyISAM): wp_term_taxonomy
+0000.301 () Processing table (MyISAM): wp_termmeta
+0000.305 () Processing table (MyISAM): wp_terms
+0000.309 () Database queries processed: 50 in 0.29 seconds
+0000.320 () Processing table (InnoDB): wp_wpmailsmtp_tasks_meta
+0000.345 () Unlocking database and leaving maintenance mode
+0000.345 () Disabling Maintenance mode&#8230;
+0000.346 () Finished: lines processed: 56 in 0.33 seconds
+0000.346 () Cleaning up rubbish...
+0000.355 () Restore successful!
+0000.355 () Restore successful

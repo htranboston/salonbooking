@@ -57,6 +57,7 @@ class AvailabilityIntervals_Controller extends REST_Controller
             array(
                 'methods'  => WP_REST_Server::CREATABLE,
                 'callback' => array($this, 'get_intervals'),
+		'permission_callback' => '__return_true',
             ),
         ) );
     }

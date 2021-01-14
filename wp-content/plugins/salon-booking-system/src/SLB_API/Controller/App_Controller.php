@@ -20,6 +20,7 @@ class App_Controller extends REST_Controller
             array(
                 'methods'   => WP_REST_Server::READABLE,
                 'callback'  => array( $this, 'get_about_info' ),
+		'permission_callback' => '__return_true',
             ),
         ) );
 
@@ -27,6 +28,7 @@ class App_Controller extends REST_Controller
             array(
                 'methods'  => WP_REST_Server::READABLE,
                 'callback' => array( $this, 'get_settings' ),
+		'permission_callback' => '__return_true',
 	    ),
 	) );
     }

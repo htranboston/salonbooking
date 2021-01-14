@@ -1,0 +1,20 @@
+0000.000 (1) Opened log file at time: Tue, 12 Jan 2021 02:18:03 +0000 on https://salonbooking.htswipe.com
+0000.001 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 10M | 2M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.001 (1) Free space on disk containing Updraft's temporary directory: 194.9 MB
+0000.001 (1) This backup task (19dcd571cd8e) is either complete or began over 2 days ago: ending (1610417883.3259, ) (existing jobdata keys: )
+0000.000 (1) Opened log file at time: Tue, 12 Jan 2021 02:20:01 +0000 on https://salonbooking.htswipe.com
+0000.001 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 8.6M | 2M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.001 (1) Free space on disk containing Updraft's temporary directory: 171.8 MB
+0000.001 (1) This backup task (19dcd571cd8e) is either complete or began over 2 days ago: ending (1610418001.545, ) (existing jobdata keys: )
+0000.000 (1) Opened log file at time: Tue, 12 Jan 2021 02:20:02 +0000 on https://salonbooking.htswipe.com
+0000.001 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 8.9M | 2M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.001 (1) Free space on disk containing Updraft's temporary directory: 171.8 MB
+0000.001 (1) This backup task (19dcd571cd8e) is either complete or began over 2 days ago: ending (1610418002.8596, ) (existing jobdata keys: )
+0000.000 (1) Opened log file at time: Tue, 12 Jan 2021 03:20:02 +0000 on https://salonbooking.htswipe.com
+0000.001 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 8.2M | 2M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.001 (1) Free space on disk containing Updraft's temporary directory: 148.6 MB
+0000.002 (1) This backup task (19dcd571cd8e) is either complete or began over 2 days ago: ending (1610421602.1181, ) (existing jobdata keys: )
+0000.000 (1) Opened log file at time: Tue, 12 Jan 2021 03:20:04 +0000 on https://salonbooking.htswipe.com
+0000.001 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 12.5M | 2M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.001 (1) Free space on disk containing Updraft's temporary directory: 148.6 MB
+0000.002 (1) This backup task (19dcd571cd8e) is either complete or began over 2 days ago: ending (1610421604.511, ) (existing jobdata keys: )

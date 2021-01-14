@@ -26,6 +26,7 @@ class Customers_Controller extends REST_Controller
             array(
                 'methods'             => WP_REST_Server::READABLE,
                 'callback'            => array( $this, 'get_items' ),
+		'permission_callback' => '__return_true',
                 'args' => array(
                     'search' => array(
                         'description' => __( 'Search string.', 'salon-booking-system' ),
@@ -54,6 +55,7 @@ class Customers_Controller extends REST_Controller
             array(
                 'methods'             => WP_REST_Server::READABLE,
                 'callback'            => array( $this, 'get_item' ),
+		'permission_callback' => '__return_true',
                 'args'                => array(
                     'context' => $this->get_context_param( array( 'default' => 'view' ) ),
                 ),

@@ -195,8 +195,8 @@ abstract class SLN_Admin_Reports_AbstractReport {
 	</select>
 		<script>
 			jQuery(document).ready(function() {
-				jQuery('[name=view]').change(function() {
-					jQuery('#sln-graphs-filter').submit();
+				jQuery('[name=view]').on('change', function() {
+					jQuery('#sln-graphs-filter').trigger('submit');
 				});
 			});
 		</script>
@@ -531,7 +531,7 @@ abstract class SLN_Admin_Reports_AbstractReport {
 		<script>
 			// Show hide extended date options
 			jQuery(window).ready(function() {
-				jQuery( '#sln-graphs-date-options' ).change( function() {
+				jQuery( '#sln-graphs-date-options' ).on('change', function() {
 					var $this = jQuery(this);
 					date_range_options = jQuery( '#sln-date-range-options' );
 

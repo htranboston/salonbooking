@@ -14,7 +14,7 @@
 	var GRIP_CELL_SELECTOR = '.sln-checkout-fields--grip--cell';
 	var DEFAULT_VALUE_TEXT_COL_SELECTOR = '#sln-fields-editor-default-field-text-wrapper';
 	var DEFAULT_VALUE_CHECKBOX_COL_SELECTOR = '#sln-fields-editor-default-field-checkbox-wrapper';
-	
+
 	var slugify = function (str) {
 		var separator = "_";
 		return str
@@ -78,7 +78,7 @@
 		setCellValue: function(el,val){
 			el.is(':checkbox') ? el.prop("checked", val) : el.val(val);
 			if (el.is('select')) {
-				el.change()
+				el.trigger('change')
 			}
 
 		}
@@ -97,7 +97,7 @@
 	var editorPrototype = {
 		init: function(){
 			var editor = this;
-			this.$el.find(LABEL_INPUT_SELECTOR).change(function(){
+			this.$el.find(LABEL_INPUT_SELECTOR).on('change', function(){
 				if(!editor.isValid){
 					var val = $(this).val();
 					if(val){
@@ -106,12 +106,12 @@
 					}
 				}
 			});
-			this.$el.find(EDITOR_BUTTON_SELECTOR).click(function(){
+			this.$el.find(EDITOR_BUTTON_SELECTOR).on('click', function(){
 				editor.update();
 				editor.onClickCloseButton()
 			});
-			this.$el.find(EDITOR_CLOSE_BUTTON_SELECTOR).click(this.onClickCloseButton);
-			this.$el.find(TYPE_SELECT_SELECTOR).change(function(){
+			this.$el.find(EDITOR_CLOSE_BUTTON_SELECTOR).on('click', this.onClickCloseButton);
+			this.$el.find(TYPE_SELECT_SELECTOR).on('change', function(){
 				var val = $(this).val();
 				editor.onTypeChange(val)
 			});
@@ -199,6 +199,7 @@
 			var parent = newFieldEditor.$el.parent().clone();
 			var el = parent.children();
 			el.data('mode','existing');
+			el.attr('data-mode','existing');
 			el.find(EDITOR_BUTTON_SELECTOR).text(UPDATE_FIELD_BUTTON_TEXT)
 			$('.sln-checkout-fields').find('select').attr( 'data-select2-id', function(){ return this.id+'1'; } );
 			parent.hide();
@@ -214,6 +215,7 @@
 				this.setKey('');
 				$(ROW_SELECTOR).removeClass('selected');
 				existingFieldEditor.clear()
+				newFieldEditor.$el.parent().slideDown();
 			}.bind(existingFieldEditor));
 		},
 		getKey: function (){
@@ -227,6 +229,7 @@
 			var key = this.getKey();
 			if(!this.validate(field)) return;
 			this.updateTableRow(field,key);
+			this.$el.parent().slideUp(function(){ newFieldEditor.$el.parent().slideDown(); })
 		},
 		show: function(key){
 			this.$el.parent().insertAfter($(ROW_SELECTOR+'[data-index="'+key+'"]'))
@@ -251,6 +254,7 @@
 	body.on('click',EDIT_BUTTON_SELECTOR,function(){
 		var $el = $(this);
 		var key = getKey($el);
+		newFieldEditor.$el.parent().slideUp();
 		if( key !== existingFieldEditor.getKey() ){
 			var field = fieldTable.getField(key);
 			existingFieldEditor.editField(field, key)

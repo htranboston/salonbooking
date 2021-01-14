@@ -24,6 +24,7 @@ class ServicesCategories_Controller extends REST_Controller
             array(
                 'methods'             => WP_REST_Server::READABLE,
                 'callback'            => array( $this, 'get_items' ),
+		'permission_callback' => '__return_true',
             ),
             array(
                 'methods'             => WP_REST_Server::CREATABLE,
@@ -45,6 +46,7 @@ class ServicesCategories_Controller extends REST_Controller
             array(
                 'methods'             => WP_REST_Server::READABLE,
                 'callback'            => array( $this, 'get_item' ),
+		'permission_callback' => '__return_true',
                 'args'                => array(
                     'context' => $this->get_context_param( array( 'default' => 'view' ) ),
                 ),

@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:a8b7070ee92a00e1f7dece48eae4591d
+SUMMARY:Salon Booking Demo - 04 Dec 2020 3:00pm
+DTSTART;TZID=America/New_York:20201204T150000
+DTEND;TZID=America/New_York:20201204T150500
+DESCRIPTION:Salon name: Salon Booking Demo \n\nSalon address: Main Street 123 \n\nSalon phone: 6178988070 \n\nSalon email: huy.m.tran@gmail.com \n\nBooked services:\nManicure: 3:00pm ➝ 3:00pm - Thuy\nNails styling: 3:00pm ➝ 3:00pm - Thuy\n\nBooking notes:\nNone\n\nBooking status: Confirmed
+LOCATION:Main Street 123
+END:VEVENT
+END:VCALENDAR

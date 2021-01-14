@@ -505,7 +505,7 @@ class SLN_Wrapper_Booking extends SLN_Wrapper_Abstract
 
 		// have time and know page ?
 		$cancellationText = $cancellationHours<24 ? $cancellationHours . __(" hours", 'salon-booking-system') :
-							$cancellationHours==24? __("1 day", 'salon-booking-system') : round($cancellationHours/24) . __("days", 'salon-booking-system');
+							($cancellationHours==24? __("1 day", 'salon-booking-system') : round($cancellationHours/24) . __("days", 'salon-booking-system'));
 		$bookingMyAccountUrl = get_permalink($bookingMyAccountPageId);
 		return true;
 	}
