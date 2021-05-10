@@ -150,8 +150,11 @@ $customer_fields = SLN_Enum_CheckoutFields::forBookingAndCustomer()->filter('add
                                 $helper->getFieldName($postType, $key), $value, 
                                 array('required' => $field->isRequired()) 
                             );
-                            if($field['type'] === 'checkbox'){
-                                
+			    if ($key === 'email') {
+				$additional_opts[2]['type'] = 'email';
+			    }
+			    if($field['type'] === 'checkbox'){
+
 
                                $additional_opts = array_merge(array_slice($additional_opts, 0, 2), array(''), array_slice($additional_opts, 2));
                                 $method_name = $method_name .'Button';

@@ -1,0 +1,13 @@
+image: php:7.4.1
+
+pipelines:
+ branches:
+
+   dev_dimitri:
+     - step:
+         name: Deploy to staging
+         deployment: staging
+         script:
+           - apt-get update
+           - apt-get -qq install git-ftp
+           - git ftp init --user $ftp_username_ --passwd $ftp_password_ ftp://ftp.prova.salonbooking.it/public_html/

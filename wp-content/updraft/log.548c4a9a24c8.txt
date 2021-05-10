@@ -1,0 +1,599 @@
+0000.000 (0) Opened log file at time: Tue, 04 May 2021 00:03:27 +0000 on https://salonbooking.htswipe.com
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 9.3M | 10M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.001 (0) Free space on disk containing Updraft's temporary directory: 3194 MB
+0000.002 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: daily)
+0000.003 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.004 (0) Semaphore (fd, wp_options) was stuck, set lock time to 2021-05-04 00:03:27
+0000.004 (0) Semaphore (fd, wp_options) reset to 1
+0000.005 (0) Set semaphore last lock (fd) time to 2021-05-04 00:03:27
+0000.005 (0) Semaphore lock (fd) complete
+0000.006 (0) Backup run: resumption=0, nonce=548c4a9a24c8, file_nonce=548c4a9a24c8 begun at=1620086607 (0s ago), job type=backup
+0000.007 (0) Scheduling a resumption (1) after 300 seconds (1620086907) in case this run gets aborted
+0000.013 (0) Checking if we have a zip executable available
+0000.014 (0) Creation of backups of directories: beginning
+0000.015 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.155 (0) Total entities for the zip file: 1993 directories, 11948 files (0 skipped as non-modified), 149.4 MB
+0000.165 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.169 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.172 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.176 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.180 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.183 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.187 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.191 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.194 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.198 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.199 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.6 MB, 11948 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0000.451 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 1100 files added (on-disk size: 1535.4 KB)
+0000.454 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 1200 files added (on-disk size: 1535.4 KB)
+0000.458 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 1300 files added (on-disk size: 1535.4 KB)
+0000.461 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 1400 files added (on-disk size: 1535.4 KB)
+0000.465 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 1500 files added (on-disk size: 1535.4 KB)
+0000.468 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 1600 files added (on-disk size: 1535.4 KB)
+0000.472 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 1700 files added (on-disk size: 1535.4 KB)
+0000.476 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 1800 files added (on-disk size: 1535.4 KB)
+0000.479 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 1900 files added (on-disk size: 1535.4 KB)
+0000.483 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 2000 files added (on-disk size: 1535.4 KB)
+0000.483 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (9.4 MB, 11948 files batched, 1001 (2002) added so far); re-opening (prior size: 1535.4 KB)
+0001.183 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 2100 files added (on-disk size: 4392.6 KB)
+0001.188 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 2200 files added (on-disk size: 4392.6 KB)
+0001.192 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 2300 files added (on-disk size: 4392.6 KB)
+0001.195 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 2400 files added (on-disk size: 4392.6 KB)
+0001.199 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 2500 files added (on-disk size: 4392.6 KB)
+0001.203 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 2600 files added (on-disk size: 4392.6 KB)
+0001.206 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 2700 files added (on-disk size: 4392.6 KB)
+0001.210 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 2800 files added (on-disk size: 4392.6 KB)
+0001.214 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 2900 files added (on-disk size: 4392.6 KB)
+0001.218 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 3000 files added (on-disk size: 4392.6 KB)
+0001.218 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (19.5 MB, 11948 files batched, 1001 (3003) added so far); re-opening (prior size: 4392.6 KB)
+0002.896 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 3100 files added (on-disk size: 10077.5 KB)
+0002.901 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 3200 files added (on-disk size: 10077.5 KB)
+0002.905 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 3300 files added (on-disk size: 10077.5 KB)
+0002.909 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 3400 files added (on-disk size: 10077.5 KB)
+0002.913 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 3500 files added (on-disk size: 10077.5 KB)
+0002.917 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 3600 files added (on-disk size: 10077.5 KB)
+0002.922 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 3700 files added (on-disk size: 10077.5 KB)
+0002.926 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 3800 files added (on-disk size: 10077.5 KB)
+0002.931 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 3900 files added (on-disk size: 10077.5 KB)
+0002.935 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 4000 files added (on-disk size: 10077.5 KB)
+0002.935 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (9.7 MB, 11948 files batched, 1001 (4004) added so far); re-opening (prior size: 10077.5 KB)
+0003.618 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 4100 files added (on-disk size: 12770.2 KB)
+0003.622 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 4200 files added (on-disk size: 12770.2 KB)
+0003.626 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 4300 files added (on-disk size: 12770.2 KB)
+0003.630 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 4400 files added (on-disk size: 12770.2 KB)
+0003.634 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 4500 files added (on-disk size: 12770.2 KB)
+0003.638 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 4600 files added (on-disk size: 12770.2 KB)
+0003.642 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 4700 files added (on-disk size: 12770.2 KB)
+0003.646 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 4800 files added (on-disk size: 12770.2 KB)
+0003.650 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 4900 files added (on-disk size: 12770.2 KB)
+0003.654 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 5000 files added (on-disk size: 12770.2 KB)
+0003.655 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (13.8 MB, 11948 files batched, 1001 (5005) added so far); re-opening (prior size: 12770.2 KB)
+0004.788 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 5100 files added (on-disk size: 18389.8 KB)
+0004.792 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 5200 files added (on-disk size: 18389.8 KB)
+0004.797 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 5300 files added (on-disk size: 18389.8 KB)
+0004.801 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 5400 files added (on-disk size: 18389.8 KB)
+0004.805 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 5500 files added (on-disk size: 18389.8 KB)
+0004.809 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 5600 files added (on-disk size: 18389.8 KB)
+0004.813 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 5700 files added (on-disk size: 18389.8 KB)
+0004.818 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 5800 files added (on-disk size: 18389.8 KB)
+0004.822 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 5900 files added (on-disk size: 18389.8 KB)
+0004.826 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 6000 files added (on-disk size: 18389.8 KB)
+0004.827 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (24.8 MB, 11948 files batched, 1001 (6006) added so far); re-opening (prior size: 18389.8 KB)
+0006.507 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 6100 files added (on-disk size: 25862.2 KB)
+0006.512 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 6200 files added (on-disk size: 25862.2 KB)
+0006.516 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 6300 files added (on-disk size: 25862.2 KB)
+0006.520 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 6400 files added (on-disk size: 25862.2 KB)
+0006.525 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 6500 files added (on-disk size: 25862.2 KB)
+0006.529 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 6600 files added (on-disk size: 25862.2 KB)
+0006.533 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 6700 files added (on-disk size: 25862.2 KB)
+0006.537 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 6800 files added (on-disk size: 25862.2 KB)
+0006.541 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 6900 files added (on-disk size: 25862.2 KB)
+0006.545 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 7000 files added (on-disk size: 25862.2 KB)
+0006.546 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.4 MB, 11948 files batched, 1001 (7007) added so far); re-opening (prior size: 25862.2 KB)
+0007.061 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 7100 files added (on-disk size: 27498.8 KB)
+0007.066 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 7200 files added (on-disk size: 27498.8 KB)
+0007.070 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 7300 files added (on-disk size: 27498.8 KB)
+0007.074 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 7400 files added (on-disk size: 27498.8 KB)
+0007.079 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 7500 files added (on-disk size: 27498.8 KB)
+0007.083 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 7600 files added (on-disk size: 27498.8 KB)
+0007.087 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 7700 files added (on-disk size: 27498.8 KB)
+0007.091 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25.7 MB, 11948 files batched, 786 (7793) added so far); re-opening (prior size: 27498.8 KB)
+0009.317 (0) A useful amount of data was added after this amount of zip processing: 2.7 s (normalised: 2.6 s, rate: 9673.6 KB/s)
+0009.318 (0) Performance is good - will increase the amount of data we attempt to batch (time=2.7244279384613, normalised_time=2.6463778422091, max_time=9.3171639442444, data points known=1, old_max_bytes=26214400, new_max_bytes=59434596)
+0009.351 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 7800 files added (on-disk size: 34726.2 KB)
+0009.355 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 7900 files added (on-disk size: 34726.2 KB)
+0009.359 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 8000 files added (on-disk size: 34726.2 KB)
+0009.362 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 8100 files added (on-disk size: 34726.2 KB)
+0009.366 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 8200 files added (on-disk size: 34726.2 KB)
+0009.370 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 8300 files added (on-disk size: 34726.2 KB)
+0009.373 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 8400 files added (on-disk size: 34726.2 KB)
+0009.377 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 8500 files added (on-disk size: 34726.2 KB)
+0009.381 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 8600 files added (on-disk size: 34726.2 KB)
+0009.385 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 8700 files added (on-disk size: 34726.2 KB)
+0009.389 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (16.8 MB, 11948 files batched, 1001 (8794) added so far); re-opening (prior size: 34726.2 KB)
+0010.491 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 8800 files added (on-disk size: 41030.9 KB)
+0010.496 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 8900 files added (on-disk size: 41030.9 KB)
+0010.500 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 9000 files added (on-disk size: 41030.9 KB)
+0010.504 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 9100 files added (on-disk size: 41030.9 KB)
+0010.509 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 9200 files added (on-disk size: 41030.9 KB)
+0010.513 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 9300 files added (on-disk size: 41030.9 KB)
+0010.517 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 9400 files added (on-disk size: 41030.9 KB)
+0010.522 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 9500 files added (on-disk size: 41030.9 KB)
+0010.526 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 9600 files added (on-disk size: 41030.9 KB)
+0010.530 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 9700 files added (on-disk size: 41030.9 KB)
+0010.534 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (10.1 MB, 11948 files batched, 1001 (9795) added so far); re-opening (prior size: 41030.9 KB)
+0011.403 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 9800 files added (on-disk size: 43614.7 KB)
+0011.408 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 9900 files added (on-disk size: 43614.7 KB)
+0011.413 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 10000 files added (on-disk size: 43614.7 KB)
+0011.418 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 10100 files added (on-disk size: 43614.7 KB)
+0011.422 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 10200 files added (on-disk size: 43614.7 KB)
+0011.427 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 10300 files added (on-disk size: 43614.7 KB)
+0011.431 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 10400 files added (on-disk size: 43614.7 KB)
+0011.436 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 10500 files added (on-disk size: 43614.7 KB)
+0011.441 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 10600 files added (on-disk size: 43614.7 KB)
+0011.445 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 10700 files added (on-disk size: 43614.7 KB)
+0011.449 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.3 MB, 11948 files batched, 1001 (10796) added so far); re-opening (prior size: 43614.7 KB)
+0011.856 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 10800 files added (on-disk size: 44942.8 KB)
+0011.861 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 10900 files added (on-disk size: 44942.8 KB)
+0011.865 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 11000 files added (on-disk size: 44942.8 KB)
+0011.870 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 11100 files added (on-disk size: 44942.8 KB)
+0011.875 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 11200 files added (on-disk size: 44942.8 KB)
+0011.879 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 11300 files added (on-disk size: 44942.8 KB)
+0011.884 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 11400 files added (on-disk size: 44942.8 KB)
+0011.888 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 11500 files added (on-disk size: 44942.8 KB)
+0011.893 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 11600 files added (on-disk size: 44942.8 KB)
+0011.898 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 11700 files added (on-disk size: 44942.8 KB)
+0011.903 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.1 MB, 11948 files batched, 1001 (11797) added so far); re-opening (prior size: 44942.8 KB)
+0012.342 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 11800 files added (on-disk size: 46223.9 KB)
+0012.346 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip.tmp: 11900 files added (on-disk size: 46223.9 KB)
+0013.013 (0) Created plugins zip (0) - 46483 KB in 13 s (3576.6 KB/s) (sha1: 917ce29cfe9e6e749f905bd25fa45fc96d76a94b, sha256: e097b7b6c95736a0952f35257816ae55318d8add79233560b25129c14128237a)
+0013.013 (0) Deleting old temporary file: log.465a7b0cbeb2-browser.txt
+0013.014 (0) Beginning creation of dump of themes (split every: 400 MB)
+0013.019 (0) Total entities for the zip file: 65 directories, 254 files (0 skipped as non-modified), 5.1 MB
+0013.023 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0013.026 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0013.259 (0) Created themes zip (0) - 3554.1 KB in 0.2 s (14590.8 KB/s) (sha1: 309c0dca51b2094d518fc9b05cd2cb731aa5c91b, sha256: 1c9dc9e63ac408525e7761e5f52b2048ebc109949c5f94c464dae7da197f92b4)
+0013.260 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0013.261 (0) Looking for candidates to backup in: /var/www/salon/wp-content/uploads
+0013.261 (0) finding files: Mycal_135.ics: adding to list (1)
+0013.261 (0) finding files: Mycal_1525.ics: adding to list (2)
+0013.262 (0) finding files: Mycal_1467.ics: adding to list (3)
+0013.262 (0) finding files: Mycal_113.ics: adding to list (4)
+0013.262 (0) finding files: Mycal_1547.ics: adding to list (5)
+0013.263 (0) finding files: Mycal_1541.ics: adding to list (6)
+0013.263 (0) finding files: Mycal_105.ics: adding to list (7)
+0013.263 (0) finding files: Mycal_145.ics: adding to list (8)
+0013.263 (0) finding files: Mycal_216.ics: adding to list (9)
+0013.264 (0) finding files: buddypress: adding to list (10)
+0013.264 (0) finding files: Mycal_1627.ics: adding to list (11)
+0013.264 (0) finding files: Mycal_1468.ics: adding to list (12)
+0013.265 (0) finding files: Mycal_133.ics: adding to list (13)
+0013.265 (0) finding files: Mycal_1500.ics: adding to list (14)
+0013.265 (0) finding files: Mycal_89.ics: adding to list (15)
+0013.266 (0) finding files: Mycal_194.ics: adding to list (16)
+0013.266 (0) finding files: Mycal_127.ics: adding to list (17)
+0013.266 (0) finding files: Mycal_632.ics: adding to list (18)
+0013.266 (0) finding files: Mycal_93.ics: adding to list (19)
+0013.267 (0) finding files: Mycal_1537.ics: adding to list (20)
+0013.267 (0) finding files: Mycal_123.ics: adding to list (21)
+0013.267 (0) finding files: Mycal_1663.ics: adding to list (22)
+0013.268 (0) finding files: Mycal_243.ics: adding to list (23)
+0013.268 (0) finding files: Mycal_1508.ics: adding to list (24)
+0013.268 (0) finding files: Mycal_1562.ics: adding to list (25)
+0013.268 (0) finding files: Mycal_190.ics: adding to list (26)
+0013.269 (0) finding files: Mycal_1514.ics: adding to list (27)
+0013.269 (0) finding files: Mycal_1489.ics: adding to list (28)
+0013.269 (0) finding files: Mycal_1580.ics: adding to list (29)
+0013.270 (0) finding files: Mycal_103.ics: adding to list (30)
+0013.270 (0) finding files: wp-file-manager-pro: adding to list (31)
+0013.270 (0) finding files: Mycal_1510.ics: adding to list (32)
+0013.270 (0) finding files: Mycal_1639.ics: adding to list (33)
+0013.271 (0) finding files: Mycal_67.ics: adding to list (34)
+0013.271 (0) finding files: Mycal_1634.ics: adding to list (35)
+0013.271 (0) finding files: Mycal_1649.ics: adding to list (36)
+0013.272 (0) finding files: Mycal_91.ics: adding to list (37)
+0013.272 (0) finding files: Mycal_1661.ics: adding to list (38)
+0013.272 (0) finding files: Mycal_630.ics: adding to list (39)
+0013.272 (0) finding files: Mycal_1529.ics: adding to list (40)
+0013.273 (0) finding files: Mycal_160.ics: adding to list (41)
+0013.273 (0) finding files: Mycal_220.ics: adding to list (42)
+0013.273 (0) finding files: Mycal_1586.ics: adding to list (43)
+0013.274 (0) finding files: Mycal_222.ics: adding to list (44)
+0013.274 (0) finding files: Mycal_1560.ics: adding to list (45)
+0013.274 (0) finding files: Mycal_111.ics: adding to list (46)
+0013.274 (0) finding files: Mycal_247.ics: adding to list (47)
+0013.275 (0) finding files: Mycal_115.ics: adding to list (48)
+0013.275 (0) finding files: Mycal_85.ics: adding to list (49)
+0013.275 (0) finding files: Mycal_1553.ics: adding to list (50)
+0013.276 (0) finding files: Mycal_1568.ics: adding to list (51)
+0013.276 (0) finding files: Mycal_205.ics: adding to list (52)
+0013.276 (0) finding files: Mycal_1539.ics: adding to list (53)
+0013.276 (0) finding files: Mycal_234.ics: adding to list (54)
+0013.276 (0) finding files: Mycal_1519.ics: adding to list (55)
+0013.276 (0) finding files: Mycal_1572.ics: adding to list (56)
+0013.276 (0) finding files: Mycal_1570.ics: adding to list (57)
+0013.276 (0) finding files: Mycal_1723.ics: adding to list (58)
+0013.276 (0) finding files: Mycal_1558.ics: adding to list (59)
+0013.276 (0) finding files: Mycal_226.ics: adding to list (60)
+0013.276 (0) finding files: Mycal_1641.ics: adding to list (61)
+0013.276 (0) finding files: Mycal_230.ics: adding to list (62)
+0013.276 (0) finding files: Mycal_1629.ics: adding to list (63)
+0013.276 (0) finding files: Mycal_1533.ics: adding to list (64)
+0013.276 (0) finding files: Mycal_109.ics: adding to list (65)
+0013.276 (0) finding files: Mycal_1590.ics: adding to list (66)
+0013.276 (0) finding files: Mycal_1576.ics: adding to list (67)
+0013.276 (0) finding files: Mycal_1643.ics: adding to list (68)
+0013.276 (0) finding files: Mycal_147.ics: adding to list (69)
+0013.276 (0) finding files: Mycal_1535.ics: adding to list (70)
+0013.276 (0) finding files: Mycal_1582.ics: adding to list (71)
+0013.276 (0) finding files: Mycal_1556.ics: adding to list (72)
+0013.276 (0) finding files: Mycal_1465.ics: adding to list (73)
+0013.276 (0) finding files: Mycal_1523.ics: adding to list (74)
+0013.276 (0) finding files: Mycal_151.ics: adding to list (75)
+0013.276 (0) finding files: Mycal_1545.ics: adding to list (76)
+0013.276 (0) finding files: Mycal_1543.ics: adding to list (77)
+0013.276 (0) finding files: Mycal_1521.ics: adding to list (78)
+0013.276 (0) finding files: Mycal_1631.ics: adding to list (79)
+0013.276 (0) finding files: Mycal_188.ics: adding to list (80)
+0013.276 (0) finding files: Mycal_1592.ics: adding to list (81)
+0013.276 (0) finding files: Mycal_634.ics: adding to list (82)
+0013.276 (0) finding files: Mycal_117.ics: adding to list (83)
+0013.276 (0) finding files: Mycal_626.ics: adding to list (84)
+0013.276 (0) finding files: Mycal_1721.ics: adding to list (85)
+0013.276 (0) finding files: elementor: adding to list (86)
+0013.276 (0) finding files: Mycal_1645.ics: adding to list (87)
+0013.276 (0) finding files: Mycal_119.ics: adding to list (88)
+0013.276 (0) finding files: ultimatemember: adding to list (89)
+0013.276 (0) finding files: Mycal_97.ics: adding to list (90)
+0013.276 (0) finding files: Mycal_628.ics: adding to list (91)
+0013.276 (0) finding files: Mycal_143.ics: adding to list (92)
+0013.276 (0) finding files: Mycal_131.ics: adding to list (93)
+0013.276 (0) finding files: Mycal_1512.ics: adding to list (94)
+0013.276 (0) finding files: Mycal_1198.ics: adding to list (95)
+0013.276 (0) finding files: Mycal_1456.ics: adding to list (96)
+0013.276 (0) finding files: Mycal_1473.ics: adding to list (97)
+0013.276 (0) finding files: Mycal_1659.ics: adding to list (98)
+0013.276 (0) finding files: Mycal_218.ics: adding to list (99)
+0013.276 (0) finding files: 2021: adding to list (100)
+0013.276 (0) finding files: Mycal_214.ics: adding to list (101)
+0013.276 (0) finding files: Mycal_121.ics: adding to list (102)
+0013.276 (0) finding files: Mycal_232.ics: adding to list (103)
+0013.276 (0) finding files: Mycal_87.ics: adding to list (104)
+0013.276 (0) finding files: Mycal_125.ics: adding to list (105)
+0013.276 (0) finding files: Mycal_83.ics: adding to list (106)
+0013.276 (0) finding files: Mycal_141.ics: adding to list (107)
+0013.276 (0) finding files: sln-colors.css: adding to list (108)
+0013.276 (0) finding files: Mycal_1203.ics: adding to list (109)
+0013.276 (0) finding files: Mycal_107.ics: adding to list (110)
+0013.276 (0) finding files: 2020: adding to list (111)
+0013.276 (0) finding files: Mycal_1594.ics: adding to list (112)
+0013.276 (0) finding files: Mycal_137.ics: adding to list (113)
+0013.276 (0) finding files: Mycal_1531.ics: adding to list (114)
+0013.276 (0) finding files: Mycal_192.ics: adding to list (115)
+0013.276 (0) finding files: Mycal_1584.ics: adding to list (116)
+0013.276 (0) finding files: Mycal_69.ics: adding to list (117)
+0013.276 (0) finding files: Mycal_1487.ics: adding to list (118)
+0013.276 (0) finding files: Mycal_149.ics: adding to list (119)
+0013.276 (0) finding files: Mycal_212.ics: adding to list (120)
+0013.276 (0) finding files: Mycal_1636.ics: adding to list (121)
+0013.276 (0) finding files: Mycal_81.ics: adding to list (122)
+0013.276 (0) finding files: Mycal_228.ics: adding to list (123)
+0013.276 (0) finding files: Mycal_1527.ics: adding to list (124)
+0013.276 (0) finding files: Mycal_1517.ics: adding to list (125)
+0013.276 (0) finding files: Mycal_1647.ics: adding to list (126)
+0013.276 (0) finding files: Mycal_162.ics: adding to list (127)
+0013.276 (0) finding files: Mycal_1588.ics: adding to list (128)
+0013.276 (0) finding files: Mycal_139.ics: adding to list (129)
+0013.276 (0) finding files: Mycal_1564.ics: adding to list (130)
+0013.276 (0) finding files: Mycal_1201.ics: adding to list (131)
+0013.276 (0) finding files: Mycal_1566.ics: adding to list (132)
+0013.276 (0) finding files: Mycal_1471.ics: adding to list (133)
+0013.276 (0) finding files: Mycal_129.ics: adding to list (134)
+0013.276 (0) finding files: Mycal_245.ics: adding to list (135)
+0013.276 (0) finding files: Mycal_1502.ics: adding to list (136)
+0013.276 (0) finding files: Mycal_1498.ics: adding to list (137)
+0013.276 (0) finding files: Mycal_1578.ics: adding to list (138)
+0013.276 (0) finding files: Mycal_224.ics: adding to list (139)
+0013.277 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0013.280 (0) Total entities for the zip file: 16 directories, 188 files (0 skipped as non-modified), 5 MB
+0013.283 (0) Zip: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0013.366 (0) Created uploads zip (0) - 5063.6 KB in 0.1 s (57070.7 KB/s) (sha1: 290ec4a9c7731baed00d32b18e4e36e0c374e1f9, sha256: ae55f1d5d8e6d38dc671ca95ad885279e01d6c70fdb2dcb8a7525fd4fc00bc00)
+0013.367 (0) Beginning backup of other directories found in the content directory (index: 0)
+0013.368 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0013.368 (0) Looking for candidates to backup in: /var/www/salon/wp-content
+0013.369 (0) finding files: index.php-old-old: adding to list (1)
+0013.369 (0) finding files: index.php-old: adding to list (2)
+0013.369 (0) finding files: plugins-old: adding to list (3)
+0013.369 (0) finding files: index.php-old-old-old: adding to list (4)
+0013.370 (0) finding files: uploads-old: adding to list (5)
+0013.370 (0) finding files: uploads: skipping: this is the uploads directory
+0013.370 (0) finding files: index.php: adding to list (6)
+0013.371 (0) finding files: updraft: skipping: this is the updraft directory
+0013.371 (0) finding files: themes: skipping: this is the themes directory
+0013.371 (0) finding files: plugins: skipping: this is the plugins directory
+0013.372 (0) finding files: languages: adding to list (7)
+0013.372 (0) finding files: languages-old: adding to list (8)
+0013.372 (0) finding files: upgrade: skipping: excluded by options
+0013.373 (0) finding files: themes-old: adding to list (9)
+0013.374 (0) Total entities for the zip file: 7 directories, 4 files (0 skipped as non-modified), 0 MB
+0013.377 (0) Created others zip (0) - 1.3 KB in 0 s (376.2 KB/s) (sha1: 0b99f8e49fca4c1e963e0be757ec67e55646567a, sha256: aa4b2637e100cd3d95930c0139964c8e82b56cdb34dcce53ce83e1b42bb3359f)
+0013.379 (0) Saving backup status to database (elements: 8)
+0013.380 (0) Beginning creation of database dump (WordPress DB)
+0013.381 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0013.381 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0013.403 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCRE (truncated - 1250 bytes total)
+0013.404 (0) Binary mysqldump: error (code: 5)
+0013.408 (0) Table wp_options: Total expected rows (approximate): 447
+0013.493 (0) Table wp_options: Rows added in this batch (next record: 132605): 439 (uncompressed bytes in this segment=2107945) in 0.08 seconds
+0013.494 (0) Table wp_options: finishing file(s) (2, 406.8 KB)
+0013.496 (0) Table wp_users: Total expected rows (approximate): 7
+0013.497 (0) Table wp_users: Rows added in this batch (next record: 8): 7 (uncompressed bytes in this segment=2455) in 0.00 seconds
+0013.499 (0) Table wp_users: finishing file(s) (2, 1 KB)
+0013.500 (0) Table wp_usermeta: Total expected rows (approximate): 229
+0013.503 (0) Table wp_usermeta: Rows added in this batch (next record: 1140): 229 (uncompressed bytes in this segment=19946) in 0.00 seconds
+0013.504 (0) Table wp_usermeta: finishing file(s) (2, 4.9 KB)
+0013.505 (0) Table wp_actionscheduler_actions: Total expected rows (approximate): 20
+0013.507 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 191): 20 (uncompressed bytes in this segment=7353) in 0.00 seconds
+0013.509 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 1.3 KB)
+0013.510 (0) Table wp_actionscheduler_claims: Total expected rows (approximate): 0
+0013.511 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=636) in 0.00 seconds
+0013.512 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0013.513 (0) Table wp_actionscheduler_groups: Total expected rows (approximate): 2
+0013.514 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=711) in 0.00 seconds
+0013.516 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0013.517 (0) Table wp_actionscheduler_logs: Total expected rows (approximate): 60
+0013.519 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 264): 60 (uncompressed bytes in this segment=6167) in 0.00 seconds
+0013.520 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 1.2 KB)
+0013.521 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0013.522 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=685) in 0.00 seconds
+0013.524 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0013.525 (0) Table wp_comments: Total expected rows (approximate): 5
+0013.526 (0) Table wp_comments: Rows added in this batch (next record: 6): 5 (uncompressed bytes in this segment=2611) in 0.00 seconds
+0013.528 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0013.529 (0) Table wp_links: Total expected rows (approximate): 0
+0013.530 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1310) in 0.00 seconds
+0013.531 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0013.532 (0) Table wp_postmeta: Total expected rows (approximate): 5098
+0013.594 (0) Table wp_postmeta: Rows added in this batch (next record: 12440): 5098 (uncompressed bytes in this segment=2465754) in 0.06 seconds
+0013.596 (0) Table wp_postmeta: finishing file(s) (2, 70.6 KB)
+0013.597 (0) Table wp_posts: Total expected rows (approximate): 943
+0013.625 (0) Table wp_posts: Rows added in this batch (next record: 1838): 943 (uncompressed bytes in this segment=603056) in 0.03 seconds
+0013.627 (0) Table wp_posts: finishing file(s) (2, 29.7 KB)
+0013.628 (0) Table wp_signups: Total expected rows (approximate): 0
+0013.629 (0) Table wp_signups: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1254) in 0.00 seconds
+0013.631 (0) Table wp_signups: finishing file(s) (2, 0.5 KB)
+0013.632 (0) Table wp_term_relationships: Total expected rows (approximate): 26
+0013.633 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 26 (uncompressed bytes in this segment=1072) in 0.00 seconds
+0013.635 (0) Table wp_term_relationships: finishing file(s) (2, 0.5 KB)
+0013.636 (0) Table wp_term_taxonomy: Total expected rows (approximate): 20
+0013.638 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 20): 20 (uncompressed bytes in this segment=2432) in 0.00 seconds
+0013.640 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.9 KB)
+0013.641 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0013.642 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=658) in 0.00 seconds
+0013.644 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0013.645 (0) Table wp_terms: Total expected rows (approximate): 20
+0013.646 (0) Table wp_terms: Rows added in this batch (next record: 20): 20 (uncompressed bytes in this segment=1794) in 0.00 seconds
+0013.648 (0) Table wp_terms: finishing file(s) (2, 0.7 KB)
+0013.649 (0) Table wp_bp_activity: Total expected rows (approximate): 5
+0013.651 (0) Table wp_bp_activity: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=1908) in 0.00 seconds
+0013.653 (0) Table wp_bp_activity: finishing file(s) (2, 0.7 KB)
+0013.654 (0) Table wp_bp_activity_meta: Total expected rows (approximate): 0
+0013.655 (0) Table wp_bp_activity_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=678) in 0.00 seconds
+0013.657 (0) Table wp_bp_activity_meta: finishing file(s) (2, 0.4 KB)
+0013.658 (0) Table wp_bp_invitations: Total expected rows (approximate): 0
+0013.659 (0) Table wp_bp_invitations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1281) in 0.00 seconds
+0013.661 (0) Table wp_bp_invitations: finishing file(s) (2, 0.5 KB)
+0013.662 (0) Table wp_bp_notifications: Total expected rows (approximate): 0
+0013.663 (0) Table wp_bp_notifications: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1044) in 0.00 seconds
+0013.665 (0) Table wp_bp_notifications: finishing file(s) (2, 0.5 KB)
+0013.667 (0) Table wp_bp_notifications_meta: Total expected rows (approximate): 0
+0013.668 (0) Table wp_bp_notifications_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=720) in 0.00 seconds
+0013.669 (0) Table wp_bp_notifications_meta: finishing file(s) (2, 0.4 KB)
+0013.671 (0) Table wp_bp_xprofile_data: Total expected rows (approximate): 0
+0013.672 (0) Table wp_bp_xprofile_data: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=691) in 0.00 seconds
+0013.673 (0) Table wp_bp_xprofile_data: finishing file(s) (2, 0.4 KB)
+0013.675 (0) Table wp_bp_xprofile_fields: Total expected rows (approximate): 0
+0013.676 (0) Table wp_bp_xprofile_fields: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1356) in 0.00 seconds
+0013.678 (0) Table wp_bp_xprofile_fields: finishing file(s) (2, 0.5 KB)
+0013.679 (0) Table wp_bp_xprofile_groups: Total expected rows (approximate): 0
+0013.680 (0) Table wp_bp_xprofile_groups: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=797) in 0.00 seconds
+0013.681 (0) Table wp_bp_xprofile_groups: finishing file(s) (2, 0.4 KB)
+0013.683 (0) Table wp_bp_xprofile_meta: Total expected rows (approximate): 0
+0013.684 (0) Table wp_bp_xprofile_meta: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=857) in 0.00 seconds
+0013.686 (0) Table wp_bp_xprofile_meta: finishing file(s) (2, 0.5 KB)
+0013.687 (0) Table wp_gamipress_logs: Total expected rows (approximate): 3
+0013.688 (0) Table wp_gamipress_logs: Rows added in this batch (next record: 20): 3 (uncompressed bytes in this segment=1306) in 0.00 seconds
+0013.690 (0) Table wp_gamipress_logs: finishing file(s) (2, 0.5 KB)
+0013.691 (0) Table wp_gamipress_logs_meta: Total expected rows (approximate): 15
+0013.692 (0) Table wp_gamipress_logs_meta: Rows added in this batch (next record: 75): 15 (uncompressed bytes in this segment=1619) in 0.00 seconds
+0013.693 (0) Table wp_gamipress_logs_meta: finishing file(s) (2, 0.6 KB)
+0013.695 (0) Table wp_gamipress_user_earnings: Total expected rows (approximate): 2
+0013.696 (0) Table wp_gamipress_user_earnings: Rows added in this batch (next record: 4): 2 (uncompressed bytes in this segment=1122) in 0.00 seconds
+0013.698 (0) Table wp_gamipress_user_earnings: finishing file(s) (2, 0.5 KB)
+0013.699 (0) Table wp_gamipress_user_earnings_meta: Total expected rows (approximate): 0
+0013.700 (0) Table wp_gamipress_user_earnings_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=721) in 0.00 seconds
+0013.702 (0) Table wp_gamipress_user_earnings_meta: finishing file(s) (2, 0.4 KB)
+0013.703 (0) Table wp_jot_groupinvites: Total expected rows (approximate): 0
+0013.704 (0) Table wp_jot_groupinvites: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1064) in 0.00 seconds
+0013.706 (0) Table wp_jot_groupinvites: finishing file(s) (2, 0.5 KB)
+0013.707 (0) Table wp_jot_groupmembers: Total expected rows (approximate): 2
+0013.708 (0) Table wp_jot_groupmembers: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=906) in 0.00 seconds
+0013.710 (0) Table wp_jot_groupmembers: finishing file(s) (2, 0.5 KB)
+0013.711 (0) Table wp_jot_groupmemxref: Total expected rows (approximate): 2
+0013.712 (0) Table wp_jot_groupmemxref: Rows added in this batch (next record: 1000): 2 (uncompressed bytes in this segment=688) in 0.00 seconds
+0013.714 (0) Table wp_jot_groupmemxref: finishing file(s) (2, 0.4 KB)
+0013.715 (0) Table wp_jot_groupmeta: Total expected rows (approximate): 2
+0013.717 (0) Table wp_jot_groupmeta: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=874) in 0.00 seconds
+0013.718 (0) Table wp_jot_groupmeta: finishing file(s) (2, 0.5 KB)
+0013.719 (0) Table wp_jot_groups: Total expected rows (approximate): 0
+0013.721 (0) Table wp_jot_groups: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=742) in 0.00 seconds
+0013.722 (0) Table wp_jot_groups: finishing file(s) (2, 0.4 KB)
+0013.724 (0) Table wp_jot_messagequeue: Total expected rows (approximate): 0
+0013.725 (0) Table wp_jot_messagequeue: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1080) in 0.00 seconds
+0013.726 (0) Table wp_jot_messagequeue: finishing file(s) (2, 0.4 KB)
+0013.728 (0) Table wp_jot_messages: Total expected rows (approximate): 0
+0013.729 (0) Table wp_jot_messages: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=589) in 0.00 seconds
+0013.730 (0) Table wp_jot_messages: finishing file(s) (2, 0.3 KB)
+0013.732 (0) Table wp_myCRED_log: Total expected rows (approximate): 102
+0013.734 (0) Table wp_myCRED_log: Rows added in this batch (next record: 115): 102 (uncompressed bytes in this segment=10581) in 0.00 seconds
+0013.735 (0) Table wp_myCRED_log: finishing file(s) (2, 1.6 KB)
+0013.737 (0) Table wp_sms_send: Total expected rows (approximate): 0
+0013.738 (0) Table wp_sms_send: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=727) in 0.00 seconds
+0013.739 (0) Table wp_sms_send: finishing file(s) (2, 0.4 KB)
+0013.741 (0) Table wp_sms_subscribes: Total expected rows (approximate): 0
+0013.742 (0) Table wp_sms_subscribes: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=698) in 0.00 seconds
+0013.743 (0) Table wp_sms_subscribes: finishing file(s) (2, 0.4 KB)
+0013.745 (0) Table wp_sms_subscribes_group: Total expected rows (approximate): 0
+0013.746 (0) Table wp_sms_subscribes_group: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=529) in 0.00 seconds
+0013.747 (0) Table wp_sms_subscribes_group: finishing file(s) (2, 0.3 KB)
+0013.749 (0) Table wp_um_metadata: Total expected rows (approximate): 0
+0013.750 (0) Table wp_um_metadata: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=720) in 0.00 seconds
+0013.751 (0) Table wp_um_metadata: finishing file(s) (2, 0.4 KB)
+0013.753 (0) Table wp_useronline: Total expected rows (approximate): 0
+0013.754 (0) Table wp_useronline: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=1353) in 0.00 seconds
+0013.756 (0) Table wp_useronline: finishing file(s) (2, 0.6 KB)
+0013.757 (0) Table wp_wpfm_backup: Total expected rows (approximate): 0
+0013.758 (0) Table wp_wpfm_backup: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=514) in 0.00 seconds
+0013.760 (0) Table wp_wpfm_backup: finishing file(s) (2, 0.3 KB)
+0013.761 (0) Table wp_wpmailsmtp_tasks_meta: Total expected rows (approximate): 50
+0013.763 (0) Table wp_wpmailsmtp_tasks_meta: Rows added in this batch (next record: 50): 50 (uncompressed bytes in this segment=4729) in 0.00 seconds
+0013.764 (0) Table wp_wpmailsmtp_tasks_meta: finishing file(s) (2, 1 KB)
+0013.765 (0) Table wp_xyz_ips_short_code: Total expected rows (approximate): 2
+0013.767 (0) Table wp_xyz_ips_short_code: Rows added in this batch (next record: 4): 2 (uncompressed bytes in this segment=1309) in 0.00 seconds
+0013.768 (0) Table wp_xyz_ips_short_code: finishing file(s) (2, 0.7 KB)
+0013.769 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_options.table.tmpr132606.gz (1/46): adding to final database dump
+0013.849 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_options.table.gz (2/46): adding to final database dump
+0013.850 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_users.table.tmpr9.gz (3/46): adding to final database dump
+0013.851 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_users.table.gz (4/46): adding to final database dump
+0013.851 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_usermeta.table.tmpr1141.gz (5/46): adding to final database dump
+0013.852 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_usermeta.table.gz (6/46): adding to final database dump
+0013.853 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_actionscheduler_actions.table.tmpr192.gz (7/46): adding to final database dump
+0013.853 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_actionscheduler_actions.table.gz (8/46): adding to final database dump
+0013.854 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_actionscheduler_claims.table.tmpr0.gz (9/46): adding to final database dump
+0013.854 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_actionscheduler_claims.table.gz (10/46): adding to final database dump
+0013.855 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_actionscheduler_groups.table.tmpr3.gz (11/46): adding to final database dump
+0013.855 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_actionscheduler_groups.table.gz (12/46): adding to final database dump
+0013.855 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_actionscheduler_logs.table.tmpr265.gz (13/46): adding to final database dump
+0013.856 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_actionscheduler_logs.table.gz (14/46): adding to final database dump
+0013.856 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_commentmeta.table.tmpr0.gz (15/46): adding to final database dump
+0013.857 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_commentmeta.table.gz (16/46): adding to final database dump
+0013.857 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_comments.table.tmpr7.gz (17/46): adding to final database dump
+0013.858 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_comments.table.gz (18/46): adding to final database dump
+0013.858 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_links.table.tmpr0.gz (19/46): adding to final database dump
+0013.858 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_links.table.gz (20/46): adding to final database dump
+0013.859 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_postmeta.table.tmpr12441.gz (21/46): adding to final database dump
+0013.889 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_postmeta.table.gz (22/46): adding to final database dump
+0013.889 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_posts.table.tmpr1839.gz (23/46): adding to final database dump
+0013.898 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_posts.table.gz (24/46): adding to final database dump
+0013.899 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_signups.table.tmpr0.gz (25/46): adding to final database dump
+0013.899 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_signups.table.gz (26/46): adding to final database dump
+0013.900 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_term_relationships.table.tmpr100001.gz (27/46): adding to final database dump
+0013.900 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_term_relationships.table.gz (28/46): adding to final database dump
+0013.900 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_term_taxonomy.table.tmpr21.gz (29/46): adding to final database dump
+0013.901 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_term_taxonomy.table.gz (30/46): adding to final database dump
+0013.901 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_termmeta.table.tmpr0.gz (31/46): adding to final database dump
+0013.902 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_termmeta.table.gz (32/46): adding to final database dump
+0013.902 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_terms.table.tmpr21.gz (33/46): adding to final database dump
+0013.902 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_terms.table.gz (34/46): adding to final database dump
+0013.903 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_activity.table.tmpr6.gz (35/46): adding to final database dump
+0013.903 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_activity.table.gz (36/46): adding to final database dump
+0013.904 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_activity_meta.table.tmpr0.gz (37/46): adding to final database dump
+0013.904 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_activity_meta.table.gz (38/46): adding to final database dump
+0013.904 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_invitations.table.tmpr0.gz (39/46): adding to final database dump
+0013.905 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_invitations.table.gz (40/46): adding to final database dump
+0013.905 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_notifications.table.tmpr0.gz (41/46): adding to final database dump
+0013.906 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_notifications.table.gz (42/46): adding to final database dump
+0013.906 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_notifications_meta.table.tmpr0.gz (43/46): adding to final database dump
+0013.906 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_notifications_meta.table.gz (44/46): adding to final database dump
+0013.907 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_xprofile_data.table.tmpr0.gz (45/46): adding to final database dump
+0013.907 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_xprofile_data.table.gz (46/46): adding to final database dump
+0013.908 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_xprofile_fields.table.tmpr2.gz (47/46): adding to final database dump
+0013.908 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_xprofile_fields.table.gz (48/46): adding to final database dump
+0013.908 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_xprofile_groups.table.tmpr2.gz (49/46): adding to final database dump
+0013.909 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_xprofile_groups.table.gz (50/46): adding to final database dump
+0013.909 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_xprofile_meta.table.tmpr2.gz (51/46): adding to final database dump
+0013.909 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_bp_xprofile_meta.table.gz (52/46): adding to final database dump
+0013.910 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_gamipress_logs.table.tmpr21.gz (53/46): adding to final database dump
+0013.910 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_gamipress_logs.table.gz (54/46): adding to final database dump
+0013.910 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_gamipress_logs_meta.table.tmpr76.gz (55/46): adding to final database dump
+0013.911 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_gamipress_logs_meta.table.gz (56/46): adding to final database dump
+0013.911 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_gamipress_user_earnings.table.tmpr5.gz (57/46): adding to final database dump
+0013.912 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_gamipress_user_earnings.table.gz (58/46): adding to final database dump
+0013.912 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_gamipress_user_earnings_meta.table.tmpr0.gz (59/46): adding to final database dump
+0013.912 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_gamipress_user_earnings_meta.table.gz (60/46): adding to final database dump
+0013.913 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_groupinvites.table.tmpr2.gz (61/46): adding to final database dump
+0013.913 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_groupinvites.table.gz (62/46): adding to final database dump
+0013.913 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_groupmembers.table.tmpr3.gz (63/46): adding to final database dump
+0013.914 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_groupmembers.table.gz (64/46): adding to final database dump
+0013.914 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_groupmemxref.table.tmpr1001.gz (65/46): adding to final database dump
+0013.915 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_groupmemxref.table.gz (66/46): adding to final database dump
+0013.915 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_groupmeta.table.tmpr3.gz (67/46): adding to final database dump
+0013.915 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_groupmeta.table.gz (68/46): adding to final database dump
+0013.916 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_groups.table.tmpr2.gz (69/46): adding to final database dump
+0013.916 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_groups.table.gz (70/46): adding to final database dump
+0013.916 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_messagequeue.table.tmpr0.gz (71/46): adding to final database dump
+0013.917 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_messagequeue.table.gz (72/46): adding to final database dump
+0013.917 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_messages.table.tmpr0.gz (73/46): adding to final database dump
+0013.918 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_jot_messages.table.gz (74/46): adding to final database dump
+0013.918 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_myCRED_log.table.tmpr116.gz (75/46): adding to final database dump
+0013.919 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_myCRED_log.table.gz (76/46): adding to final database dump
+0013.919 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_sms_send.table.tmpr0.gz (77/46): adding to final database dump
+0013.920 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_sms_send.table.gz (78/46): adding to final database dump
+0013.920 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_sms_subscribes.table.tmpr0.gz (79/46): adding to final database dump
+0013.920 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_sms_subscribes.table.gz (80/46): adding to final database dump
+0013.921 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_sms_subscribes_group.table.tmpr0.gz (81/46): adding to final database dump
+0013.921 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_sms_subscribes_group.table.gz (82/46): adding to final database dump
+0013.921 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_um_metadata.table.tmpr0.gz (83/46): adding to final database dump
+0013.922 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_um_metadata.table.gz (84/46): adding to final database dump
+0013.922 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_useronline.table.tmpr1001.gz (85/46): adding to final database dump
+0013.922 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_useronline.table.gz (86/46): adding to final database dump
+0013.923 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_wpfm_backup.table.tmpr0.gz (87/46): adding to final database dump
+0013.923 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_wpfm_backup.table.gz (88/46): adding to final database dump
+0013.923 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_wpmailsmtp_tasks_meta.table.tmpr51.gz (89/46): adding to final database dump
+0013.924 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_wpmailsmtp_tasks_meta.table.gz (90/46): adding to final database dump
+0013.924 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_xyz_ips_short_code.table.tmpr5.gz (91/46): adding to final database dump
+0013.925 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db-table-wp_xyz_ips_short_code.table.gz (92/46): adding to final database dump
+0013.927 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db.gz: finished writing out complete database file (496 KB)
+0013.936 (0) Total database tables backed up: 46 (backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db.gz, size: 535468, sha1: 8db16e412a728612023e0d4bc5b6ad73daa8e37a, sha256: 338ae3a124c622008fd2ec7c47b49b5d3849289067618d454f68e2ce05a3b6cf)
+0013.939 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0013.939 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0013.940 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0013.940 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-others.zip: others: This file has not yet been successfully uploaded: will queue
+0013.940 (0) backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db.gz: db: This file has not yet been successfully uploaded: will queue
+0013.941 (0) Saving backup history. Total backup size: 54.3 MB
+0013.942 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0013.943 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0013.944 (0) No remote despatch: user chose no remote backup service
+0013.944 (0) Recording as successfully uploaded: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-plugins.zip
+0013.945 (0) Recording as successfully uploaded: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-themes.zip
+0013.946 (0) Recording as successfully uploaded: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-uploads.zip
+0013.947 (0) Recording as successfully uploaded: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-others.zip
+0013.948 (0) Recording as successfully uploaded: backup_2021-05-03-2003_On_Booking_548c4a9a24c8-db.gz
+0013.949 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0013.949 (0) Number of backup sets in history: 2; groups (db): 1
+0013.950 (0) Examining (for databases) backup set with group_id=0, nonce=548c4a9a24c8, datestamp=1620086607 (May 04 2021 00:03:27)
+0013.950 (0) This backup set is the backup set just made, so will not be deleted.
+0013.950 (0) Examining (for databases) backup set with group_id=0, nonce=607957cb7f57, datestamp=1610421600 (Jan 12 2021 03:20:00)
+0013.950 (0) This backup set (1610421600) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0013.950 (0) Number of backup sets in history: 2; groups (files): 1
+0013.950 (0) Examining (for files) backup set with nonce=548c4a9a24c8, datestamp=1620086607 (May 04 2021 00:03:27)
+0013.950 (0) This backup set is the backup set just made, so will not be deleted.
+0013.951 (0) This backup set is the backup set just made, so will not be deleted.
+0013.951 (0) This backup set is the backup set just made, so will not be deleted.
+0013.951 (0) This backup set is the backup set just made, so will not be deleted.
+0013.951 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0013.951 (0) Examining (for files) backup set with nonce=607957cb7f57, datestamp=1610421600 (Jan 12 2021 03:20:00)
+0013.951 (0) This backup set (1610421600) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0013.951 (0) This backup set (1610421600) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0013.951 (0) This backup set (1610421600) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0013.951 (0) This backup set (1610421600) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0013.951 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0013.951 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0013.953 (0) Resume backup (548c4a9a24c8, 0): finish run
+0013.953 (0) Decremented the semaphore (fd) by 1
+0013.954 (0) Semaphore (fd) unlocked
+0013.954 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0013.956 (0) Fetching RSS news feed
+0013.968 (0) Fetched RSS news feed; result is a: SimplePie
+0013.971 (0) Sending email ('Files and database (Full backup)') report (attachments: 0, size: 0 KB) to: htexh...
+0014.643 (0) The backup apparently succeeded and is now complete

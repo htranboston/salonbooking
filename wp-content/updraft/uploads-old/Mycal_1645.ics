@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:f47688e44cfefb6c44b744fb18d2a963
+SUMMARY:Salon Booking Demo - 28 Apr 2021 10:05am
+DTSTART;TZID=America/New_York:20210428T100500
+DTEND;TZID=America/New_York:20210428T103500
+DESCRIPTION:Salon name: Salon Booking Demo \n\nSalon address: Main Street 123 \n\nSalon phone: 6178988070 \n\nSalon email: huy.m.tran@gmail.com \n\nBooked services:\nBasic Madicure: 10:05am ➝ 10:35am - Lily Ngo\n\nBooking notes:\nNone\n\nBooking status: Confirmed
+LOCATION:Main Street 123
+END:VEVENT
+END:VCALENDAR

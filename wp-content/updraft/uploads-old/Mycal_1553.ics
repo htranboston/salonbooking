@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:4dd58e78562681220093108d2e0c147a
+SUMMARY:Salon Booking Demo - 20 Mar 2021 9:30am
+DTSTART;TZID=America/New_York:20210320T093000
+DTEND;TZID=America/New_York:20210320T123000
+DESCRIPTION:Salon name: Salon Booking Demo \n\nSalon address: Main Street 123 \n\nSalon phone: 6178988070 \n\nSalon email: huy.m.tran@gmail.com \n\nBooked services:\nh1: 9:30am ➝ 10:30am - Jennifer Eng\nh2: 10:30am ➝ 12:30pm - Jennifer Eng\n\nBooking notes:\nKaylee mani pedi with Jen\n\nBooking status: Pay later
+LOCATION:Main Street 123
+END:VEVENT
+END:VCALENDAR

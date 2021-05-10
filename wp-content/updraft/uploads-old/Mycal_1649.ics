@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:895ef89388e0e3bba38dd4ee319b1064
+SUMMARY:Salon Booking Demo - 28 Apr 2021 10:10am
+DTSTART;TZID=America/New_York:20210428T101000
+DTEND;TZID=America/New_York:20210428T111000
+DESCRIPTION:Salon name: Salon Booking Demo \n\nSalon address: Main Street 123 \n\nSalon phone: 6178988070 \n\nSalon email: huy.m.tran@gmail.com \n\nBooked services:\nGel Manicure French: 10:10am ➝ 11:10am - Any Assistant\n\nBooking notes:\nNone\n\nBooking status: Confirmed
+LOCATION:Main Street 123
+END:VEVENT
+END:VCALENDAR

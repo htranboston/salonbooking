@@ -15,15 +15,20 @@ $day_calendar_holydays_ajax_data = apply_filters('sln.get-day-calendar-holidays-
     var daily_rules = JSON.parse('<?php echo json_encode($holidays_rules); ?>');
     var holidays_rules_locale = {
         'block':'<?php _e('Block','salon-booking-system'); ?>',
+        'block_this_row':'<?php _e('Block this row','salon-booking-system'); ?>',
+        'block_these_rows':'<?php _e('Block these rows','salon-booking-system'); ?>',
         'unblock':'<?php _e('Unlock','salon-booking-system'); ?>',
-        'single':'<?php _e('this row','salon-booking-system'); ?>',
-        'multiple':'<?php _e('these rows','salon-booking-system'); ?>'
+        'unblock_this_row':'<?php _e('Unlock this row','salon-booking-system'); ?>',
+        'unblock_these_rows':'<?php _e('Unlock these rows','salon-booking-system'); ?>',
     }
     var sln_search_translation = {
         'tot':'<?php _e('Tot.','salon-booking-system'); ?>',
         'edit':'<?php _e('Edit','salon-booking-system'); ?>',
         'cancel':'<?php _e('Cancel','salon-booking-system'); ?>',
         'no_results':'<?php _e('No results','salon-booking-system'); ?>'
+    }
+    var calendar_locale = {
+        'add_event':'<?php _e('Add book','salon-booking-system'); ?>',
     }
 
     var dayCalendarHolydaysAjaxData = JSON.parse('<?php echo json_encode($day_calendar_holydays_ajax_data); ?>');
@@ -176,10 +181,10 @@ jQuery(function($){
     </div>-->
 
 <div class="row">
-    <div class="col-xs-12 col-md-3 col-md-push-9 btn-group"> 
+    <div class="col-xs-12 col-md-3 col-md-push-9 btn-group">
         <?php include 'help.php' ?>
     </div>
-    
+
           <?php do_action('sln.template.calendar.navtabwrapper') ?>
 </div>
 <div class="row">
@@ -216,7 +221,7 @@ jQuery(function($){
 
 <div class="row sln-calendar-view sln-box">
     <div class="col-xs-12 form-inline">
-        <div class="row">            
+        <div class="row">
             <div class="col-xs-12 col-sm-6 col-sm-push-6">
                 <div class="sln-calendar-viewnav btn-group">
                     <div class="sln-btn sln-btn--light sln-btn--large  sln-btn--icon sln-btn--icon--left sln-icon--arrow--left" data-calendar-view="day">
@@ -242,7 +247,7 @@ jQuery(function($){
                                             )
                                             ?></div>
                     <div class="sln-calendar-booking-search-icon">
-                        
+
                     </div>
                     </div>
                     <div id="search-results-list" class="sln-calendar-search-results-list"></div>
@@ -325,9 +330,9 @@ jQuery(function($){
 <?php endif; ?>
 <div class="row">
 <div class="col-xs-12 col-md-11">
-    <h4><?php _e('Bookings status legend','salon-booking-system')?></h4> 
+    <h4><?php _e('Bookings status legend','salon-booking-system')?></h4>
 <ul>
-<li><span class="pull-left event event-warning"></span><?php echo SLN_Enum_BookingStatus::getLabel(SLN_Enum_BookingStatus::PENDING) ?></li> 
+<li><span class="pull-left event event-warning"></span><?php echo SLN_Enum_BookingStatus::getLabel(SLN_Enum_BookingStatus::PENDING) ?></li>
 <li><span class="pull-left event event-success"></span><?php echo SLN_Enum_BookingStatus::getLabel(SLN_Enum_BookingStatus::PAID) ?> <?php _e('or','salon-booking-system')?> <?php echo SLN_Enum_BookingStatus::getLabel(SLN_Enum_BookingStatus::CONFIRMED)?></li>
 <li><span class="pull-left event event-info"></span><?php echo SLN_Enum_BookingStatus::getLabel(SLN_Enum_BookingStatus::PAY_LATER) ?></li>
 <li><span class="pull-left event event-danger"></span><?php echo SLN_Enum_BookingStatus::getLabel(SLN_Enum_BookingStatus::CANCELED) ?></li>

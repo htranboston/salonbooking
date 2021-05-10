@@ -20,7 +20,6 @@ if ( !function_exists( 'chld_thm_cfg_parent_css' ) ):
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
-
 // END ENQUEUE PARENT ACTION
 
 //Remove Profile Menu from Dashboard
@@ -35,9 +34,16 @@ add_action('admin_menu', 'remove_profile_menu');
 //Logout redirect
 add_action('wp_logout','ps_redirect_after_logout');
 function ps_redirect_after_logout(){
-         wp_redirect( 'https://salonbooking.htswipe.com/' );
+         wp_redirect( get_home_url() );
          exit();
 }
+
+//Register redirect to booking my account update profile page
+function wpse_19692_registration_redirect() {
+    return home_url( '/booking-my-account/#profile' );
+}
+
+add_filter( 'registration_redirect', 'wpse_19692_registration_redirect' );
 
 //Redirect from profile.php
 add_action( 'load-profile.php', function() {
@@ -46,7 +52,137 @@ add_action( 'load-profile.php', function() {
 	
     //redirect non managed users to home page
     if (strpos ($_SERVER ['REQUEST_URI'] , 'wp-admin/profile.php' )) {
-        wp_redirect ( 'https://salonbooking.htswipe.com/' ); 
+        wp_redirect ( get_home_url() ); 
             exit();
     }	
 } );
+
+//Change wordpress login title
+add_filter('login_title', custom_login_title, 99);
+function custom_login_title($origtitle) { 
+    return get_bloginfo('name');
+}
+
+// Add custom message to WordPress login page
+function smallenvelop_login_message( $message ) {
+    if ( empty($message) ){
+        return "<h2 style='text-align:center;'>New Client" . "<a href='" . get_home_url() . "/onbooking/?action=register'>" . " Sign Up" . "</a>" . " to Receive $5 Off TODAY</h2>
+				</br>
+				<p>By siging up, you agree to our <a href='" . get_home_url() . "/terms-of-service'>" . "Terms of Service </a>" . ".You may receive SMS and Email Notifications from us and can opt out any time.</p>";
+    } else {
+        return $message;
+    }
+}
+
+add_filter( 'login_message', 'smallenvelop_login_message' );
+
+//Find widgets id in appearance widgets
+add_action('in_widget_form', 'spice_get_widget_id');
+function spice_get_widget_id($widget_instance)
+{   
+    // Check if the widget is already saved or not.  
+    if ($widget_instance->number=="__i__"){   
+     echo "<p><strong>Widget ID is</strong>: Pls save the widget first!</p>"   ;    
+  	} else {        
+       echo "<p><strong>Widget ID is: </strong>" .$widget_instance->id. "</p>";         
+    }
+}
+
+// SMS Opt out
+function sms_opt_out($request) {
+  if (!isset($request['id']) || !is_numeric($request['id']))
+  {
+    return new WP_Error( 'invalid_parameter', 'Invalid Parameter', array('status' => 500));
+  }
+
+  global $wpdb;
+
+  $table_groups = $wpdb->prefix."jot_groups";
+  $group_name = 'Do Not Send Group';
+
+  $sql = " SELECT jot_groupid " .
+    " FROM " . $table_groups  .
+    " WHERE jot_groupname = '" . $group_name . "'";
+
+  $group = $wpdb->get_row($sql);
+
+  if ($group == null)
+  {
+    $data = array(
+      'jot_groupid'   => rand(1000, 2000),
+      'jot_groupname' =>sanitize_text_field ($group_name),
+      'jot_groupdesc' =>sanitize_text_field ($group_name),
+      'jot_ts' => date("Y-m-d H:i:s")
+    );
+
+    $success=$wpdb->insert( $table_groups, $data); 
+  }
+
+  $data = array(
+    'jot_grpid' => $group->jot_groupid
+  );
+
+  $table_members = $wpdb->prefix."jot_groupmembers";
+
+  $rows = $wpdb->update($table_members, $data, array( 'jot_grpmemid' =>  $request['id']) );
+
+    $response = new WP_REST_Response($posts);
+    $response->set_status(200);
+
+    return $response;
+}
+
+// SMS Opt in
+function sms_opt_in($request) {
+  if (!isset($request['id']) || !is_numeric($request['id']))
+  {
+    return new WP_Error( 'invalid_parameter', 'Invalid Parameter', array('status' => 500));
+  }
+
+  global $wpdb;
+
+  $table_groups = $wpdb->prefix."jot_groups";
+  $group_name = 'My customer group';
+
+  $sql = " SELECT jot_groupid " .
+    " FROM " . $table_groups  .
+    " WHERE jot_groupname = '" . $group_name . "'";
+
+  $group = $wpdb->get_row($sql);
+
+  if ($group == null)
+  {
+    $data = array(
+      'jot_groupid'   => rand(1000, 2000),
+      'jot_groupname' =>sanitize_text_field ($group_name),
+      'jot_groupdesc' =>sanitize_text_field ($group_name),
+      'jot_ts' => date("Y-m-d H:i:s")
+    );
+
+    $success=$wpdb->insert( $table_groups, $data); 
+  }
+
+  $data = array(
+    'jot_grpid' => $group->jot_groupid
+  );
+
+  $table_members = $wpdb->prefix."jot_groupmembers";
+
+  $rows = $wpdb->update($table_members, $data, array( 'jot_grpmemid' =>  $request['id']) );
+
+    $response = new WP_REST_Response($posts);
+    $response->set_status(200);
+
+    return $response;
+}
+
+add_action('rest_api_init', function () {
+  register_rest_route( 'sms/v1', 'opt_out/(?P<id>\d+)',array(
+          'methods'  => 'GET',
+          'callback' => 'sms_opt_out'
+    ));
+  register_rest_route( 'sms/v1', 'opt_in/(?P<id>\d+)',array(
+          'methods'  => 'GET',
+          'callback' => 'sms_opt_in'
+    ));
+  });

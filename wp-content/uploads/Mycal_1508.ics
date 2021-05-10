@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:ab4bbefe2ff8cfc8c72de213c1b6462c
+SUMMARY:Salon Booking Demo - 11 Mar 2021 10:00am
+DTSTART;TZID=America/New_York:20210311T100000
+DTEND;TZID=America/New_York:20210311T103000
+DESCRIPTION:Salon name: Salon Booking Demo \n\nSalon address: Main Street 123 \n\nSalon phone: 6178988070 \n\nSalon email: huy.m.tran@gmail.com \n\nBooked services:\nBasic Madicure: 10:00am ➝ 10:30am - Any Assistant\n\nBooking notes:\nNone\n\nBooking status: Confirmed
+LOCATION:Main Street 123
+END:VEVENT
+END:VCALENDAR

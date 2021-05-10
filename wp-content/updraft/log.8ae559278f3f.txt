@@ -1,0 +1,308 @@
+0000.009 (0) Opened log file at time: Sun, 09 May 2021 21:18:02 +0000 on https://salonbooking.htswipe.com
+0000.010 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 19.3M | 2M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.010 (0) Free space on disk containing Updraft's temporary directory: 3153.4 MB
+0000.012 (0) Tasks: Backup files:  (schedule: manual) Backup DB: 1 (schedule: daily)
+0000.013 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.018 (0) Requesting semaphore lock (d) (apparently via scheduler: last_scheduled_action_called_at=1620508682, seconds_ago=86400)
+0000.018 (0) Set semaphore last lock (d) time to 2021-05-09 21:18:02
+0000.019 (0) Semaphore lock (d) complete
+0000.020 (0) Backup run: resumption=0, nonce=8ae559278f3f, file_nonce=8ae559278f3f begun at=1620595082 (0s ago), job type=backup
+0000.021 (0) Scheduling a resumption (1) after 300 seconds (1620595382) in case this run gets aborted
+0000.031 (0) This backup run is not intended for files - skipping
+0000.031 (0) Beginning creation of database dump (WordPress DB)
+0000.032 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.033 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.077 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCRE (truncated - 1250 bytes total)
+0000.078 (0) Binary mysqldump: error (code: 5)
+0000.103 (0) Table wp_options: Total expected rows (approximate): 472
+0000.141 (0) Table wp_options: Rows added in this batch (next record: 137168): 468 (uncompressed bytes in this segment=1141260) in 0.04 seconds
+0000.144 (0) Table wp_options: finishing file(s) (2, 153.5 KB)
+0000.145 (0) Table wp_users: Total expected rows (approximate): 5
+0000.146 (0) Table wp_users: Rows added in this batch (next record: 61): 5 (uncompressed bytes in this segment=2078) in 0.00 seconds
+0000.148 (0) Table wp_users: finishing file(s) (2, 0.9 KB)
+0000.149 (0) Table wp_usermeta: Total expected rows (approximate): 157
+0000.151 (0) Table wp_usermeta: Rows added in this batch (next record: 1377): 157 (uncompressed bytes in this segment=11879) in 0.00 seconds
+0000.153 (0) Table wp_usermeta: finishing file(s) (2, 4 KB)
+0000.154 (0) Table wp_actionscheduler_actions: Total expected rows (approximate): 33
+0000.156 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 208): 33 (uncompressed bytes in this segment=11121) in 0.00 seconds
+0000.157 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 1.7 KB)
+0000.161 (0) Table wp_actionscheduler_claims: Total expected rows (approximate): 0
+0000.162 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=634) in 0.00 seconds
+0000.163 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0000.165 (0) Table wp_actionscheduler_groups: Total expected rows (approximate): 2
+0000.166 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=728) in 0.00 seconds
+0000.167 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0000.168 (0) Table wp_actionscheduler_logs: Total expected rows (approximate): 99
+0000.170 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 311): 99 (uncompressed bytes in this segment=9603) in 0.00 seconds
+0000.172 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 1.7 KB)
+0000.174 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0000.175 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=685) in 0.00 seconds
+0000.176 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.178 (0) Table wp_comments: Total expected rows (approximate): 6
+0000.181 (0) Table wp_comments: Rows added in this batch (next record: 7): 6 (uncompressed bytes in this segment=2782) in 0.00 seconds
+0000.182 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0000.184 (0) Table wp_links: Total expected rows (approximate): 0
+0000.185 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1310) in 0.00 seconds
+0000.186 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0000.187 (0) Table wp_postmeta: Total expected rows (approximate): 5876
+0000.285 (0) Table wp_postmeta: Rows added in this batch (next record: 13687): 5876 (uncompressed bytes in this segment=2907635) in 0.10 seconds
+0000.287 (0) Table wp_postmeta: finishing file(s) (2, 88.1 KB)
+0000.289 (0) Table wp_posts: Total expected rows (approximate): 1108
+0000.328 (0) Table wp_posts: Rows added in this batch (next record: 2095): 1108 (uncompressed bytes in this segment=828616) in 0.04 seconds
+0000.330 (0) Table wp_posts: finishing file(s) (2, 40.3 KB)
+0000.332 (0) Table wp_signups: Total expected rows (approximate): 0
+0000.333 (0) Table wp_signups: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1254) in 0.00 seconds
+0000.335 (0) Table wp_signups: finishing file(s) (2, 0.5 KB)
+0000.336 (0) Table wp_term_relationships: Total expected rows (approximate): 27
+0000.337 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 27 (uncompressed bytes in this segment=1088) in 0.00 seconds
+0000.339 (0) Table wp_term_relationships: finishing file(s) (2, 0.5 KB)
+0000.340 (0) Table wp_term_taxonomy: Total expected rows (approximate): 20
+0000.341 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 20): 20 (uncompressed bytes in this segment=2432) in 0.00 seconds
+0000.343 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.9 KB)
+0000.345 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0000.346 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=658) in 0.00 seconds
+0000.347 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0000.349 (0) Table wp_terms: Total expected rows (approximate): 20
+0000.350 (0) Table wp_terms: Rows added in this batch (next record: 20): 20 (uncompressed bytes in this segment=1794) in 0.00 seconds
+0000.351 (0) Table wp_terms: finishing file(s) (2, 0.7 KB)
+0000.353 (0) Table wp_bp_activity: Total expected rows (approximate): 5
+0000.354 (0) Table wp_bp_activity: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=1908) in 0.00 seconds
+0000.356 (0) Table wp_bp_activity: finishing file(s) (2, 0.7 KB)
+0000.358 (0) Table wp_bp_activity_meta: Total expected rows (approximate): 0
+0000.359 (0) Table wp_bp_activity_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=678) in 0.00 seconds
+0000.360 (0) Table wp_bp_activity_meta: finishing file(s) (2, 0.4 KB)
+0000.362 (0) Table wp_bp_invitations: Total expected rows (approximate): 0
+0000.363 (0) Table wp_bp_invitations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1281) in 0.00 seconds
+0000.364 (0) Table wp_bp_invitations: finishing file(s) (2, 0.5 KB)
+0000.366 (0) Table wp_bp_notifications: Total expected rows (approximate): 0
+0000.367 (0) Table wp_bp_notifications: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1044) in 0.00 seconds
+0000.369 (0) Table wp_bp_notifications: finishing file(s) (2, 0.5 KB)
+0000.370 (0) Table wp_bp_notifications_meta: Total expected rows (approximate): 0
+0000.371 (0) Table wp_bp_notifications_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=720) in 0.00 seconds
+0000.372 (0) Table wp_bp_notifications_meta: finishing file(s) (2, 0.4 KB)
+0000.376 (0) Table wp_bp_xprofile_data: Total expected rows (approximate): 0
+0000.377 (0) Table wp_bp_xprofile_data: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=691) in 0.00 seconds
+0000.379 (0) Table wp_bp_xprofile_data: finishing file(s) (2, 0.4 KB)
+0000.380 (0) Table wp_bp_xprofile_fields: Total expected rows (approximate): 0
+0000.382 (0) Table wp_bp_xprofile_fields: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1356) in 0.00 seconds
+0000.383 (0) Table wp_bp_xprofile_fields: finishing file(s) (2, 0.5 KB)
+0000.384 (0) Table wp_bp_xprofile_groups: Total expected rows (approximate): 0
+0000.386 (0) Table wp_bp_xprofile_groups: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=797) in 0.00 seconds
+0000.387 (0) Table wp_bp_xprofile_groups: finishing file(s) (2, 0.4 KB)
+0000.388 (0) Table wp_bp_xprofile_meta: Total expected rows (approximate): 0
+0000.390 (0) Table wp_bp_xprofile_meta: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=857) in 0.00 seconds
+0000.391 (0) Table wp_bp_xprofile_meta: finishing file(s) (2, 0.5 KB)
+0000.392 (0) Table wp_gamipress_logs: Total expected rows (approximate): 3
+0000.394 (0) Table wp_gamipress_logs: Rows added in this batch (next record: 20): 3 (uncompressed bytes in this segment=1306) in 0.00 seconds
+0000.395 (0) Table wp_gamipress_logs: finishing file(s) (2, 0.5 KB)
+0000.397 (0) Table wp_gamipress_logs_meta: Total expected rows (approximate): 15
+0000.398 (0) Table wp_gamipress_logs_meta: Rows added in this batch (next record: 75): 15 (uncompressed bytes in this segment=1619) in 0.00 seconds
+0000.399 (0) Table wp_gamipress_logs_meta: finishing file(s) (2, 0.6 KB)
+0000.401 (0) Table wp_gamipress_user_earnings: Total expected rows (approximate): 2
+0000.402 (0) Table wp_gamipress_user_earnings: Rows added in this batch (next record: 4): 2 (uncompressed bytes in this segment=1122) in 0.00 seconds
+0000.403 (0) Table wp_gamipress_user_earnings: finishing file(s) (2, 0.5 KB)
+0000.405 (0) Table wp_gamipress_user_earnings_meta: Total expected rows (approximate): 0
+0000.406 (0) Table wp_gamipress_user_earnings_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=721) in 0.00 seconds
+0000.407 (0) Table wp_gamipress_user_earnings_meta: finishing file(s) (2, 0.4 KB)
+0000.409 (0) Table wp_jot_groupinvites: Total expected rows (approximate): 0
+0000.410 (0) Table wp_jot_groupinvites: Rows added in this batch (next record: 1229): 2 (uncompressed bytes in this segment=1228) in 0.00 seconds
+0000.411 (0) Table wp_jot_groupinvites: finishing file(s) (2, 0.5 KB)
+0000.413 (0) Table wp_jot_groupmembers: Total expected rows (approximate): 2
+0000.414 (0) Table wp_jot_groupmembers: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=976) in 0.00 seconds
+0000.416 (0) Table wp_jot_groupmembers: finishing file(s) (2, 0.5 KB)
+0000.417 (0) Table wp_jot_groupmemxref: Total expected rows (approximate): 2
+0000.418 (0) Table wp_jot_groupmemxref: Rows added in this batch (next record: 1000): 3 (uncompressed bytes in this segment=723) in 0.00 seconds
+0000.420 (0) Table wp_jot_groupmemxref: finishing file(s) (2, 0.4 KB)
+0000.421 (0) Table wp_jot_groupmeta: Total expected rows (approximate): 4
+0000.422 (0) Table wp_jot_groupmeta: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1053) in 0.00 seconds
+0000.424 (0) Table wp_jot_groupmeta: finishing file(s) (2, 0.5 KB)
+0000.425 (0) Table wp_jot_groups: Total expected rows (approximate): 0
+0000.427 (0) Table wp_jot_groups: Rows added in this batch (next record: 1229): 2 (uncompressed bytes in this segment=819) in 0.00 seconds
+0000.428 (0) Table wp_jot_groups: finishing file(s) (2, 0.5 KB)
+0000.430 (0) Table wp_jot_messagequeue: Total expected rows (approximate): 0
+0000.431 (0) Table wp_jot_messagequeue: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1080) in 0.00 seconds
+0000.432 (0) Table wp_jot_messagequeue: finishing file(s) (2, 0.4 KB)
+0000.434 (0) Table wp_jot_messages: Total expected rows (approximate): 0
+0000.435 (0) Table wp_jot_messages: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=589) in 0.00 seconds
+0000.436 (0) Table wp_jot_messages: finishing file(s) (2, 0.3 KB)
+0000.438 (0) Table wp_myCRED_log: Total expected rows (approximate): 0
+0000.439 (0) Table wp_myCRED_log: Rows added in this batch (next record: 5): 1 (uncompressed bytes in this segment=991) in 0.00 seconds
+0000.441 (0) Table wp_myCRED_log: finishing file(s) (2, 0.5 KB)
+0000.442 (0) Table wp_sms_send: Total expected rows (approximate): 0
+0000.443 (0) Table wp_sms_send: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=727) in 0.00 seconds
+0000.444 (0) Table wp_sms_send: finishing file(s) (2, 0.4 KB)
+0000.446 (0) Table wp_sms_subscribes: Total expected rows (approximate): 0
+0000.447 (0) Table wp_sms_subscribes: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=698) in 0.00 seconds
+0000.448 (0) Table wp_sms_subscribes: finishing file(s) (2, 0.4 KB)
+0000.450 (0) Table wp_sms_subscribes_group: Total expected rows (approximate): 0
+0000.451 (0) Table wp_sms_subscribes_group: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=529) in 0.00 seconds
+0000.452 (0) Table wp_sms_subscribes_group: finishing file(s) (2, 0.3 KB)
+0000.454 (0) Table wp_social_users: Total expected rows (approximate): 0
+0000.455 (0) Table wp_social_users: Rows added in this batch (next record: 2): 1 (uncompressed bytes in this segment=1019) in 0.00 seconds
+0000.457 (0) Table wp_social_users: finishing file(s) (2, 0.5 KB)
+0000.458 (0) Table wp_um_metadata: Total expected rows (approximate): 0
+0000.459 (0) Table wp_um_metadata: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=720) in 0.00 seconds
+0000.461 (0) Table wp_um_metadata: finishing file(s) (2, 0.4 KB)
+0000.463 (0) Table wp_user_registration_sessions: Total expected rows (approximate): 0
+0000.464 (0) Table wp_user_registration_sessions: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=752) in 0.00 seconds
+0000.465 (0) Table wp_user_registration_sessions: finishing file(s) (2, 0.4 KB)
+0000.467 (0) Table wp_useronline: Total expected rows (approximate): 0
+0000.468 (0) Table wp_useronline: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=1353) in 0.00 seconds
+0000.469 (0) Table wp_useronline: finishing file(s) (2, 0.6 KB)
+0000.471 (0) Table wp_wpfm_backup: Total expected rows (approximate): 0
+0000.472 (0) Table wp_wpfm_backup: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=514) in 0.00 seconds
+0000.473 (0) Table wp_wpfm_backup: finishing file(s) (2, 0.3 KB)
+0000.475 (0) Table wp_wpforms_tasks_meta: Total expected rows (approximate): 4
+0000.476 (0) Table wp_wpforms_tasks_meta: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=978) in 0.00 seconds
+0000.477 (0) Table wp_wpforms_tasks_meta: finishing file(s) (2, 0.5 KB)
+0000.479 (0) Table wp_wpmailsmtp_tasks_meta: Total expected rows (approximate): 50
+0000.480 (0) Table wp_wpmailsmtp_tasks_meta: Rows added in this batch (next record: 54): 54 (uncompressed bytes in this segment=5053) in 0.00 seconds
+0000.482 (0) Table wp_wpmailsmtp_tasks_meta: finishing file(s) (2, 1 KB)
+0000.483 (0) Table wp_xyz_ips_short_code: Total expected rows (approximate): 2
+0000.484 (0) Table wp_xyz_ips_short_code: Rows added in this batch (next record: 4): 2 (uncompressed bytes in this segment=1338) in 0.00 seconds
+0000.485 (0) Table wp_xyz_ips_short_code: finishing file(s) (2, 0.7 KB)
+0000.486 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_options.table.tmpr137169.gz (1/49): adding to final database dump
+0000.518 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_options.table.gz (2/49): adding to final database dump
+0000.519 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_users.table.tmpr62.gz (3/49): adding to final database dump
+0000.520 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_users.table.gz (4/49): adding to final database dump
+0000.520 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_usermeta.table.tmpr1378.gz (5/49): adding to final database dump
+0000.521 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_usermeta.table.gz (6/49): adding to final database dump
+0000.521 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_actionscheduler_actions.table.tmpr209.gz (7/49): adding to final database dump
+0000.522 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_actionscheduler_actions.table.gz (8/49): adding to final database dump
+0000.522 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_actionscheduler_claims.table.tmpr0.gz (9/49): adding to final database dump
+0000.523 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_actionscheduler_claims.table.gz (10/49): adding to final database dump
+0000.523 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_actionscheduler_groups.table.tmpr4.gz (11/49): adding to final database dump
+0000.524 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_actionscheduler_groups.table.gz (12/49): adding to final database dump
+0000.524 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_actionscheduler_logs.table.tmpr312.gz (13/49): adding to final database dump
+0000.525 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_actionscheduler_logs.table.gz (14/49): adding to final database dump
+0000.526 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_commentmeta.table.tmpr0.gz (15/49): adding to final database dump
+0000.526 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_commentmeta.table.gz (16/49): adding to final database dump
+0000.526 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_comments.table.tmpr8.gz (17/49): adding to final database dump
+0000.527 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_comments.table.gz (18/49): adding to final database dump
+0000.527 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_links.table.tmpr0.gz (19/49): adding to final database dump
+0000.527 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_links.table.gz (20/49): adding to final database dump
+0000.528 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_postmeta.table.tmpr13688.gz (21/49): adding to final database dump
+0000.564 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_postmeta.table.gz (22/49): adding to final database dump
+0000.565 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_posts.table.tmpr2096.gz (23/49): adding to final database dump
+0000.577 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_posts.table.gz (24/49): adding to final database dump
+0000.578 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_signups.table.tmpr0.gz (25/49): adding to final database dump
+0000.579 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_signups.table.gz (26/49): adding to final database dump
+0000.579 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_term_relationships.table.tmpr100001.gz (27/49): adding to final database dump
+0000.579 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_term_relationships.table.gz (28/49): adding to final database dump
+0000.580 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_term_taxonomy.table.tmpr21.gz (29/49): adding to final database dump
+0000.580 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_term_taxonomy.table.gz (30/49): adding to final database dump
+0000.580 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_termmeta.table.tmpr0.gz (31/49): adding to final database dump
+0000.581 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_termmeta.table.gz (32/49): adding to final database dump
+0000.581 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_terms.table.tmpr21.gz (33/49): adding to final database dump
+0000.582 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_terms.table.gz (34/49): adding to final database dump
+0000.582 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_activity.table.tmpr6.gz (35/49): adding to final database dump
+0000.582 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_activity.table.gz (36/49): adding to final database dump
+0000.583 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_activity_meta.table.tmpr0.gz (37/49): adding to final database dump
+0000.583 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_activity_meta.table.gz (38/49): adding to final database dump
+0000.584 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_invitations.table.tmpr0.gz (39/49): adding to final database dump
+0000.584 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_invitations.table.gz (40/49): adding to final database dump
+0000.584 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_notifications.table.tmpr0.gz (41/49): adding to final database dump
+0000.585 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_notifications.table.gz (42/49): adding to final database dump
+0000.585 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_notifications_meta.table.tmpr0.gz (43/49): adding to final database dump
+0000.585 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_notifications_meta.table.gz (44/49): adding to final database dump
+0000.586 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_xprofile_data.table.tmpr0.gz (45/49): adding to final database dump
+0000.586 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_xprofile_data.table.gz (46/49): adding to final database dump
+0000.586 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_xprofile_fields.table.tmpr2.gz (47/49): adding to final database dump
+0000.587 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_xprofile_fields.table.gz (48/49): adding to final database dump
+0000.587 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_xprofile_groups.table.tmpr2.gz (49/49): adding to final database dump
+0000.587 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_xprofile_groups.table.gz (50/49): adding to final database dump
+0000.588 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_xprofile_meta.table.tmpr2.gz (51/49): adding to final database dump
+0000.589 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_bp_xprofile_meta.table.gz (52/49): adding to final database dump
+0000.589 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_gamipress_logs.table.tmpr21.gz (53/49): adding to final database dump
+0000.589 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_gamipress_logs.table.gz (54/49): adding to final database dump
+0000.590 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_gamipress_logs_meta.table.tmpr76.gz (55/49): adding to final database dump
+0000.590 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_gamipress_logs_meta.table.gz (56/49): adding to final database dump
+0000.591 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_gamipress_user_earnings.table.tmpr5.gz (57/49): adding to final database dump
+0000.591 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_gamipress_user_earnings.table.gz (58/49): adding to final database dump
+0000.591 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_gamipress_user_earnings_meta.table.tmpr0.gz (59/49): adding to final database dump
+0000.592 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_gamipress_user_earnings_meta.table.gz (60/49): adding to final database dump
+0000.592 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_groupinvites.table.tmpr1230.gz (61/49): adding to final database dump
+0000.592 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_groupinvites.table.gz (62/49): adding to final database dump
+0000.593 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_groupmembers.table.tmpr4.gz (63/49): adding to final database dump
+0000.593 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_groupmembers.table.gz (64/49): adding to final database dump
+0000.593 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_groupmemxref.table.tmpr1001.gz (65/49): adding to final database dump
+0000.594 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_groupmemxref.table.gz (66/49): adding to final database dump
+0000.594 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_groupmeta.table.tmpr5.gz (67/49): adding to final database dump
+0000.595 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_groupmeta.table.gz (68/49): adding to final database dump
+0000.595 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_groups.table.tmpr1230.gz (69/49): adding to final database dump
+0000.595 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_groups.table.gz (70/49): adding to final database dump
+0000.596 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_messagequeue.table.tmpr0.gz (71/49): adding to final database dump
+0000.596 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_messagequeue.table.gz (72/49): adding to final database dump
+0000.596 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_messages.table.tmpr0.gz (73/49): adding to final database dump
+0000.597 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_jot_messages.table.gz (74/49): adding to final database dump
+0000.597 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_myCRED_log.table.tmpr6.gz (75/49): adding to final database dump
+0000.598 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_myCRED_log.table.gz (76/49): adding to final database dump
+0000.598 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_sms_send.table.tmpr0.gz (77/49): adding to final database dump
+0000.599 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_sms_send.table.gz (78/49): adding to final database dump
+0000.599 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_sms_subscribes.table.tmpr0.gz (79/49): adding to final database dump
+0000.600 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_sms_subscribes.table.gz (80/49): adding to final database dump
+0000.600 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_sms_subscribes_group.table.tmpr0.gz (81/49): adding to final database dump
+0000.601 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_sms_subscribes_group.table.gz (82/49): adding to final database dump
+0000.601 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_social_users.table.tmpr3.gz (83/49): adding to final database dump
+0000.602 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_social_users.table.gz (84/49): adding to final database dump
+0000.602 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_um_metadata.table.tmpr0.gz (85/49): adding to final database dump
+0000.603 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_um_metadata.table.gz (86/49): adding to final database dump
+0000.603 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_user_registration_sessions.table.tmpr1.gz (87/49): adding to final database dump
+0000.603 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_user_registration_sessions.table.gz (88/49): adding to final database dump
+0000.604 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_useronline.table.tmpr1001.gz (89/49): adding to final database dump
+0000.604 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_useronline.table.gz (90/49): adding to final database dump
+0000.605 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_wpfm_backup.table.tmpr0.gz (91/49): adding to final database dump
+0000.605 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_wpfm_backup.table.gz (92/49): adding to final database dump
+0000.605 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_wpforms_tasks_meta.table.tmpr5.gz (93/49): adding to final database dump
+0000.606 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_wpforms_tasks_meta.table.gz (94/49): adding to final database dump
+0000.606 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_wpmailsmtp_tasks_meta.table.tmpr55.gz (95/49): adding to final database dump
+0000.607 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_wpmailsmtp_tasks_meta.table.gz (96/49): adding to final database dump
+0000.607 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_xyz_ips_short_code.table.tmpr5.gz (97/49): adding to final database dump
+0000.608 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db-table-wp_xyz_ips_short_code.table.gz (98/49): adding to final database dump
+0000.617 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db.gz: finished writing out complete database file (288 KB)
+0000.623 (0) Total database tables backed up: 49 (backup_2021-05-09-1718_On_Booking_8ae559278f3f-db.gz, size: 303444, sha1: 31aa87bd7a381b9a855533ff16076dd432c31985, sha256: b0212a6f39a0c09f20d751d0df0d1417d7b33adf55205646979e71791a59f7ce)
+0000.626 (0) backup_2021-05-09-1718_On_Booking_8ae559278f3f-db.gz: db: This file has not yet been successfully uploaded: will queue
+0000.627 (0) Saving backup history. Total backup size: 296.3 KB
+0000.628 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0000.629 (0) Cloud backup selection (1/1): email with instance (1/1) (last)
+0000.630 (0) Beginning dispatch of backup to remote (email)
+0000.630 (0) Email: backup_2021-05-09-1718_On_Booking_8ae559278f3f-db.gz: email to: htexh...
+0002.698 (0) Recording as successfully uploaded: backup_2021-05-09-1718_On_Booking_8ae559278f3f-db.gz
+0002.699 (0) Deleting local file: backup_2021-05-09-1718_On_Booking_8ae559278f3f-db.gz: OK
+0002.701 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0002.701 (0) Number of backup sets in history: 5; groups (db): 1
+0002.702 (0) Examining (for databases) backup set with group_id=0, nonce=8ae559278f3f, datestamp=1620595082 (May 09 2021 21:18:02)
+0002.702 (0) This backup set is the backup set just made, so will not be deleted.
+0002.702 (0) Examining (for databases) backup set with group_id=0, nonce=f127a67b6252, datestamp=1620508682 (May 08 2021 21:18:02)
+0002.702 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.703 (0) Examining (for databases) backup set with group_id=0, nonce=d45014086066, datestamp=1620422283 (May 07 2021 21:18:03)
+0002.703 (0) 1620422283: db: this set includes a database (backup_2021-05-07-1718_On_Booking_d45014086066-db.gz); db count is now 2
+0002.703 (0) 1620422283: db: over retain limit (2); will delete this database
+0002.703 (0) Delete file: backup_2021-05-07-1718_On_Booking_d45014086066-db.gz, service=email
+0002.704 (0) This backup set is now empty; will remove from history
+0002.704 (0) Deleting log file (log.d45014086066.txt)
+0002.704 (0) Examining (for databases) backup set with group_id=0, nonce=548c4a9a24c8, datestamp=1620086607 (May 04 2021 00:03:27)
+0002.704 (0) Examining (for databases) backup set with group_id=0, nonce=607957cb7f57, datestamp=1610421600 (Jan 12 2021 03:20:00)
+0002.704 (0) This backup set (1610421600) was an 'Always Keep' backup, so it will not be pruned. Skipping.
+0002.704 (0) Number of backup sets in history: 4; groups (files): 1
+0002.705 (0) Examining (for files) backup set with nonce=8ae559278f3f, datestamp=1620595082 (May 09 2021 21:18:02)
+0002.705 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.705 (0) Examining (for files) backup set with nonce=f127a67b6252, datestamp=1620508682 (May 08 2021 21:18:02)
+0002.705 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0002.705 (0) Examining (for files) backup set with nonce=548c4a9a24c8, datestamp=1620086607 (May 04 2021 00:03:27)
+0002.705 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0002.705 (0) Examining (for files) backup set with nonce=607957cb7f57, datestamp=1610421600 (Jan 12 2021 03:20:00)
+0002.705 (0) This backup set (1610421600) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0002.705 (0) This backup set (1610421600) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0002.705 (0) This backup set (1610421600) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0002.705 (0) This backup set (1610421600) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0002.705 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0002.706 (0) Retain: saving new backup history (sets now: 4) and finishing retain operation
+0002.708 (0) Resume backup (8ae559278f3f, 0): finish run
+0002.708 (0) Decremented the semaphore (d) by 1
+0002.709 (0) Semaphore (d) unlocked
+0002.709 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0002.711 (0) Fetching RSS news feed
+0003.096 (0) Fetched RSS news feed; result is a: SimplePie
+0003.119 (0) Sending email ('Database only (files were not part of this particular schedule)') report (attachments: 0, size: 0 KB) to: htexh...
+0003.451 (0) The backup apparently succeeded and is now complete

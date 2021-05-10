@@ -437,10 +437,10 @@ if(!String.prototype.formatNum) {
 
 	Calendar.prototype.setLanguage = function(lang) {
 		if(window.calendar_languages && (lang in window.calendar_languages)) {
-			this.locale = $.extend(true, {}, strings, calendar_languages[lang]);
+			this.locale = $.extend(true, {}, strings, (window.calendar_locale || {}), calendar_languages[lang]);
 			this.options.language = lang;
 		} else {
-			this.locale = strings;
+			this.locale = $.extend(true, {}, strings, (window.calendar_locale || {}));
 			delete this.options.language;
 		}
 	}

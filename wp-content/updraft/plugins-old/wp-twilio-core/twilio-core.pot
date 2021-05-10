@@ -1,0 +1,766 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Package Name\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-03 18:12+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin-pages.php:31
+msgid "Account SID"
+msgstr ""
+
+#: admin-pages.php:31 admin-pages.php:39
+msgid "Available from within your Twilio account"
+msgstr ""
+
+#: admin-pages.php:33
+msgid "Enter Account SID"
+msgstr ""
+
+#: admin-pages.php:35 admin-pages.php:43
+msgid ""
+"To view API credentials visit <a href=\"https://www.twilio.com/user/account/"
+"voice-sms-mms\" target=\"_blank\">https://www.twilio.com/user/account/voice-"
+"sms-mms</a>"
+msgstr ""
+
+#: admin-pages.php:39
+msgid "Auth Token"
+msgstr ""
+
+#: admin-pages.php:41
+msgid "Enter Auth Token"
+msgstr ""
+
+#: admin-pages.php:47
+msgid "Service ID"
+msgstr ""
+
+#: admin-pages.php:47
+msgid "Available from within your Twilio account It's require for bulk SMS."
+msgstr ""
+
+#: admin-pages.php:49
+msgid "Enter Notify Service ID"
+msgstr ""
+
+#: admin-pages.php:51
+msgid ""
+"To view or create Notify Service ID visit <a href=\"https://www.twilio.com/"
+"console/notify/services\" target=\"_blank\">https://www.twilio.com/console/"
+"notify/services</a>"
+msgstr ""
+
+#: admin-pages.php:55
+msgid "Twilio Number"
+msgstr ""
+
+#: admin-pages.php:55
+msgid "Must be a valid number associated with your Twilio account"
+msgstr ""
+
+#: admin-pages.php:59
+msgid "Country code + 10-digit Twilio phone number (i.e. +16175551212)"
+msgstr ""
+
+#: admin-pages.php:65
+msgid "Advanced &amp; Debug Options"
+msgstr ""
+
+#: admin-pages.php:65
+msgid "With great power, comes great responsiblity."
+msgstr ""
+
+#: admin-pages.php:67
+msgid "Enable Logging"
+msgstr ""
+
+#: admin-pages.php:68
+msgid "Enable or Disable Logging"
+msgstr ""
+
+#: admin-pages.php:69
+msgid "Add Mobile Number Field to User Profiles"
+msgstr ""
+
+#: admin-pages.php:70
+msgid ""
+"Adds a new field \"Mobile Number\" under Contact Info on all user profile "
+"forms."
+msgstr ""
+
+#: admin-pages.php:71
+msgid "Shorten URLs using Bit.ly"
+msgstr ""
+
+#: admin-pages.php:72
+msgid "Enter Bit.ly Access Token"
+msgstr ""
+
+#: admin-pages.php:73
+msgid ""
+"Shorten all URLs in the message using the <a href=\"https://dev.bitly.com/"
+"v4_documentation.html\" target=\"_blank\">Bit.ly URL Shortener API</a>. "
+"Checking will display the access token field."
+msgstr ""
+
+#: admin-pages.php:74
+msgid "Shorten URLs using Google (Deprecated)"
+msgstr ""
+
+#: admin-pages.php:75
+msgid "Enter Google Project API key"
+msgstr ""
+
+#: admin-pages.php:76
+msgid ""
+"Shorten all URLs in the message using the <a href=\"https://code.google.com/"
+"apis/console/\" target=\"_blank\">Google URL Shortener API</a>. Checking "
+"will display the API key field."
+msgstr ""
+
+#: admin-pages.php:81 admin-pages.php:302 inc/views/newsletter.php:113
+msgid "Save Changes"
+msgstr ""
+
+#: admin-pages.php:121
+msgid ""
+"Some details are missing. Please fill all the fields below and try again."
+msgstr ""
+
+#: admin-pages.php:134
+msgid "Send a Message"
+msgstr ""
+
+#: admin-pages.php:135
+msgid ""
+"If you are sending messages while in trial mode, the recipient phone number "
+"must be verified with Twilio."
+msgstr ""
+
+#: admin-pages.php:140
+msgid "Recipient Number"
+msgstr ""
+
+#: admin-pages.php:144
+msgid ""
+"The destination phone number. Format with a '+' and country code e.g., "
+"+16175551212 "
+msgstr ""
+
+#: admin-pages.php:148
+msgid "Message Body"
+msgstr ""
+
+#: admin-pages.php:151
+msgid "The text of the message you want to send, limited to 1600 characters."
+msgstr ""
+
+#: admin-pages.php:156
+msgid "Send Message"
+msgstr ""
+
+#: admin-pages.php:177
+msgid "Logs Cleared"
+msgstr ""
+
+#: admin-pages.php:183
+msgid "Logging currently disabled."
+msgstr ""
+
+#: admin-pages.php:187
+msgid "Clear Logs"
+msgstr ""
+
+#: admin-pages.php:188 core.php:183
+msgid "Logs"
+msgstr ""
+
+#: admin-pages.php:212
+msgid "Notification Number:"
+msgstr ""
+
+#: admin-pages.php:214
+msgid "Enter Notification Number"
+msgstr ""
+
+#: admin-pages.php:215
+msgid "Set the number to receive SMS."
+msgstr ""
+
+#: admin-pages.php:216
+msgid "Leave empty if you want to receive sms on the main settings number."
+msgstr ""
+
+#: admin-pages.php:221
+msgid "New Post Published"
+msgstr ""
+
+#: admin-pages.php:224 admin-pages.php:244 admin-pages.php:264
+#: admin-pages.php:284
+msgid "Activate:"
+msgstr ""
+
+#: admin-pages.php:231 admin-pages.php:251 admin-pages.php:271
+#: admin-pages.php:291
+msgid "Message:"
+msgstr ""
+
+#: admin-pages.php:234 admin-pages.php:254 admin-pages.php:274
+#: admin-pages.php:294
+msgid "Enter the content of the sms message"
+msgstr ""
+
+#: admin-pages.php:235
+msgid ""
+"Post title: %post_title%, Post content: %post_content%, Post url: %post_url"
+"%, Post date: %post_date%"
+msgstr ""
+
+#: admin-pages.php:241
+msgid "New User Registered"
+msgstr ""
+
+#: admin-pages.php:255
+msgid ""
+"User Login: %user_login%, User email: %user_email%, Register date: "
+"%date_register%"
+msgstr ""
+
+#: admin-pages.php:261
+msgid "New Comment"
+msgstr ""
+
+#: admin-pages.php:275
+msgid ""
+"Comment Author: %comment_author%, Author email: %comment_author_email%, "
+"Author url: %comment_author_url%, Author IP: %comment_author_IP%, Comment "
+"date: %comment_date%, Comment content: %comment_content%"
+msgstr ""
+
+#: admin-pages.php:281
+msgid "New Login"
+msgstr ""
+
+#: admin-pages.php:295
+msgid "Username: %username_login%, Nickname: %display_name%"
+msgstr ""
+
+#: apps-integrations.php:12
+msgid "Apps & Integrations"
+msgstr ""
+
+#: apps-integrations.php:32
+msgid "WPSMS Addons & Integrations"
+msgstr ""
+
+#: apps-integrations.php:37
+msgid "Upgrade to WP SMS Pro"
+msgstr ""
+
+#: apps-integrations.php:38
+msgid "Or"
+msgstr ""
+
+#: apps-integrations.php:41
+msgid "Get All for $49 Only!"
+msgstr ""
+
+#: core.php:114 core.php:115
+msgid "WPSMS"
+msgstr ""
+
+#: core.php:137
+msgid "WPSMS - Twilio"
+msgstr ""
+
+#: core.php:182
+msgid "Settings"
+msgstr ""
+
+#: core.php:184
+msgid "Test"
+msgstr ""
+
+#: core.php:185
+msgid "Notifications"
+msgstr ""
+
+#: core.php:281
+msgid "WP SMS for WooCommerce"
+msgstr ""
+
+#: core.php:284
+msgid ""
+"Increase your store's engagement by sending SMS notifications to your "
+"customers as per the orders statuses .."
+msgstr ""
+
+#: core.php:288 core.php:349
+msgid "Check it out."
+msgstr ""
+
+#: core.php:294
+msgid "Sure! I'd love to see"
+msgstr ""
+
+#: core.php:297 core.php:358 core.php:402
+msgid "Dismiss"
+msgstr ""
+
+#: core.php:342
+msgid "WP SMS for AdForest Theme"
+msgstr ""
+
+#: core.php:345
+msgid ""
+"Using this addon, Your ad sellers will receive SMS as a notification when "
+"they are contacted on their listings' contact forms."
+msgstr ""
+
+#: core.php:355
+msgid "Awesome,Let me to see"
+msgstr ""
+
+#: core.php:386
+msgid "SMS Newsletter & Awesome Premium Features"
+msgstr ""
+
+#: core.php:389
+msgid "Extend the WPSMS with powerful features."
+msgstr ""
+
+#: core.php:393
+msgid "Upgrade Now."
+msgstr ""
+
+#: core.php:399
+msgid "Upgrade Now"
+msgstr ""
+
+#: helpers.php:24 inc/helpers.php:226
+#, php-format
+msgid "Success! Message SID: %s"
+msgstr ""
+
+#: helpers.php:27 inc/helpers.php:229
+#, php-format
+msgid "****** API Error: %s ******"
+msgstr ""
+
+#: helpers.php:32 inc/helpers.php:234
+msgid ""
+"Some details are missing. Please make sure you have added all details in the "
+"settings tab."
+msgstr ""
+
+#: helpers.php:113
+msgid "From: "
+msgstr ""
+
+#: helpers.php:113
+msgid "To: "
+msgstr ""
+
+#: helpers.php:126
+msgid "****** Missing Twilio Number ******"
+msgstr ""
+
+#: helpers.php:130
+msgid "****** Missing Recipient Number ******"
+msgstr ""
+
+#: helpers.php:134
+msgid "****** Missing Message ******"
+msgstr ""
+
+#: helpers.php:138
+msgid "****** Missing Account SID ******"
+msgstr ""
+
+#: helpers.php:142
+msgid "****** Missing Auth Token ******"
+msgstr ""
+
+#: helpers.php:167
+msgid "Mobile Number"
+msgstr ""
+
+#: inc/features.php:7
+msgid "Newsletter Options"
+msgstr ""
+
+#: inc/features.php:8
+msgid "Send SMS Newsletter"
+msgstr ""
+
+#: inc/features.php:38 inc/features.php:39 inc/features.php:41
+msgid "Subscriber"
+msgstr ""
+
+#: inc/features.php:40 inc/views/send_sms_newsletter.php:99
+msgid "Subscribers"
+msgstr ""
+
+#: inc/features.php:42
+msgid "Add New"
+msgstr ""
+
+#: inc/features.php:43
+msgid "Add New Subscriber"
+msgstr ""
+
+#: inc/features.php:44
+msgid "New Subscriber"
+msgstr ""
+
+#: inc/features.php:45
+msgid "Edit Subscriber"
+msgstr ""
+
+#: inc/features.php:46 inc/features.php:61
+msgid "View Subscriber"
+msgstr ""
+
+#: inc/features.php:47
+msgid "All Subscribers"
+msgstr ""
+
+#: inc/features.php:48
+msgid "Search Subscribers"
+msgstr ""
+
+#: inc/features.php:49
+msgid "No subscribers found."
+msgstr ""
+
+#: inc/features.php:50
+msgid "No subscribers found in Trash."
+msgstr ""
+
+#: inc/features.php:51
+msgid "Filter subscribers list"
+msgstr ""
+
+#: inc/features.php:52
+msgid "Subscribers list navigation"
+msgstr ""
+
+#: inc/features.php:53
+msgid "Subscribers list"
+msgstr ""
+
+#: inc/features.php:73 inc/views/send_sms_newsletter.php:96
+msgid "Groups"
+msgstr ""
+
+#: inc/features.php:98
+msgid "You are already subscribed!"
+msgstr ""
+
+#: inc/features.php:142
+msgid ""
+"A code was sent to your mobile number.<br /> To confirm your subscription "
+"paste the code below!"
+msgstr ""
+
+#: inc/features.php:153 inc/features.php:250
+msgid "You are now subscribed to our news letter!"
+msgstr ""
+
+#: inc/features.php:166
+msgid "You are already un-subscribed!"
+msgstr ""
+
+#: inc/features.php:172
+msgid "You are now un-subscribed from our news letter!"
+msgstr ""
+
+#: inc/features.php:256
+msgid "Invalid confirmation code!"
+msgstr ""
+
+#: inc/features.php:276
+msgid "Once every minute"
+msgstr ""
+
+#: inc/helpers.php:207
+msgid "No subscribers found matching the given criteria."
+msgstr ""
+
+#: inc/helpers.php:213
+msgid "****** Missing Service ID ******"
+msgstr ""
+
+#: inc/views/newsletter.php:14
+msgid "Main Settings"
+msgstr ""
+
+#: inc/views/newsletter.php:17
+msgid "Show Groups"
+msgstr ""
+
+#: inc/views/newsletter.php:20
+msgid "Display groups option on the Newsletter form"
+msgstr ""
+
+#: inc/views/newsletter.php:24
+msgid "Verify Subscriber"
+msgstr ""
+
+#: inc/views/newsletter.php:27
+msgid ""
+"Subscribers recieve codes to verify their subscriptions to the newsletter"
+msgstr ""
+
+#: inc/views/newsletter.php:32
+msgid "Welcome SMS"
+msgstr ""
+
+#: inc/views/newsletter.php:35
+msgid "Enable"
+msgstr ""
+
+#: inc/views/newsletter.php:38
+msgid "Send Welcome SMS to subscribers"
+msgstr ""
+
+#: inc/views/newsletter.php:42
+msgid "Welcome Text"
+msgstr ""
+
+#: inc/views/newsletter.php:45
+msgid "Short tags: Name: %subscriber_name%, Mobile Number: %subscriber_number%"
+msgstr ""
+
+#: inc/views/newsletter.php:50
+msgid "Newsletter Form"
+msgstr ""
+
+#: inc/views/newsletter.php:53
+msgid "Name Place Holder"
+msgstr ""
+
+#: inc/views/newsletter.php:55
+msgid "Enter Name Place Holder"
+msgstr ""
+
+#: inc/views/newsletter.php:59
+msgid "Number Place Holder"
+msgstr ""
+
+#: inc/views/newsletter.php:61
+msgid "Enter Number Place Holder"
+msgstr ""
+
+#: inc/views/newsletter.php:65
+msgid "Confirmation Text"
+msgstr ""
+
+#: inc/views/newsletter.php:67
+msgid "Enter Confirmation Text"
+msgstr ""
+
+#: inc/views/newsletter.php:71
+msgid "Enable GDPR"
+msgstr ""
+
+#: inc/views/newsletter.php:74
+msgid "Display GDPR checkbox"
+msgstr ""
+
+#: inc/views/newsletter.php:78
+msgid "GDPR Agreement"
+msgstr ""
+
+#: inc/views/newsletter.php:80
+msgid "Enter GDPR Agreement Text"
+msgstr ""
+
+#: inc/views/newsletter.php:81
+msgid "Display short text for GDPR option"
+msgstr ""
+
+#: inc/views/newsletter.php:85
+msgid "Disable Style"
+msgstr ""
+
+#: inc/views/newsletter.php:88
+msgid "Display plugin's css styles of the form"
+msgstr ""
+
+#: inc/views/newsletter.php:94
+msgid "How to use"
+msgstr ""
+
+#: inc/views/newsletter.php:96
+msgid "1/ PHP CODE:"
+msgstr ""
+
+#: inc/views/newsletter.php:97
+msgid "Copy/paste this code inside themes file of your wordpress site."
+msgstr ""
+
+#: inc/views/newsletter.php:98
+msgid "echo do_shortcode(\"[TWL_NEWSLETTER title='Newsletter']\");"
+msgstr ""
+
+#: inc/views/newsletter.php:100
+msgid "2/ Short Code"
+msgstr ""
+
+#: inc/views/newsletter.php:101
+msgid "Copy/paste this Shortcode into your blog posts or page;"
+msgstr ""
+
+#: inc/views/newsletter.php:102
+msgid "Click to copy"
+msgstr ""
+
+#: inc/views/newsletter.php:105
+msgid "3/ Widget:"
+msgstr ""
+
+#: inc/views/newsletter.php:106
+msgid ""
+"Go to Widgets=>Place the newsletter form widget in any sidebar of your "
+"website. "
+msgstr ""
+
+#: inc/views/newsletter_form.php:44
+msgid "Select a group"
+msgstr ""
+
+#: inc/views/newsletter_form.php:66
+msgid "Subscribe"
+msgstr ""
+
+#: inc/views/newsletter_form.php:68
+msgid "Unsubscribe"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:83 inc/views/send_sms_newsletter.php:207
+msgid "Send SMS"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:86
+msgid "Send from"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:88
+msgid "Enter Send from number"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:89
+msgid "If it's empty, the main settings' number will be used."
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:93
+msgid "Send to"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:97
+msgid "Wordpress Users"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:98
+msgid "Roles"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:100
+msgid "Custom Numbers"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:104 inc/views/send_sms_newsletter.php:122
+#: inc/views/send_sms_newsletter.php:140 inc/views/send_sms_newsletter.php:156
+msgid "Select All"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:170
+msgid "Enter custom numbers saperated by comas"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:171
+msgid "Select the list of subscribers."
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:175
+msgid "Message"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:178
+msgid " characters"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:182
+msgid "Twilio Account Credit"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:188
+msgid "Schedule Message"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:195
+msgid "Set Date/Time"
+msgstr ""
+
+#: inc/views/send_sms_newsletter.php:197
+msgid "Enter Date/Time"
+msgstr ""
+
+#: inc/widgets/newsletter.php:7
+msgid "SMS Newsletter"
+msgstr ""
+
+#: inc/widgets/newsletter.php:7
+msgid "Display SMS Newsletter subscription widget"
+msgstr ""
+
+#: inc/widgets/newsletter.php:31
+msgid "New title"
+msgstr ""
+
+#: inc/widgets/newsletter.php:35
+msgid "Title:"
+msgstr ""
+
+#: twilio-php/tests/Twilio/Unit/TwiML/FaxResponseTest.php:11
+#: twilio-php/tests/Twilio/Unit/TwiML/MessagingResponseTest.php:11
+#: twilio-php/tests/Twilio/Unit/TwiML/VoiceResponseTest.php:11
+msgid "Hey no tags!"
+msgstr ""
+
+#: twilio-php/tests/Twilio/Unit/TwiML/FaxResponseTest.php:18
+#: twilio-php/tests/Twilio/Unit/TwiML/MessagingResponseTest.php:18
+#: twilio-php/tests/Twilio/Unit/TwiML/MessagingResponseTest.php:50
+#: twilio-php/tests/Twilio/Unit/TwiML/VoiceResponseTest.php:18
+msgid "before"
+msgstr ""
+
+#: twilio-php/tests/Twilio/Unit/TwiML/FaxResponseTest.php:21
+#: twilio-php/tests/Twilio/Unit/TwiML/FaxResponseTest.php:44
+msgid "Content"
+msgstr ""
+
+#: twilio-php/tests/Twilio/Unit/TwiML/FaxResponseTest.php:24
+#: twilio-php/tests/Twilio/Unit/TwiML/MessagingResponseTest.php:23
+#: twilio-php/tests/Twilio/Unit/TwiML/MessagingResponseTest.php:53
+#: twilio-php/tests/Twilio/Unit/TwiML/VoiceResponseTest.php:23
+msgid "after"
+msgstr ""
+
+#: twilio-php/tests/Twilio/Unit/TwiML/MessagingResponseTest.php:51
+msgid "content"
+msgstr ""

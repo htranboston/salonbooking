@@ -46,11 +46,6 @@ class SLN_Wrapper_Attendant extends SLN_Wrapper_Abstract implements SLN_Wrapper_
         return !($this->getAvailabilityItems()->isValidDatetime($date) && $this->getHolidayItems()->isValidDatetime($date));
     }
 
-    function isNotAvailableOnDateDuration(SLN_DateTime $date, DateTime $duration)
-    {
-        return !($this->getAvailabilityItems()->isValidDatetimeDuration($date, $duration) && $this->getHolidayItems()->isValidDatetimeDuration($date, $duration));
-    }
-
     /**
      * @return SLN_Helper_AvailabilityItems
      */

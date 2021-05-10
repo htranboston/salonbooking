@@ -1,0 +1,165 @@
+==02/28/2021 06:45:06 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groups Return : Array
+(
+    [wp_jot_groups] => Created table wp_jot_groups
+)
+
+==02/28/2021 06:45:06 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groupmembers Return : Array
+(
+    [wp_jot_groupmembers] => Created table wp_jot_groupmembers
+)
+
+==02/28/2021 06:45:06 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groupinvites Return : Array
+(
+    [wp_jot_groupinvites] => Created table wp_jot_groupinvites
+)
+
+==02/28/2021 06:45:06 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_messages Return : Array
+(
+    [wp_jot_messages] => Created table wp_jot_messages
+)
+
+==02/28/2021 06:45:06 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_messagequeue Return : Array
+(
+    [wp_jot_messagequeue] => Created table wp_jot_messagequeue
+)
+
+==02/28/2021 06:45:07 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groupmeta Return : Array
+(
+    [wp_jot_groupmeta] => Created table wp_jot_groupmeta
+)
+
+==02/28/2021 06:45:07 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groupmemxref Return : Array
+(
+    [wp_jot_groupmemxref] => Created table wp_jot_groupmemxref
+)
+
+==05/03/2021 01:47:08 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groups Return : Array
+(
+    [wp_jot_groups.jot_groupid] => Changed type of wp_jot_groups.jot_groupid from int(9) to 
+    [wp_jot_groups.jot_groupname] => Changed type of wp_jot_groups.jot_groupname from varchar(40) to 
+    [wp_jot_groups.jot_groupdesc] => Changed type of wp_jot_groups.jot_groupdesc from varchar(60) to 
+    [wp_jot_groups.jot_ts] => Changed type of wp_jot_groups.jot_ts from timestamp to 
+)
+
+==05/03/2021 01:47:08 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groupmembers Return : Array
+(
+    [wp_jot_groupmembers.jot_grpmemid] => Changed type of wp_jot_groupmembers.jot_grpmemid from int(9) to 
+    [wp_jot_groupmembers.jot_grpid] => Changed type of wp_jot_groupmembers.jot_grpid from int(9) to 
+    [wp_jot_groupmembers.jot_grpmemname] => Changed type of wp_jot_groupmembers.jot_grpmemname from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemnum] => Changed type of wp_jot_groupmembers.jot_grpmemnum from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemts] => Changed type of wp_jot_groupmembers.jot_grpmemts from timestamp to 
+)
+
+==05/03/2021 01:47:08 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groupinvites Return : Array
+(
+    [wp_jot_groupinvites.jot_grpid] => Changed type of wp_jot_groupinvites.jot_grpid from int(9) to 
+    [wp_jot_groupinvites.jot_grpinvdesc] => Changed type of wp_jot_groupinvites.jot_grpinvdesc from varchar(60) to 
+    [wp_jot_groupinvites.jot_grpinvnametxt] => Changed type of wp_jot_groupinvites.jot_grpinvnametxt from varchar(40) to VARCHAR(40)
+    [wp_jot_groupinvites.jot_grpinvnumtxt] => Changed type of wp_jot_groupinvites.jot_grpinvnumtxt from varchar(40) to 
+    [wp_jot_groupinvites.jot_grpinvretchk] => Changed type of wp_jot_groupinvites.jot_grpinvretchk from tinyint(1) to 
+    [wp_jot_groupinvites.jot_grpinvrettxt] => Changed type of wp_jot_groupinvites.jot_grpinvrettxt from varchar(160) to 
+    [wp_jot_groupinvites.jot_grpinvts] => Changed type of wp_jot_groupinvites.jot_grpinvts from timestamp to 
+)
+
+==05/03/2021 01:47:08 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_messages Return : Array
+(
+    [wp_jot_messages.jot_messautoid] => Changed type of wp_jot_messages.jot_messautoid from int(9) to 
+    [wp_jot_messages.jot_messageid] => Changed type of wp_jot_messages.jot_messageid from varchar(30) to 
+    [wp_jot_messages.jot_messagecontent] => Changed type of wp_jot_messages.jot_messagecontent from varchar(640) to VARCHAR(640)
+)
+
+==05/03/2021 01:47:08 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_messagequeue Return : Array
+(
+    [wp_jot_messagequeue.jot_messqid] => Changed type of wp_jot_messagequeue.jot_messqid from int(9) to 
+    [wp_jot_messagequeue.jot_messqbatchid] => Changed type of wp_jot_messagequeue.jot_messqbatchid from varchar(50) to 
+    [wp_jot_messagequeue.jot_messqgrpid] => Changed type of wp_jot_messagequeue.jot_messqgrpid from int(9) to 
+    [wp_jot_messagequeue.jot_messqmemid] => Changed type of wp_jot_messagequeue.jot_messqmemid from int(9) to 
+    [wp_jot_messagequeue.jot_messqcontent] => Changed type of wp_jot_messagequeue.jot_messqcontent from varchar(640) to 
+    [wp_jot_messagequeue.jot_messqtype] => Changed type of wp_jot_messagequeue.jot_messqtype from char(1) to 
+    [wp_jot_messagequeue.jot_messqstatus] => Changed type of wp_jot_messagequeue.jot_messqstatus from char(1) to 
+    [wp_jot_messagequeue.jot_messqaudio] => Changed type of wp_jot_messagequeue.jot_messqaudio from varchar(20) to 
+    [wp_jot_messagequeue.jot_messsenderid] => Changed type of wp_jot_messagequeue.jot_messsenderid from varchar(11) to 
+    [wp_jot_messagequeue.jot_messqschedts] => Changed type of wp_jot_messagequeue.jot_messqschedts from timestamp to 
+    [wp_jot_messagequeue.jot_messqts] => Changed type of wp_jot_messagequeue.jot_messqts from timestamp to 
+)
+
+==05/03/2021 01:47:08 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groupmeta Return : Array
+(
+    [wp_jot_groupmeta.jot_groupmetaid] => Changed type of wp_jot_groupmeta.jot_groupmetaid from int(9) to 
+    [wp_jot_groupmeta.jot_groupid] => Changed type of wp_jot_groupmeta.jot_groupid from varchar(40) to 
+    [wp_jot_groupmeta.jot_groupmetakey] => Changed type of wp_jot_groupmeta.jot_groupmetakey from varchar(255) to 
+    [wp_jot_groupmeta.jot_groupmetaval] => Changed type of wp_jot_groupmeta.jot_groupmetaval from longtext to 
+)
+
+==05/03/2021 01:47:08 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groupmemxref Return : Array
+(
+    [wp_jot_groupmemxref.jot_grpid] => Changed type of wp_jot_groupmemxref.jot_grpid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpmemid] => Changed type of wp_jot_groupmemxref.jot_grpmemid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpxrefts] => Changed type of wp_jot_groupmemxref.jot_grpxrefts from timestamp to 
+)
+
+==05/03/2021 02:12:11 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groups Return : Array
+(
+    [wp_jot_groups.jot_groupid] => Changed type of wp_jot_groups.jot_groupid from int(9) to 
+    [wp_jot_groups.jot_groupname] => Changed type of wp_jot_groups.jot_groupname from varchar(40) to 
+    [wp_jot_groups.jot_groupdesc] => Changed type of wp_jot_groups.jot_groupdesc from varchar(60) to 
+    [wp_jot_groups.jot_ts] => Changed type of wp_jot_groups.jot_ts from timestamp to 
+)
+
+==05/03/2021 02:12:11 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groupmembers Return : Array
+(
+    [wp_jot_groupmembers.jot_grpmemid] => Changed type of wp_jot_groupmembers.jot_grpmemid from int(9) to 
+    [wp_jot_groupmembers.jot_grpid] => Changed type of wp_jot_groupmembers.jot_grpid from int(9) to 
+    [wp_jot_groupmembers.jot_grpmemname] => Changed type of wp_jot_groupmembers.jot_grpmemname from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemnum] => Changed type of wp_jot_groupmembers.jot_grpmemnum from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemts] => Changed type of wp_jot_groupmembers.jot_grpmemts from timestamp to 
+)
+
+==05/03/2021 02:12:11 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groupinvites Return : Array
+(
+    [wp_jot_groupinvites.jot_grpid] => Changed type of wp_jot_groupinvites.jot_grpid from int(9) to 
+    [wp_jot_groupinvites.jot_grpinvdesc] => Changed type of wp_jot_groupinvites.jot_grpinvdesc from varchar(60) to 
+    [wp_jot_groupinvites.jot_grpinvnametxt] => Changed type of wp_jot_groupinvites.jot_grpinvnametxt from varchar(40) to VARCHAR(40)
+    [wp_jot_groupinvites.jot_grpinvnumtxt] => Changed type of wp_jot_groupinvites.jot_grpinvnumtxt from varchar(40) to 
+    [wp_jot_groupinvites.jot_grpinvretchk] => Changed type of wp_jot_groupinvites.jot_grpinvretchk from tinyint(1) to 
+    [wp_jot_groupinvites.jot_grpinvrettxt] => Changed type of wp_jot_groupinvites.jot_grpinvrettxt from varchar(160) to 
+    [wp_jot_groupinvites.jot_grpinvts] => Changed type of wp_jot_groupinvites.jot_grpinvts from timestamp to 
+)
+
+==05/03/2021 02:12:11 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_messages Return : Array
+(
+    [wp_jot_messages.jot_messautoid] => Changed type of wp_jot_messages.jot_messautoid from int(9) to 
+    [wp_jot_messages.jot_messageid] => Changed type of wp_jot_messages.jot_messageid from varchar(30) to 
+    [wp_jot_messages.jot_messagecontent] => Changed type of wp_jot_messages.jot_messagecontent from varchar(640) to VARCHAR(640)
+)
+
+==05/03/2021 02:12:11 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_messagequeue Return : Array
+(
+    [wp_jot_messagequeue.jot_messqid] => Changed type of wp_jot_messagequeue.jot_messqid from int(9) to 
+    [wp_jot_messagequeue.jot_messqbatchid] => Changed type of wp_jot_messagequeue.jot_messqbatchid from varchar(50) to 
+    [wp_jot_messagequeue.jot_messqgrpid] => Changed type of wp_jot_messagequeue.jot_messqgrpid from int(9) to 
+    [wp_jot_messagequeue.jot_messqmemid] => Changed type of wp_jot_messagequeue.jot_messqmemid from int(9) to 
+    [wp_jot_messagequeue.jot_messqcontent] => Changed type of wp_jot_messagequeue.jot_messqcontent from varchar(640) to 
+    [wp_jot_messagequeue.jot_messqtype] => Changed type of wp_jot_messagequeue.jot_messqtype from char(1) to 
+    [wp_jot_messagequeue.jot_messqstatus] => Changed type of wp_jot_messagequeue.jot_messqstatus from char(1) to 
+    [wp_jot_messagequeue.jot_messqaudio] => Changed type of wp_jot_messagequeue.jot_messqaudio from varchar(20) to 
+    [wp_jot_messagequeue.jot_messsenderid] => Changed type of wp_jot_messagequeue.jot_messsenderid from varchar(11) to 
+    [wp_jot_messagequeue.jot_messqschedts] => Changed type of wp_jot_messagequeue.jot_messqschedts from timestamp to 
+    [wp_jot_messagequeue.jot_messqts] => Changed type of wp_jot_messagequeue.jot_messqts from timestamp to 
+)
+
+==05/03/2021 02:12:11 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groupmeta Return : Array
+(
+    [wp_jot_groupmeta.jot_groupmetaid] => Changed type of wp_jot_groupmeta.jot_groupmetaid from int(9) to 
+    [wp_jot_groupmeta.jot_groupid] => Changed type of wp_jot_groupmeta.jot_groupid from varchar(40) to 
+    [wp_jot_groupmeta.jot_groupmetakey] => Changed type of wp_jot_groupmeta.jot_groupmetakey from varchar(255) to 
+    [wp_jot_groupmeta.jot_groupmetaval] => Changed type of wp_jot_groupmeta.jot_groupmetaval from longtext to 
+)
+
+==05/03/2021 02:12:11 pm Joy_Of_Text_Plugin::install||Run dbdelta for wp_jot_groupmemxref Return : Array
+(
+    [wp_jot_groupmemxref.jot_grpid] => Changed type of wp_jot_groupmemxref.jot_grpid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpmemid] => Changed type of wp_jot_groupmemxref.jot_grpmemid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpxrefts] => Changed type of wp_jot_groupmemxref.jot_grpxrefts from timestamp to 
+)
+

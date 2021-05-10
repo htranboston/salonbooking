@@ -1,0 +1,228 @@
+0000.002 () Opened log file at time: Mon, 03 May 2021 14:24:24 +0000 on https://salonbooking.htswipe.com
+0000.002 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.56 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 13.3M | 16M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.002 () Free space on disk containing Updraft's temporary directory: 3287.9 MB
+0000.014 () Restore setup, now closing connection and starting restore over AJAX.
+0000.001 () Opened log file at time: Mon, 03 May 2021 14:24:25 +0000 on https://salonbooking.htswipe.com
+0000.001 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.56 WP: 5.5.3 PHP: 7.0.33-0+deb9u10 (apache2handler, Linux soccer-bet-buddy-vm 4.9.0-11-amd64 #1 SMP Debian 4.9.189-3+deb9u2 (2019-11-11) x86_64) MySQL: 5.7.27 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 10.4M | 6M) multisite: N openssl: OpenSSL 1.1.0l  10 Sep 2019 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.001 () Free space on disk containing Updraft's temporary directory: 3287.9 MB
+0000.011 () Ensuring WP_Filesystem is setup for a restore
+0000.012 () WP_Filesystem is setup and ready for a restore
+0000.014 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_actionscheduler_actions","wp_actionscheduler_claims","wp_actionscheduler_groups","wp_actionscheduler_logs","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_signups","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms","wp_bp_activity","wp_bp_activity_meta","wp_bp_invitations","wp_bp_notifications","wp_bp_notifications_meta","wp_bp_xprofile_data","wp_bp_xprofile_fields","wp_bp_xprofile_groups","wp_bp_xprofile_meta","wp_gamipress_logs","wp_gamipress_logs_meta","wp_gamipress_user_earnings","wp_gamipress_user_earnings_meta","wp_jot_groupinvites","wp_jot_groupmembers","wp_jot_groupmemxref","wp_jot_groupmeta","wp_jot_groups","wp_jot_messagequeue","wp_jot_messages","wp_myCRED_log","wp_sms_send","wp_sms_subscribes","wp_sms_subscribes_group","wp_um_metadata","wp_useronline","wp_wpfm_backup","wp_wpmailsmtp_tasks_meta","wp_xyz_ips_short_code"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.015 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.016 () Entity: db
+0000.016 () restore_backup(backup_file=backup_2021-05-03-0948_On_Booking_52836c3438fd-db.gz, type=db, info=a:0:{}, last_one=)
+0000.016 () Unpacking backup... (backup_2021-05-03-0948_On_Booking_52836c3438fd-db.gz, 0.5 Mb)
+0000.016 () Database successfully unpacked
+0000.016 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.017 () Using direct MySQL access; value of use_mysqli is: 1
+0000.017 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.062 () Tried to raise max_allowed_packet from 4 MB to 32 MB, but failed (Access denied; you need (at least one of) the SUPER privilege(s) for this operation, b:0;)
+0000.062 () Max packet size: 4 MB
+0000.062 () Entering maintenance mode
+0000.062 () Enabling Maintenance mode&#8230;
+0000.073 () Backup of: https://salonbooking.htswipe.com
+0000.074 () Content URL: https://salonbooking.htswipe.com/wp-content
+0000.074 () Uploads URL: https://salonbooking.htswipe.com/wp-content/uploads
+0000.074 () Old table prefix: wp_
+0000.074 () Site information: multisite=0
+0000.074 () Site information: sql_mode=NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.075 () New table prefix: 3q_
+0000.076 () Processing table (MyISAM): wp_options - will restore as: 3q_options
+0000.140 () Atomic restore: dropping original table (wp_options)
+0000.145 () Atomic restore: renaming new table (3q_options) to final table name (wp_options)
+0000.145 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0000.153 () Processing table (MyISAM): wp_users - will restore as: 3q_users
+0000.159 () Atomic restore: dropping original table (wp_users)
+0000.161 () Atomic restore: renaming new table (3q_users) to final table name (wp_users)
+0000.162 () Processing table (MyISAM): wp_usermeta - will restore as: 3q_usermeta
+0000.169 () Atomic restore: dropping original table (wp_usermeta)
+0000.170 () Atomic restore: renaming new table (3q_usermeta) to final table name (wp_usermeta)
+0000.170 () Processing table (InnoDB): wp_actionscheduler_actions - will restore as: 3q_actionscheduler_actions
+0000.208 () Atomic restore: dropping original table (wp_actionscheduler_actions)
+0000.222 () Atomic restore: renaming new table (3q_actionscheduler_actions) to final table name (wp_actionscheduler_actions)
+0000.227 () Processing table (InnoDB): wp_actionscheduler_claims - will restore as: 3q_actionscheduler_claims
+0000.244 () Atomic restore: dropping original table (wp_actionscheduler_claims)
+0000.257 () Atomic restore: renaming new table (3q_actionscheduler_claims) to final table name (wp_actionscheduler_claims)
+0000.266 () Processing table (InnoDB): wp_actionscheduler_groups - will restore as: 3q_actionscheduler_groups
+0000.283 () Atomic restore: dropping original table (wp_actionscheduler_groups)
+0000.295 () Atomic restore: renaming new table (3q_actionscheduler_groups) to final table name (wp_actionscheduler_groups)
+0000.301 () Processing table (InnoDB): wp_actionscheduler_logs - will restore as: 3q_actionscheduler_logs
+0000.323 () Atomic restore: dropping original table (wp_actionscheduler_logs)
+0000.331 () Atomic restore: renaming new table (3q_actionscheduler_logs) to final table name (wp_actionscheduler_logs)
+0000.337 () Processing table (MyISAM): wp_commentmeta - will restore as: 3q_commentmeta
+0000.341 () Atomic restore: dropping original table (wp_commentmeta)
+0000.343 () Atomic restore: renaming new table (3q_commentmeta) to final table name (wp_commentmeta)
+0000.343 () Processing table (MyISAM): wp_comments - will restore as: 3q_comments
+0000.348 () Atomic restore: dropping original table (wp_comments)
+0000.350 () Atomic restore: renaming new table (3q_comments) to final table name (wp_comments)
+0000.350 () Processing table (MyISAM): wp_links - will restore as: 3q_links
+0000.354 () Atomic restore: dropping original table (wp_links)
+0000.354 () Atomic restore: renaming new table (3q_links) to final table name (wp_links)
+0000.355 () Processing table (MyISAM): wp_postmeta - will restore as: 3q_postmeta
+0000.997 () Atomic restore: dropping original table (wp_postmeta)
+0001.002 () Atomic restore: renaming new table (3q_postmeta) to final table name (wp_postmeta)
+0001.002 () Processing table (MyISAM): wp_posts - will restore as: 3q_posts
+0001.053 () Atomic restore: dropping original table (wp_posts)
+0001.055 () Database queries processed: 50 in 1.04 seconds
+0001.055 () Atomic restore: renaming new table (3q_posts) to final table name (wp_posts)
+0001.055 () Processing table (InnoDB): wp_signups - will restore as: 3q_signups
+0001.078 () Atomic restore: dropping original table (wp_signups)
+0001.092 () Atomic restore: renaming new table (3q_signups) to final table name (wp_signups)
+0001.097 () Processing table (MyISAM): wp_term_relationships - will restore as: 3q_term_relationships
+0001.102 () Atomic restore: dropping original table (wp_term_relationships)
+0001.103 () Atomic restore: renaming new table (3q_term_relationships) to final table name (wp_term_relationships)
+0001.104 () Processing table (MyISAM): wp_term_taxonomy - will restore as: 3q_term_taxonomy
+0001.108 () Atomic restore: dropping original table (wp_term_taxonomy)
+0001.110 () Atomic restore: renaming new table (3q_term_taxonomy) to final table name (wp_term_taxonomy)
+0001.110 () Processing table (MyISAM): wp_termmeta - will restore as: 3q_termmeta
+0001.114 () Atomic restore: dropping original table (wp_termmeta)
+0001.115 () Atomic restore: renaming new table (3q_termmeta) to final table name (wp_termmeta)
+0001.115 () Processing table (MyISAM): wp_terms - will restore as: 3q_terms
+0001.120 () Atomic restore: dropping original table (wp_terms)
+0001.121 () Atomic restore: renaming new table (3q_terms) to final table name (wp_terms)
+0001.121 () Processing table (InnoDB): wp_bp_activity - will restore as: 3q_bp_activity
+0001.156 () Atomic restore: dropping original table (wp_bp_activity)
+0001.170 () Atomic restore: renaming new table (3q_bp_activity) to final table name (wp_bp_activity)
+0001.174 () Processing table (InnoDB): wp_bp_activity_meta - will restore as: 3q_bp_activity_meta
+0001.193 () Atomic restore: dropping original table (wp_bp_activity_meta)
+0001.202 () Atomic restore: renaming new table (3q_bp_activity_meta) to final table name (wp_bp_activity_meta)
+0001.206 () Processing table (InnoDB): wp_bp_invitations - will restore as: 3q_bp_invitations
+0001.237 () Atomic restore: dropping original table (wp_bp_invitations)
+0001.250 () Atomic restore: renaming new table (3q_bp_invitations) to final table name (wp_bp_invitations)
+0001.255 () Processing table (InnoDB): wp_bp_notifications - will restore as: 3q_bp_notifications
+0001.283 () Atomic restore: dropping original table (wp_bp_notifications)
+0001.295 () Atomic restore: renaming new table (3q_bp_notifications) to final table name (wp_bp_notifications)
+0001.301 () Processing table (InnoDB): wp_bp_notifications_meta - will restore as: 3q_bp_notifications_meta
+0001.319 () Atomic restore: dropping original table (wp_bp_notifications_meta)
+0001.331 () Atomic restore: renaming new table (3q_bp_notifications_meta) to final table name (wp_bp_notifications_meta)
+0001.340 () Processing table (InnoDB): wp_bp_xprofile_data - will restore as: 3q_bp_xprofile_data
+0001.357 () Atomic restore: dropping original table (wp_bp_xprofile_data)
+0001.368 () Atomic restore: renaming new table (3q_bp_xprofile_data) to final table name (wp_bp_xprofile_data)
+0001.372 () Processing table (InnoDB): wp_bp_xprofile_fields - will restore as: 3q_bp_xprofile_fields
+0001.398 () Atomic restore: dropping original table (wp_bp_xprofile_fields)
+0001.411 () Atomic restore: renaming new table (3q_bp_xprofile_fields) to final table name (wp_bp_xprofile_fields)
+0001.415 () Processing table (InnoDB): wp_bp_xprofile_groups - will restore as: 3q_bp_xprofile_groups
+0001.433 () Atomic restore: dropping original table (wp_bp_xprofile_groups)
+0001.442 () Atomic restore: renaming new table (3q_bp_xprofile_groups) to final table name (wp_bp_xprofile_groups)
+0001.446 () Processing table (InnoDB): wp_bp_xprofile_meta - will restore as: 3q_bp_xprofile_meta
+0001.467 () Atomic restore: dropping original table (wp_bp_xprofile_meta)
+0001.474 () Atomic restore: renaming new table (3q_bp_xprofile_meta) to final table name (wp_bp_xprofile_meta)
+0001.479 () Processing table (InnoDB): wp_gamipress_logs - will restore as: 3q_gamipress_logs
+0001.495 () Atomic restore: dropping original table (wp_gamipress_logs)
+0001.504 () Atomic restore: renaming new table (3q_gamipress_logs) to final table name (wp_gamipress_logs)
+0001.510 () Processing table (InnoDB): wp_gamipress_logs_meta - will restore as: 3q_gamipress_logs_meta
+0001.529 () Atomic restore: dropping original table (wp_gamipress_logs_meta)
+0001.542 () Atomic restore: renaming new table (3q_gamipress_logs_meta) to final table name (wp_gamipress_logs_meta)
+0001.550 () Processing table (InnoDB): wp_gamipress_user_earnings - will restore as: 3q_gamipress_user_earnings
+0001.564 () Atomic restore: dropping original table (wp_gamipress_user_earnings)
+0001.574 () Atomic restore: renaming new table (3q_gamipress_user_earnings) to final table name (wp_gamipress_user_earnings)
+0001.579 () Processing table (InnoDB): wp_gamipress_user_earnings_meta - will restore as: 3q_gamipress_user_earnings_meta
+0001.592 () Atomic restore: dropping original table (wp_gamipress_user_earnings_meta)
+0001.599 () Atomic restore: renaming new table (3q_gamipress_user_earnings_meta) to final table name (wp_gamipress_user_earnings_meta)
+0001.606 () Processing table (InnoDB): wp_jot_groupinvites - will restore as: 3q_jot_groupinvites
+0001.623 () Atomic restore: dropping original table (wp_jot_groupinvites)
+0001.630 () Atomic restore: renaming new table (3q_jot_groupinvites) to final table name (wp_jot_groupinvites)
+0001.634 () Processing table (InnoDB): wp_jot_groupmembers - will restore as: 3q_jot_groupmembers
+0001.650 () Database queries processed: 100 in 1.63 seconds
+0001.651 () Atomic restore: dropping original table (wp_jot_groupmembers)
+0001.659 () Atomic restore: renaming new table (3q_jot_groupmembers) to final table name (wp_jot_groupmembers)
+0001.663 () Processing table (InnoDB): wp_jot_groupmemxref - will restore as: 3q_jot_groupmemxref
+0001.681 () Atomic restore: dropping original table (wp_jot_groupmemxref)
+0001.693 () Atomic restore: renaming new table (3q_jot_groupmemxref) to final table name (wp_jot_groupmemxref)
+0001.701 () Processing table (InnoDB): wp_jot_groupmeta - will restore as: 3q_jot_groupmeta
+0001.719 () Atomic restore: dropping original table (wp_jot_groupmeta)
+0001.726 () Atomic restore: renaming new table (3q_jot_groupmeta) to final table name (wp_jot_groupmeta)
+0001.730 () Processing table (InnoDB): wp_jot_groups - will restore as: 3q_jot_groups
+0001.745 () Atomic restore: dropping original table (wp_jot_groups)
+0001.753 () Atomic restore: renaming new table (3q_jot_groups) to final table name (wp_jot_groups)
+0001.756 () Processing table (InnoDB): wp_jot_messagequeue - will restore as: 3q_jot_messagequeue
+0001.771 () Atomic restore: dropping original table (wp_jot_messagequeue)
+0001.778 () Atomic restore: renaming new table (3q_jot_messagequeue) to final table name (wp_jot_messagequeue)
+0001.782 () Processing table (InnoDB): wp_jot_messages - will restore as: 3q_jot_messages
+0001.795 () Atomic restore: dropping original table (wp_jot_messages)
+0001.801 () Atomic restore: renaming new table (3q_jot_messages) to final table name (wp_jot_messages)
+0001.805 () Processing table (InnoDB): wp_myCRED_log - will restore as: 3q_myCRED_log
+0001.824 () Atomic restore: dropping original table (wp_myCRED_log)
+0001.836 () Atomic restore: renaming new table (3q_myCRED_log) to final table name (wp_myCRED_log)
+0001.841 () Processing table (InnoDB): wp_sms_send - will restore as: 3q_sms_send
+0001.856 () Atomic restore: dropping original table (wp_sms_send)
+0001.863 () Atomic restore: renaming new table (3q_sms_send) to final table name (wp_sms_send)
+0001.867 () Processing table (InnoDB): wp_sms_subscribes - will restore as: 3q_sms_subscribes
+0001.880 () Atomic restore: dropping original table (wp_sms_subscribes)
+0001.887 () Atomic restore: renaming new table (3q_sms_subscribes) to final table name (wp_sms_subscribes)
+0001.891 () Processing table (InnoDB): wp_sms_subscribes_group - will restore as: 3q_sms_subscribes_group
+0001.904 () Atomic restore: dropping original table (wp_sms_subscribes_group)
+0001.911 () Atomic restore: renaming new table (3q_sms_subscribes_group) to final table name (wp_sms_subscribes_group)
+0001.915 () Processing table (InnoDB): wp_um_metadata - will restore as: 3q_um_metadata
+0001.936 () Atomic restore: dropping original table (wp_um_metadata)
+0001.944 () Atomic restore: renaming new table (3q_um_metadata) to final table name (wp_um_metadata)
+0001.949 () Processing table (InnoDB): wp_useronline - will restore as: 3q_useronline
+0001.966 () Atomic restore: dropping original table (wp_useronline)
+0001.972 () Atomic restore: renaming new table (3q_useronline) to final table name (wp_useronline)
+0001.977 () Processing table (InnoDB): wp_wpfm_backup - will restore as: 3q_wpfm_backup
+0001.990 () Atomic restore: dropping original table (wp_wpfm_backup)
+0001.999 () Atomic restore: renaming new table (3q_wpfm_backup) to final table name (wp_wpfm_backup)
+0002.003 () Processing table (InnoDB): wp_wpmailsmtp_tasks_meta - will restore as: 3q_wpmailsmtp_tasks_meta
+0002.019 () Atomic restore: dropping original table (wp_wpmailsmtp_tasks_meta)
+0002.026 () Atomic restore: renaming new table (3q_wpmailsmtp_tasks_meta) to final table name (wp_wpmailsmtp_tasks_meta)
+0002.030 () Processing table (InnoDB): wp_xyz_ips_short_code - will restore as: 3q_xyz_ips_short_code
+0002.075 () Unlocking database and leaving maintenance mode
+0002.075 () Disabling Maintenance mode&#8230;
+0002.075 () Atomic restore: dropping original table (wp_xyz_ips_short_code)
+0002.087 () Atomic restore: renaming new table (3q_xyz_ips_short_code) to final table name (wp_xyz_ips_short_code)
+0002.090 () Finished: lines processed: 138 in 2.07 seconds
+0002.091 () Cleaning up rubbish...
+0002.096 () Entity: plugins
+0002.096 () restore_backup(backup_file=backup_2021-05-03-0948_On_Booking_52836c3438fd-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:33:"/var/www/salon/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0002.096 () Unpacking backup... (backup_2021-05-03-0948_On_Booking_52836c3438fd-plugins.zip, 45.4 MB)
+0002.097 () Unzipping backup_2021-05-03-0948_On_Booking_52836c3438fd-plugins.zip to /var/www/salon/wp-content/upgrade/9261a71f/ using UpdraftPlus_ZipArchive, starting index 0
+0002.303 () Unzip progress: 1994 out of 13941 files (26 B, plugins/sendex/public/index.php)
+0002.367 () Unzip progress: 2995 out of 13941 files (4.6 MB, plugins/sendex/twilio/Twilio/Rest/Taskrouter/V1/Workspace/ActivityList.php)
+0002.461 () Unzip progress: 3996 out of 13941 files (14 MB, plugins/updraftplus/vendor/rackspace/php-opencloud/lib/OpenCloud/Common/Exceptions/AsyncError.php)
+0002.620 () Unzip progress: 4997 out of 13941 files (33.5 MB, plugins/buddypress/bp-templates/bp-legacy/buddypress/groups/index.php)
+0002.715 () Unzip progress: 5998 out of 13941 files (43.3 MB, plugins/child-theme-configurator/includes/forms/main.php)
+0002.834 () Unzip progress: 6999 out of 13941 files (57 MB, plugins/members/addons/members-role-levels/changelog.md)
+0003.167 () Unzip progress: 8000 out of 13941 files (81.9 MB, plugins/salon-booking-system/src/SLN/Third/google-api-php-client/vendor/psr/http-message/src/RequestInterface.php)
+0003.280 () Unzip progress: 9001 out of 13941 files (87.3 MB, plugins/salon-booking-system/freemius/assets/img/index.php)
+0003.602 () Unzip progress: 10002 out of 13941 files (118.3 MB, plugins/mycred/includes/shortcodes/mycred_hide_if.php)
+0003.805 () Unzip progress: 11003 out of 13941 files (131.3 MB, plugins/wp-mail-smtp/vendor_prefixed/google/auth/src/Iam.php)
+0003.934 () Unzip progress: 12004 out of 13941 files (140.7 MB, plugins/wp-twilio-core/twilio-php/src/Twilio/Rest/Autopilot/V1/Assistant/Task/FieldInstance.php)
+0004.048 () Unzip progress: 13005 out of 13941 files (145.1 MB, plugins/wp-twilio-core/twilio-php/src/Twilio/Rest/Taskrouter/V1/Workspace/EventOptions.php)
+0004.149 () Unzip progress: 13941 out of 13941 files (149.4 MB, plugins/insert-headers-and-footers/readme.txt)
+0004.153 () Moving old data: filesystem method / updraft_dir is potentially possible
+0004.153 () Moving old data: can potentially use wp_filesystem method / -old
+0004.153 () Moving old data out of the way...
+0004.893 () Top-level entities being moved: sendex, joy-of-text, updraftplus, buddypress, child-theme-configurator, wp-file-manager, members, index.php, widget-context, content-control, elementor, salon-booking-system, mycred, white-label-cms, classic-editor, wp-mail-smtp, adminimize, wp-useronline, wps-hide-login, wp-twilio-core, insert-php-code-snippet, insert-headers-and-footers
+0004.897 () Moving unpacked backup into place...
+0005.602 () Top-level entities being moved: sendex, joy-of-text, updraftplus, buddypress, child-theme-configurator, wp-file-manager, members, index.php, widget-context, content-control, elementor, salon-booking-system, mycred, white-label-cms, classic-editor, wp-mail-smtp, adminimize, wp-useronline, wps-hide-login, wp-twilio-core, insert-php-code-snippet, insert-headers-and-footers
+0005.610 () Cleaning up rubbish...
+0005.616 () Entity: themes
+0005.616 () restore_backup(backup_file=backup_2021-05-03-0948_On_Booking_52836c3438fd-themes.zip, type=themes, info=a:2:{s:4:"path";s:32:"/var/www/salon/wp-content/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0005.616 () Unpacking backup... (backup_2021-05-03-0948_On_Booking_52836c3438fd-themes.zip, 0.9 MB)
+0005.617 () Unzipping backup_2021-05-03-0948_On_Booking_52836c3438fd-themes.zip to /var/www/salon/wp-content/upgrade/5659a226/ using UpdraftPlus_ZipArchive, starting index 0
+0005.653 () Unzip progress: 81 out of 81 files (1.7 MB, themes/index.php)
+0005.654 () Moving old data: filesystem method / updraft_dir is potentially possible
+0005.654 () Moving old data: can potentially use wp_filesystem method / -old
+0005.654 () Moving old data out of the way...
+0005.672 () Top-level entities being moved: twentytwentyone, twentytwenty-child, twentytwenty, index.php
+0005.672 () Moving unpacked backup into place...
+0005.676 () Top-level entities being moved: twentytwenty-child, twentytwenty, index.php
+0005.677 () Cleaning up rubbish...
+0005.678 () Entity: uploads
+0005.678 () restore_backup(backup_file=backup_2021-05-03-0948_On_Booking_52836c3438fd-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:33:"/var/www/salon/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0005.678 () Unpacking backup... (backup_2021-05-03-0948_On_Booking_52836c3438fd-uploads.zip, 4.9 MB)
+0005.678 () Unzipping backup_2021-05-03-0948_On_Booking_52836c3438fd-uploads.zip to /var/www/salon/wp-content/upgrade/761818a3/ using UpdraftPlus_ZipArchive, starting index 0
+0005.722 () Unzip progress: 202 out of 202 files (4.9 MB, uploads/Mycal_224.ics)
+0005.722 () Moving old data: filesystem method / updraft_dir is potentially possible
+0005.722 () Moving old data: can potentially use wp_filesystem method / -old
+0005.722 () Moving old data out of the way...
+0005.735 () Moving unpacked backup into place...
+0005.748 () Cleaning up rubbish...
+0005.749 () Entity: others
+0005.749 () restore_backup(backup_file=backup_2021-05-03-0948_On_Booking_52836c3438fd-others.zip, type=others, info=a:2:{s:4:"path";s:25:"/var/www/salon/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0005.749 () Unpacking backup... (backup_2021-05-03-0948_On_Booking_52836c3438fd-others.zip, 0 MB)
+0005.749 () Unzipping backup_2021-05-03-0948_On_Booking_52836c3438fd-others.zip to /var/www/salon/wp-content/upgrade/1008be0d/ using UpdraftPlus_ZipArchive, starting index 0
+0005.751 () Unzip progress: 5 out of 5 files (84 B, index.php)
+0005.752 () Cleaning up rubbish...
+0005.761 () Restore successful!
+0005.761 () Restore successful

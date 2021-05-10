@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:6409c51a7f29cfde4372b2b1b353ec98
+SUMMARY:Salon Booking Demo - 18 Mar 2021 1:00pm
+DTSTART;TZID=America/New_York:20210318T130000
+DTEND;TZID=America/New_York:20210318T140000
+DESCRIPTION:Salon name: Salon Booking Demo \n\nSalon address: Main Street 123 \n\nSalon phone: 6178988070 \n\nSalon email: huy.m.tran@gmail.com \n\nBooked services:\nFirewalker Pedicure: 1:00pm ➝ 2:00pm - Lily Ngo\n\nBooking notes:\nNone\n\nBooking status: Pay later
+LOCATION:Main Street 123
+END:VEVENT
+END:VCALENDAR

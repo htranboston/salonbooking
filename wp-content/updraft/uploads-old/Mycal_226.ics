@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:c97b763c045a78aed435c4889914dc95
+SUMMARY:Salon Booking Demo - 12 Jan 2021 10:45am
+DTSTART;TZID=America/New_York:20210112T104500
+DTEND;TZID=America/New_York:20210112T114500
+DESCRIPTION:Salon name: Salon Booking Demo \n\nSalon address: Main Street 123 \n\nSalon phone: 6178988070 \n\nSalon email: huy.m.tran@gmail.com \n\nBooked services:\nGel Manicure French: 10:45am ➝ 11:45am - Lily Ngo\n\nBooking notes:\nNone\n\nBooking status: Confirmed
+LOCATION:Main Street 123
+END:VEVENT
+END:VCALENDAR

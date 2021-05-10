@@ -3,17 +3,17 @@ Contributors: Salon Booking System
 Tags: booking, reservations, barber shop, hair salon, beauty center, spas, scheduling, appointment, availability calendar, booking calendar, online reservation, schedule, PayPal appointment, appointment calendar, booking software, reservation plugin, booking engine, booking plugin
 Requires at least: 4.1
 Tested up to: 5.5
-Stable tag: 4.9.8
+Stable tag: 5.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-A complete and easy to manage appointments booking system for busy Salons.
+A complete and easy to manage appointments scheduling system for busy salons.
 
 
 == Description ==
 
-Salon Booking System is a complete and easy to manage appointments booking system to help your business getting more reservations on your website and saving a lot of time with your agenda management tasks.
+Salon Booking System is a complete and easy to manage appointments scheduling system to help your business getting more reservations on your website and saving a lot of time with your agenda management tasks.
 
 Salon Booking System  is the best solution for: 
 
@@ -40,7 +40,7 @@ https://www.youtube.com/watch?v=Il_zXsf2AB0
 * New Zapier.com integration available even for the free edition
 
 
-Mobile App 
+Mobile App ( PRO VERSION ONLY )
 
 https://www.salonbookingsystem.com/salon-booking-system-mobile-app-for-android-and-ios/
 
@@ -177,7 +177,7 @@ for more details on this section visit: https://www.salonbookingsystem.com/advan
 
 **Tools**
 
-* Importing system from other platform (Users, Services and Assistants)
+* Easy import Users, Services and Assistants from a CSV file
 
 **Frontend pages**
 
@@ -200,7 +200,7 @@ for more details on this section visit: https://www.salonbookingsystem.com/advan
 * Disable Bootstrap Javascript
 * Disable Bootstrap CSS
 
-More information at [Salon Booking System](http://salonbookingsystem.com/).
+More information at [Salon Booking System](https://salonbookingsystem.com/).
 
 
 == Installation ==
@@ -229,7 +229,7 @@ The plugin has been tested on WordPress 4.0
  
 = Which version of php is supported? =
 
-The plugin supports php 5.6 and above version.
+The plugin supports php 7.4 and above version.
 
  
 = Is it possible to accept online payments? =
@@ -314,6 +314,44 @@ Look at this guide: https://www.salonbookingsystem.com/divi-theme-accordions-iss
 
 
 == Changelog ==
+
+17.03.2021
+
+* Added new metabox to customise the email notification message sent to the customer after booking confirmation
+* Search customers by telephone number
+* Fixed minor bugs
+
+22.02.2021
+
+* Fixed issue "Your site could not complete a loopback request"
+* Fixed compatibility issue with Stripe library
+* Fixed issue with Polylang
+
+15.02.2021
+
+* Fixed bug with email notification to customer 
+
+12.02.2021
+
+* Added a new feature "Do not notify customer"
+
+02.08.2021
+
+* Updated text strings
+* Fixed issue with Reports graphs
+* Fixed issue with WPML
+* Improved Booking cancellation email notification
+* Improved booking process performance
+
+
+18.01.2021
+
+* Improved booking cancellation email notification
+* Improved mobile app API for date/time format
+* Fixed issue with "service direct link" when WMPL is enabled
+* Fixed CSS issue on service selection check-box
+* Fixed issue on booking creation from back-end when email address added isn't valid
+
 
 15.12.2020
 

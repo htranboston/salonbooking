@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:b9fadff58c3fc5ee7cd57fdbbd817b81
+SUMMARY:Salon Booking Demo - 28 Apr 2021 10:10am
+DTSTART;TZID=America/New_York:20210428T101000
+DTEND;TZID=America/New_York:20210428T104000
+DESCRIPTION:Salon name: Salon Booking Demo \n\nSalon address: Main Street 123 \n\nSalon phone: 6178988070 \n\nSalon email: huy.m.tran@gmail.com \n\nBooked services:\nBasic Pedicure: 10:10am ➝ 10:40am - Jennifer Eng\n\nBooking notes:\nNone\n\nBooking status: Confirmed
+LOCATION:Main Street 123
+END:VEVENT
+END:VCALENDAR

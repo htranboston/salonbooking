@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:df4195a869e8fc01068815e76c481b37
+SUMMARY:Salon Booking Demo - 12 Jan 2021 10:50am
+DTSTART;TZID=America/New_York:20210112T105000
+DTEND;TZID=America/New_York:20210112T115000
+DESCRIPTION:Salon name: Salon Booking Demo \n\nSalon address: Main Street 123 \n\nSalon phone: 6178988070 \n\nSalon email: huy.m.tran@gmail.com \n\nBooked services:\nFirewalker Pedicure: 10:50am ➝ 11:50am - Jennifer Eng\n\nBooking notes:\nNone\n\nBooking status: Confirmed
+LOCATION:Main Street 123
+END:VEVENT
+END:VCALENDAR

@@ -3,7 +3,7 @@
 /*
 Plugin Name: Salon Booking Wordpress Plugin - Free Version
 Description: Let your customers book you services through your website. Perfect for hairdressing salons, barber shops and beauty centers.
-Version: 4.9.8
+Version: 5.5
 Plugin URI: http://salonbookingsystem.com/
 Author: Salon Booking System
 Author URI: http://salonbookingsystem.com/
@@ -14,7 +14,7 @@ Domain Path: /languages
 define('SLN_PLUGIN_BASENAME', plugin_basename(__FILE__));
 define('SLN_PLUGIN_DIR', untrailingslashit(dirname(__FILE__)));
 define('SLN_PLUGIN_URL', untrailingslashit(plugins_url('', __FILE__)));
-define('SLN_VERSION', '4.9.8');
+define('SLN_VERSION', '5.5');
 define('SLN_STORE_URL', 'https://salonbookingsystem.com');
 define('SLN_AUTHOR', 'Salon Booking');
 define('SLN_ITEM_SLUG', 'salon-booking-wordpress-plugin');
@@ -103,6 +103,7 @@ do_action('sln.init', $sln_plugin);
 add_action('init', function () {
 	if (!session_id()
 		&& !strstr($_SERVER['REQUEST_URI'], '/wp-admin/site-health.php')
+		&& !strstr($_SERVER['REQUEST_URI'], '/wp-json/wp-site-health')
 		&& !(isset($_POST['action']) && $_POST['action'] === 'health-check-loopback-requests')
 	) {
 		session_start();
