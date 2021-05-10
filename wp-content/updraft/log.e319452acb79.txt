@@ -1,0 +1,305 @@
+0000.011 (0) Opened log file at time: Thu, 14 Jan 2021 21:43:17 +0000 on http://localhost/salonbooking
+0000.032 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.3.21 (apache2handler, Windows NT HUYTRAN-PC 10.0 build 17134 (Windows 10) AMD64) MySQL: 5.7.31 WPLANG: en_US Server: Apache/2.4.46 (Win64) PHP/7.3.21 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 6.1M | 2M) multisite: N openssl: OpenSSL 1.1.1g  21 Apr 2020 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.034 (0) Free space on disk containing Updraft's temporary directory: 34175.8 MB
+0000.051 (0) Tasks: Backup files:  (schedule: manual) Backup DB: 1 (schedule: daily)
+0000.053 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.063 (0) Requesting semaphore lock (d) (apparently via scheduler: last_scheduled_action_called_at=1610572681, seconds_ago=87916)
+0000.078 (0) Set semaphore last lock (d) time to 2021-01-14 21:43:17
+0000.079 (0) Semaphore lock (d) complete
+0000.084 (0) Backup run: resumption=0, nonce=e319452acb79, file_nonce=e319452acb79 begun at=1610660597 (0s ago), job type=backup
+0000.087 (0) Scheduling a resumption (1) after 300 seconds (1610660897) in case this run gets aborted
+0000.140 (0) This backup run is not intended for files - skipping
+0000.142 (0) Beginning creation of database dump (WordPress DB)
+0000.144 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER
+0000.208 (0) Table wp_options: Total expected rows (approximate): 274
+0000.292 (0) Table wp_options: Rows added in this batch (next record: 10710): 270 (uncompressed bytes in this segment=889016) in 0.08 seconds
+0000.307 (0) Table wp_options: finishing file(s) (2, 117.5 KB)
+0000.312 (0) Table wp_users: Total expected rows (approximate): 6
+0000.317 (0) Table wp_users: Rows added in this batch (next record: 7): 6 (uncompressed bytes in this segment=2253) in 0.00 seconds
+0000.324 (0) Table wp_users: finishing file(s) (2, 1 KB)
+0000.329 (0) Table wp_usermeta: Total expected rows (approximate): 136
+0000.340 (0) Table wp_usermeta: Rows added in this batch (next record: 264): 136 (uncompressed bytes in this segment=7394) in 0.01 seconds
+0000.347 (0) Table wp_usermeta: finishing file(s) (2, 2.4 KB)
+0000.362 (0) Table wp_actionscheduler_actions: Total expected rows (approximate): 17
+0000.369 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 128): 17 (uncompressed bytes in this segment=6464) in 0.01 seconds
+0000.376 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 1.2 KB)
+0000.380 (0) Table wp_actionscheduler_claims: Total expected rows (approximate): 0
+0000.384 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=635) in 0.00 seconds
+0000.390 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0000.397 (0) Table wp_actionscheduler_groups: Total expected rows (approximate): 2
+0000.401 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=711) in 0.00 seconds
+0000.411 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0000.417 (0) Table wp_actionscheduler_logs: Total expected rows (approximate): 51
+0000.424 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 75): 51 (uncompressed bytes in this segment=5287) in 0.01 seconds
+0000.431 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 1.1 KB)
+0000.436 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0000.439 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=685) in 0.00 seconds
+0000.446 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.451 (0) Table wp_comments: Total expected rows (approximate): 2
+0000.455 (0) Table wp_comments: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=2308) in 0.00 seconds
+0000.462 (0) Table wp_comments: finishing file(s) (2, 0.8 KB)
+0000.472 (0) Table wp_links: Total expected rows (approximate): 0
+0000.477 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1310) in 0.00 seconds
+0000.484 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0000.493 (0) Table wp_postmeta: Total expected rows (approximate): 825
+0000.544 (0) Table wp_postmeta: Rows added in this batch (next record: 1875): 825 (uncompressed bytes in this segment=115116) in 0.05 seconds
+0000.553 (0) Table wp_postmeta: finishing file(s) (2, 11.3 KB)
+0000.558 (0) Table wp_posts: Total expected rows (approximate): 163
+0000.609 (0) Table wp_posts: Rows added in this batch (next record: 309): 163 (uncompressed bytes in this segment=62753) in 0.05 seconds
+0000.619 (0) Table wp_posts: finishing file(s) (2, 7.2 KB)
+0000.623 (0) Table wp_term_relationships: Total expected rows (approximate): 6
+0000.628 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 6 (uncompressed bytes in this segment=769) in 0.00 seconds
+0000.636 (0) Table wp_term_relationships: finishing file(s) (2, 0.4 KB)
+0000.640 (0) Table wp_term_taxonomy: Total expected rows (approximate): 4
+0000.645 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1055) in 0.00 seconds
+0000.655 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0000.660 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0000.663 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=658) in 0.00 seconds
+0000.674 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0000.678 (0) Table wp_terms: Total expected rows (approximate): 4
+0000.682 (0) Table wp_terms: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=835) in 0.00 seconds
+0000.689 (0) Table wp_terms: finishing file(s) (2, 0.5 KB)
+0000.694 (0) Table wp_useronline: Total expected rows (approximate): 1
+0000.697 (0) Table wp_useronline: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=1597) in 0.00 seconds
+0000.704 (0) Table wp_useronline: finishing file(s) (2, 0.7 KB)
+0000.715 (0) Table wp_wpmailsmtp_tasks_meta: Total expected rows (approximate): 11
+0000.733 (0) Table wp_wpmailsmtp_tasks_meta: Rows added in this batch (next record: 11): 11 (uncompressed bytes in this segment=1570) in 0.02 seconds
+0000.739 (0) Table wp_wpmailsmtp_tasks_meta: finishing file(s) (2, 0.6 KB)
+0000.744 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_options.table.tmpr10711.gz (1/18): adding to final database dump
+0000.778 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_options.table.gz (2/18): adding to final database dump
+0000.780 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_users.table.tmpr8.gz (3/18): adding to final database dump
+0000.781 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_users.table.gz (4/18): adding to final database dump
+0000.783 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_usermeta.table.tmpr265.gz (5/18): adding to final database dump
+0000.786 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_usermeta.table.gz (6/18): adding to final database dump
+0000.787 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_actionscheduler_actions.table.tmpr129.gz (7/18): adding to final database dump
+0000.789 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_actionscheduler_actions.table.gz (8/18): adding to final database dump
+0000.791 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_actionscheduler_claims.table.tmpr0.gz (9/18): adding to final database dump
+0000.793 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_actionscheduler_claims.table.gz (10/18): adding to final database dump
+0000.794 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_actionscheduler_groups.table.tmpr3.gz (11/18): adding to final database dump
+0000.796 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_actionscheduler_groups.table.gz (12/18): adding to final database dump
+0000.797 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_actionscheduler_logs.table.tmpr76.gz (13/18): adding to final database dump
+0000.799 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_actionscheduler_logs.table.gz (14/18): adding to final database dump
+0000.801 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_commentmeta.table.tmpr0.gz (15/18): adding to final database dump
+0000.803 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_commentmeta.table.gz (16/18): adding to final database dump
+0000.805 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_comments.table.tmpr3.gz (17/18): adding to final database dump
+0000.806 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_comments.table.gz (18/18): adding to final database dump
+0000.808 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_links.table.tmpr0.gz (19/18): adding to final database dump
+0000.810 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_links.table.gz (20/18): adding to final database dump
+0000.811 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_postmeta.table.tmpr1876.gz (21/18): adding to final database dump
+0000.821 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_postmeta.table.gz (22/18): adding to final database dump
+0000.822 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_posts.table.tmpr310.gz (23/18): adding to final database dump
+0000.827 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_posts.table.gz (24/18): adding to final database dump
+0000.829 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_term_relationships.table.tmpr100001.gz (25/18): adding to final database dump
+0000.830 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_term_relationships.table.gz (26/18): adding to final database dump
+0000.832 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_term_taxonomy.table.tmpr5.gz (27/18): adding to final database dump
+0000.833 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_term_taxonomy.table.gz (28/18): adding to final database dump
+0000.835 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_termmeta.table.tmpr0.gz (29/18): adding to final database dump
+0000.837 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_termmeta.table.gz (30/18): adding to final database dump
+0000.838 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_terms.table.tmpr5.gz (31/18): adding to final database dump
+0000.840 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_terms.table.gz (32/18): adding to final database dump
+0000.841 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_useronline.table.tmpr1001.gz (33/18): adding to final database dump
+0000.843 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_useronline.table.gz (34/18): adding to final database dump
+0000.845 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_wpmailsmtp_tasks_meta.table.tmpr12.gz (35/18): adding to final database dump
+0000.847 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db-table-wp_wpmailsmtp_tasks_meta.table.gz (36/18): adding to final database dump
+0000.892 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db.gz: finished writing out complete database file (128 KB)
+0000.908 (0) Total database tables backed up: 18 (backup_2021-01-14-1643_On_Booking_e319452acb79-db.gz, size: 145928, sha1: 24e77b309c24fc81fc5f05e95816d2164bd4f7c8, sha256: 6a4f17020507d0dca8c6be50c68d1181742afb81cdf273869aa55d2a67e9918d)
+0000.917 (0) backup_2021-01-14-1643_On_Booking_e319452acb79-db.gz: db: This file has not yet been successfully uploaded: will queue
+0000.918 (0) Saving backup history. Total backup size: 142.5 KB
+0000.922 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0000.926 (0) Cloud backup selection (1/1): email with instance (1/1) (last)
+0000.928 (0) Beginning dispatch of backup to remote (email)
+0000.929 (0) Email: backup_2021-01-14-1643_On_Booking_e319452acb79-db.gz: email to: htexh...
+0001.226 (0) Email: Mails were not sent successfully
+0001.227 (0) An error condition has occurred for the first time during this job
+0001.230 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0001.232 (0) Number of backup sets in history: 4; groups (db): 1
+0001.235 (0) Examining (for databases) backup set with group_id=0, nonce=e319452acb79, datestamp=1610660597 (Jan 14 2021 21:43:17)
+0001.236 (0) This backup set is the backup set just made, so will not be deleted.
+0001.237 (0) Examining (for databases) backup set with group_id=0, nonce=2e9d9132cc16, datestamp=1610572681 (Jan 13 2021 21:18:01)
+0001.237 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.238 (0) Examining (for databases) backup set with group_id=0, nonce=2fcf2aa4e6f9, datestamp=1610486282 (Jan 12 2021 21:18:02)
+0001.238 (0) 1610486282: db: this set includes a database (backup_2021-01-12-1618_On_Booking_2fcf2aa4e6f9-db.gz); db count is now 2
+0001.238 (0) 1610486282: db: over retain limit (2); will delete this database
+0001.238 (0) Delete file: backup_2021-01-12-1618_On_Booking_2fcf2aa4e6f9-db.gz, service=email
+0001.241 (0) This backup set is now empty; will remove from history
+0001.243 (0) Deleting log file (log.2fcf2aa4e6f9.txt)
+0001.244 (0) Examining (for databases) backup set with group_id=0, nonce=607957cb7f57, datestamp=1610425250 (Jan 12 2021 04:20:50)
+0001.244 (0) This backup set (1610425250) was an 'Always Keep' backup, so it will not be pruned. Skipping.
+0001.244 (0) Number of backup sets in history: 3; groups (files): 1
+0001.246 (0) Examining (for files) backup set with nonce=e319452acb79, datestamp=1610660597 (Jan 14 2021 21:43:17)
+0001.246 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.247 (0) Examining (for files) backup set with nonce=2e9d9132cc16, datestamp=1610572681 (Jan 13 2021 21:18:01)
+0001.247 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0001.248 (0) Examining (for files) backup set with nonce=607957cb7f57, datestamp=1610425250 (Jan 12 2021 04:20:50)
+0001.248 (0) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0001.248 (0) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0001.248 (0) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0001.248 (0) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0001.248 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0001.249 (0) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0001.254 (0) Resume backup (e319452acb79, 0): finish run
+0001.265 (0) Decremented the semaphore (d) by 1
+0001.266 (0) Semaphore (d) unlocked
+0001.267 (0) There were errors in the uploads, so the 'resume' event is remaining scheduled
+0001.271 (0) Rescheduling resumption 1: moving to 60 seconds from now (1610660658)
+0001.274 (0) The backup has not finished; a resumption is scheduled
+0180.513 (1) Opened log file at time: Thu, 14 Jan 2021 21:46:17 +0000 on http://localhost/salonbooking
+0180.515 (1) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.3.21 (apache2handler, Windows NT HUYTRAN-PC 10.0 build 17134 (Windows 10) AMD64) MySQL: 5.7.31 WPLANG: en_US Server: Apache/2.4.46 (Win64) PHP/7.3.21 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 6.2M | 2M) multisite: N openssl: OpenSSL 1.1.1g  21 Apr 2020 mcrypt: N LANG:  ZipArchive::addFile: Y
+0180.516 (1) Free space on disk containing Updraft's temporary directory: 34175.1 MB
+0180.519 (1) Backup run: resumption=1, nonce=e319452acb79, file_nonce=e319452acb79 begun at=1610660597 (180s ago), job type=backup, previous check-in=1.2s
+0180.521 (1) Scheduling a resumption (2) after 300 seconds (1610661077) in case this run gets aborted
+0180.525 (1) This backup run is not intended for files - skipping
+0180.526 (1) Database dump (WordPress DB): Creation was completed already
+0180.527 (1) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER
+0180.534 (1) backup_2021-01-14-1643_On_Booking_e319452acb79-db.gz: db: This file has not yet been successfully uploaded: will queue
+0180.535 (1) Saving backup history. Total backup size: 142.5 KB
+0180.538 (1) Requesting upload of the files that have not yet been successfully uploaded (1)
+0180.541 (1) Cloud backup selection (1/1): email with instance (1/1) (last)
+0180.542 (1) Beginning dispatch of backup to remote (email)
+0180.543 (1) Email: backup_2021-01-14-1643_On_Booking_e319452acb79-db.gz: email to: htexh...
+0180.792 (1) Email: Mails were not sent successfully
+0180.794 (1) An error condition has occurred for the first time during this job
+0180.797 (1) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0180.798 (1) Number of backup sets in history: 3; groups (db): 1
+0180.799 (1) Examining (for databases) backup set with group_id=0, nonce=e319452acb79, datestamp=1610660597 (Jan 14 2021 21:43:17)
+0180.800 (1) This backup set is the backup set just made, so will not be deleted.
+0180.800 (1) Examining (for databases) backup set with group_id=0, nonce=2e9d9132cc16, datestamp=1610572681 (Jan 13 2021 21:18:01)
+0180.800 (1) This backup set remains non-empty (f=0/d=1); will retain in history
+0180.802 (1) Examining (for databases) backup set with group_id=0, nonce=607957cb7f57, datestamp=1610425250 (Jan 12 2021 04:20:50)
+0180.802 (1) This backup set (1610425250) was an 'Always Keep' backup, so it will not be pruned. Skipping.
+0180.802 (1) Number of backup sets in history: 3; groups (files): 1
+0180.803 (1) Examining (for files) backup set with nonce=e319452acb79, datestamp=1610660597 (Jan 14 2021 21:43:17)
+0180.803 (1) This backup set remains non-empty (f=0/d=1); will retain in history
+0180.804 (1) Examining (for files) backup set with nonce=2e9d9132cc16, datestamp=1610572681 (Jan 13 2021 21:18:01)
+0180.804 (1) This backup set remains non-empty (f=0/d=1); will retain in history
+0180.804 (1) Examining (for files) backup set with nonce=607957cb7f57, datestamp=1610425250 (Jan 12 2021 04:20:50)
+0180.804 (1) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0180.804 (1) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0180.804 (1) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0180.805 (1) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0180.805 (1) This backup set remains non-empty (f=1/d=1); will retain in history
+0180.806 (1) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0180.809 (1) Resume backup (e319452acb79, 1): finish run
+0180.810 (1) There were errors in the uploads, so the 'resume' event is remaining scheduled
+0180.812 (1) The backup has not finished; a resumption is scheduled
+0540.624 (2) Opened log file at time: Thu, 14 Jan 2021 21:52:17 +0000 on http://localhost/salonbooking
+0540.626 (2) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.3.21 (apache2handler, Windows NT HUYTRAN-PC 10.0 build 17134 (Windows 10) AMD64) MySQL: 5.7.31 WPLANG: en_US Server: Apache/2.4.46 (Win64) PHP/7.3.21 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 6.1M | 2M) multisite: N openssl: OpenSSL 1.1.1g  21 Apr 2020 mcrypt: N LANG:  ZipArchive::addFile: Y
+0540.628 (2) Free space on disk containing Updraft's temporary directory: 34175.1 MB
+0540.630 (2) Backup run: resumption=2, nonce=e319452acb79, file_nonce=e319452acb79 begun at=1610660597 (540s ago), job type=backup
+0540.633 (2) Scheduling a resumption (3) after 300 seconds (1610661437) in case this run gets aborted
+0540.636 (2) This backup run is not intended for files - skipping
+0540.637 (2) Database dump (WordPress DB): Creation was completed already
+0540.639 (2) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER
+0540.647 (2) backup_2021-01-14-1643_On_Booking_e319452acb79-db.gz: db: This file has not yet been successfully uploaded: will queue
+0540.649 (2) Saving backup history. Total backup size: 142.5 KB
+0540.653 (2) Requesting upload of the files that have not yet been successfully uploaded (1)
+0540.655 (2) Cloud backup selection (1/1): email with instance (1/1) (last)
+0540.656 (2) Beginning dispatch of backup to remote (email)
+0540.658 (2) Email: backup_2021-01-14-1643_On_Booking_e319452acb79-db.gz: email to: htexh...
+0543.985 (2) Email: Mails were not sent successfully
+0543.987 (2) An error condition has occurred for the first time during this job
+0543.989 (2) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0543.992 (2) Number of backup sets in history: 3; groups (db): 1
+0543.993 (2) Examining (for databases) backup set with group_id=0, nonce=e319452acb79, datestamp=1610660597 (Jan 14 2021 21:43:17)
+0543.994 (2) This backup set is the backup set just made, so will not be deleted.
+0543.994 (2) Examining (for databases) backup set with group_id=0, nonce=2e9d9132cc16, datestamp=1610572681 (Jan 13 2021 21:18:01)
+0543.994 (2) This backup set remains non-empty (f=0/d=1); will retain in history
+0543.995 (2) Examining (for databases) backup set with group_id=0, nonce=607957cb7f57, datestamp=1610425250 (Jan 12 2021 04:20:50)
+0543.996 (2) This backup set (1610425250) was an 'Always Keep' backup, so it will not be pruned. Skipping.
+0543.996 (2) Number of backup sets in history: 3; groups (files): 1
+0543.997 (2) Examining (for files) backup set with nonce=e319452acb79, datestamp=1610660597 (Jan 14 2021 21:43:17)
+0543.997 (2) This backup set remains non-empty (f=0/d=1); will retain in history
+0543.999 (2) Examining (for files) backup set with nonce=2e9d9132cc16, datestamp=1610572681 (Jan 13 2021 21:18:01)
+0543.999 (2) This backup set remains non-empty (f=0/d=1); will retain in history
+0543.999 (2) Examining (for files) backup set with nonce=607957cb7f57, datestamp=1610425250 (Jan 12 2021 04:20:50)
+0543.999 (2) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0543.999 (2) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0543.999 (2) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0544.000 (2) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0544.000 (2) This backup set remains non-empty (f=1/d=1); will retain in history
+0544.001 (2) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0544.005 (2) Resume backup (e319452acb79, 2): finish run
+0544.007 (2) There were errors in the uploads, so the 'resume' event is remaining scheduled
+0544.010 (2) The backup has not finished; a resumption is scheduled
+10670.129 (3) Opened log file at time: Fri, 15 Jan 2021 00:41:07 +0000 on http://localhost/salonbooking
+10670.132 (3) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.3.21 (apache2handler, Windows NT HUYTRAN-PC 10.0 build 17134 (Windows 10) AMD64) MySQL: 5.7.31 WPLANG: en_US Server: Apache/2.4.46 (Win64) PHP/7.3.21 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 6.1M | 8M) multisite: N openssl: OpenSSL 1.1.1g  21 Apr 2020 mcrypt: N LANG:  ZipArchive::addFile: Y
+10670.133 (3) Free space on disk containing Updraft's temporary directory: 34175 MB
+10670.136 (3) Backup run: resumption=3, nonce=e319452acb79, file_nonce=e319452acb79 begun at=1610660597 (10670s ago), job type=backup
+10670.137 (3) Long time past since expected resumption time: approx expected=1610661437.9, now=1610671267.4, diff=9829.5
+10670.140 (3) [Warning] Your website is visited infrequently and UpdraftPlus is not getting the resources it hoped for; please read this page: https://updraftplus.com/faqs/why-am-i-getting-warnings-about-my-site-not-having-enough-visitors/
+10670.142 (3) Scheduling a resumption (4) after 300 seconds (1610671567) in case this run gets aborted
+10670.147 (3) This backup run is not intended for files - skipping
+10670.148 (3) Database dump (WordPress DB): Creation was completed already
+10670.150 (3) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER
+10670.158 (3) backup_2021-01-14-1643_On_Booking_e319452acb79-db.gz: db: This file has not yet been successfully uploaded: will queue
+10670.159 (3) Saving backup history. Total backup size: 142.5 KB
+10670.162 (3) Requesting upload of the files that have not yet been successfully uploaded (1)
+10670.165 (3) Cloud backup selection (1/1): email with instance (1/1) (last)
+10670.166 (3) Beginning dispatch of backup to remote (email)
+10670.168 (3) Email: backup_2021-01-14-1643_On_Booking_e319452acb79-db.gz: email to: htexh...
+10670.516 (3) Email: Mails were not sent successfully
+10670.518 (3) An error condition has occurred for the first time during this job
+10670.521 (3) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+10670.523 (3) Number of backup sets in history: 3; groups (db): 1
+10670.524 (3) Examining (for databases) backup set with group_id=0, nonce=e319452acb79, datestamp=1610660597 (Jan 14 2021 21:43:17)
+10670.525 (3) This backup set is the backup set just made, so will not be deleted.
+10670.525 (3) Examining (for databases) backup set with group_id=0, nonce=2e9d9132cc16, datestamp=1610572681 (Jan 13 2021 21:18:01)
+10670.525 (3) This backup set remains non-empty (f=0/d=1); will retain in history
+10670.526 (3) Examining (for databases) backup set with group_id=0, nonce=607957cb7f57, datestamp=1610425250 (Jan 12 2021 04:20:50)
+10670.526 (3) This backup set (1610425250) was an 'Always Keep' backup, so it will not be pruned. Skipping.
+10670.526 (3) Number of backup sets in history: 3; groups (files): 1
+10670.528 (3) Examining (for files) backup set with nonce=e319452acb79, datestamp=1610660597 (Jan 14 2021 21:43:17)
+10670.528 (3) This backup set remains non-empty (f=0/d=1); will retain in history
+10670.529 (3) Examining (for files) backup set with nonce=2e9d9132cc16, datestamp=1610572681 (Jan 13 2021 21:18:01)
+10670.529 (3) This backup set remains non-empty (f=0/d=1); will retain in history
+10670.530 (3) Examining (for files) backup set with nonce=607957cb7f57, datestamp=1610425250 (Jan 12 2021 04:20:50)
+10670.530 (3) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+10670.530 (3) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+10670.530 (3) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+10670.530 (3) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+10670.530 (3) This backup set remains non-empty (f=1/d=1); will retain in history
+10670.531 (3) Retain: saving new backup history (sets now: 3) and finishing retain operation
+10670.534 (3) Resume backup (e319452acb79, 3): finish run
+10670.537 (3) There were errors in the uploads, so the 'resume' event is remaining scheduled
+10670.539 (3) The backup has not finished; a resumption is scheduled
+165359.558 (4) Opened log file at time: Sat, 16 Jan 2021 19:39:16 +0000 on http://localhost/salonbooking
+165359.564 (4) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.3.21 (apache2handler, Windows NT HUYTRAN-PC 10.0 build 17134 (Windows 10) AMD64) MySQL: 5.7.31 WPLANG: en_US Server: Apache/2.4.46 (Win64) PHP/7.3.21 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 6.3M | 8M) multisite: N openssl: OpenSSL 1.1.1g  21 Apr 2020 mcrypt: N LANG:  ZipArchive::addFile: Y
+165359.566 (4) Free space on disk containing Updraft's temporary directory: 34179 MB
+165359.568 (4) Backup run: resumption=4, nonce=e319452acb79, file_nonce=e319452acb79 begun at=1610660597 (165359s ago), job type=backup
+165359.570 (4) Long time past since expected resumption time: approx expected=1610671567.4, now=1610825956.8, diff=154389.4
+165359.571 (4) [Warning] Your website is visited infrequently and UpdraftPlus is not getting the resources it hoped for; please read this page: https://updraftplus.com/faqs/why-am-i-getting-warnings-about-my-site-not-having-enough-visitors/
+165359.574 (4) Scheduling a resumption (5) after 300 seconds (1610826256) in case this run gets aborted
+165359.621 (4) This backup run is not intended for files - skipping
+165359.623 (4) Database dump (WordPress DB): Creation was completed already
+165359.625 (4) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER
+165359.662 (4) backup_2021-01-14-1643_On_Booking_e319452acb79-db.gz: db: This file has not yet been successfully uploaded: will queue
+165359.663 (4) Saving backup history. Total backup size: 142.5 KB
+165359.667 (4) Requesting upload of the files that have not yet been successfully uploaded (1)
+165359.670 (4) Cloud backup selection (1/1): email with instance (1/1) (last)
+165359.671 (4) Beginning dispatch of backup to remote (email)
+165359.672 (4) Email: backup_2021-01-14-1643_On_Booking_e319452acb79-db.gz: email to: htexh...
+165360.480 (4) Email: Mails were not sent successfully
+165360.482 (4) An error condition has occurred for the first time during this job
+165360.486 (4) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+165360.488 (4) Number of backup sets in history: 3; groups (db): 1
+165360.490 (4) Examining (for databases) backup set with group_id=0, nonce=e319452acb79, datestamp=1610660597 (Jan 14 2021 21:43:17)
+165360.491 (4) This backup set is the backup set just made, so will not be deleted.
+165360.491 (4) Examining (for databases) backup set with group_id=0, nonce=2e9d9132cc16, datestamp=1610572681 (Jan 13 2021 21:18:01)
+165360.491 (4) This backup set remains non-empty (f=0/d=1); will retain in history
+165360.493 (4) Examining (for databases) backup set with group_id=0, nonce=607957cb7f57, datestamp=1610425250 (Jan 12 2021 04:20:50)
+165360.493 (4) This backup set (1610425250) was an 'Always Keep' backup, so it will not be pruned. Skipping.
+165360.493 (4) Number of backup sets in history: 3; groups (files): 1
+165360.495 (4) Examining (for files) backup set with nonce=e319452acb79, datestamp=1610660597 (Jan 14 2021 21:43:17)
+165360.495 (4) This backup set remains non-empty (f=0/d=1); will retain in history
+165360.496 (4) Examining (for files) backup set with nonce=2e9d9132cc16, datestamp=1610572681 (Jan 13 2021 21:18:01)
+165360.496 (4) This backup set remains non-empty (f=0/d=1); will retain in history
+165360.497 (4) Examining (for files) backup set with nonce=607957cb7f57, datestamp=1610425250 (Jan 12 2021 04:20:50)
+165360.497 (4) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+165360.497 (4) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+165360.497 (4) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+165360.497 (4) This backup set (1610425250) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+165360.497 (4) This backup set remains non-empty (f=1/d=1); will retain in history
+165360.498 (4) Retain: saving new backup history (sets now: 3) and finishing retain operation
+165360.504 (4) Resume backup (e319452acb79, 4): finish run
+165360.506 (4) There were errors in the uploads, so the 'resume' event is remaining scheduled
+165360.510 (4) The backup has not finished; a resumption is scheduled

@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:4104e4c5805c743a1e17640a010323dc
+SUMMARY:Feel Nails & Spa - 18 Jan 2021 11:00am
+DTSTART;TZID=America/New_York:20210118T110000
+DTEND;TZID=America/New_York:20210118T121000
+DESCRIPTION:Salon name: Feel Nails & Spa \n\nSalon address: 386 Columbia Rd\, Hanover\, MA 02339 \n\nSalon phone: (781) 826-6330 \n\nSalon email: huy.m.tran@gmail.com \n\nBooked services:\nRefill Single: 11:00am ➝ 12:10pm - Any Assistant\n\nBooking notes:\nNone\n\nBooking status: Confirmed
+LOCATION:386 Columbia Rd\, Hanover\, MA 02339
+END:VEVENT
+END:VCALENDAR

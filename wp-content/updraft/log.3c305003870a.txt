@@ -1,0 +1,15 @@
+1003.201 (4) Opened log file at time: Sat, 16 Jan 2021 21:34:30 +0000 on http://localhost/feelnailsspa
+1003.203 (4) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.46 WP: 5.5.3 PHP: 7.3.21 (apache2handler, Windows NT HUYTRAN-PC 10.0 build 17134 (Windows 10) AMD64) MySQL: 5.7.31 WPLANG: en_US Server: Apache/2.4.46 (Win64) PHP/7.3.21 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 5.9M | 4M) multisite: N openssl: OpenSSL 1.1.1g  21 Apr 2020 mcrypt: N LANG:  ZipArchive::addFile: Y
+1003.204 (4) Free space on disk containing Updraft's temporary directory: 33948.8 MB
+1003.219 (4) Backup run: resumption=4, nonce=3c305003870a, file_nonce=3c305003870a begun at=1610831867 (1003s ago), job type=backup
+1003.221 (4) Scheduling a resumption (5) after 300 seconds (1610833170) in case this run gets aborted
+1003.224 (4) This backup run is not intended for files - skipping
+1003.225 (4) Database dump (WordPress DB): Creation was completed already
+1003.227 (4) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER
+1003.234 (4) backup_2021-01-16-1617_Feel_Nails_Spa_3c305003870a-db.gz: db: This file is not ours to upload and has been/will be handled by another job.
+1003.235 (4) Saving backup history. Total backup size: Unknown
+1003.238 (4) Resume backup (3c305003870a, 4): finish run
+1003.241 (4) There were no more files that needed uploading
+1003.242 (4) There were no errors in the uploads, so the 'resume' event (5) is being unscheduled
+1003.247 (4) No email will be sent - this backup set was empty.
+1003.248 (4) The backup apparently succeeded and is now complete

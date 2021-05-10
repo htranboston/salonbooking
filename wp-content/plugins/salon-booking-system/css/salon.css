@@ -480,12 +480,12 @@ a.sln-btn,
 
 .sln-text--ok, .sln-alert--success:after,
 #sln-salon .alert-success:after {
-  color: #5bc24c; }
+  color: #0277bd; }
 
 .datetimepicker.sln-datetimepicker .sln-datetimepicker-close, .sln-alert--problem:after,
 #sln-salon .sln-alert--problem:after,
 #sln-salon .alert-danger:after {
-  color: #D22221; }
+  color: #99aaba; }
 
 .sln-alert--warning:after,
 #sln-salon .alert-warning:after, .sln-alert--info:after,
@@ -587,7 +587,7 @@ a.sln-btn,
 .datetimepicker.sln-datetimepicker table tr td span.minute:not(.disabled):not(.active),
 .datetimepicker.sln-datetimepicker table tr td span.month:not(.disabled):not(.active),
 .datetimepicker.sln-datetimepicker table tr td span.year:not(.disabled):not(.active), #sln-salon .sln-thankyou--okbox.sln-bkg--ok::after {
-  background-color: #5bc24c; }
+  background-color: #0277bd; }
 
 #sln-salon .sln-thankyou--okbox::after, #sln-salon .sln-thankyou--okbox.sln-bkg--attention::after, #sln-salon .sln-thankyou--okbox.sln-pending-payment-box::after {
   background-color: #f5b025; }
@@ -641,7 +641,7 @@ ul.sln-list--dashed li,
 
 #sln-salon .sln-invalid,
 #sln-salon .sln-input .sln-invalid {
-  border-color: #D22221; }
+  border-color: #99aaba; }
 
 @font-face {
   font-family: "Material Icons";
@@ -1003,21 +1003,21 @@ ul.sln-list--dashed li,
 
 #sln-salon .sln-invalid::-webkit-input-placeholder,
 #sln-salon .sln-input .sln-invalid::-webkit-input-placeholder {
-  color: #D22221; }
+  color: #99aaba; }
 
 #sln-salon .sln-invalid:-moz-placeholder,
 #sln-salon .sln-input .sln-invalid:-moz-placeholder {
   /* Firefox 18- */
-  color: #D22221; }
+  color: #99aaba; }
 
 #sln-salon .sln-invalid::-moz-placeholder,
 #sln-salon .sln-input .sln-invalid::-moz-placeholder {
   /* Firefox 19+ */
-  color: #D22221; }
+  color: #99aaba; }
 
 #sln-salon .sln-invalid:-ms-input-placeholder,
 #sln-salon .sln-input .sln-invalid:-ms-input-placeholder {
-  color: #D22221; }
+  color: #99aaba; }
 
 @media only screen and (min-width: 992px) {
   #sln-salon .sln-invalid[type="checkbox"] {
@@ -1034,7 +1034,7 @@ ul.sln-list--dashed li,
       vertical-align: top;
       margin-top: 0.1em;
       min-width: 95px;
-      color: #D22221;
+      color: #99aaba;
       display: none; } }
     @media only screen and (min-width: 992px) and (min-width: 992px) {
       #sln-salon .sln-invalid[type="checkbox"]:after {
@@ -1054,13 +1054,13 @@ ul.sln-list--dashed li,
   vertical-align: top;
   margin-top: 0.1em;
   min-width: 95px;
-  color: #D22221; }
+  color: #99aaba; }
   @media only screen and (min-width: 768px) {
     #sln-salon .sln-checkbox.sln-invalid-p:after {
       margin-left: 2em; } }
 
 .sln-invalid[type="checkbox"]:not(:checked) + label::before {
-  border-color: #D22221; }
+  border-color: #99aaba; }
 
 /*!
  * Datetimepicker for Bootstrap
@@ -1877,7 +1877,7 @@ ul.sln-list--dashed li,
   #sln-salon.sln-loginform #loginform input[type="tel"].sln-invalid,
   #sln-salon.sln-loginform #loginform input[type="number"].sln-invalid,
   #sln-salon.sln-loginform #loginform textarea.sln-invalid {
-    border-color: #D22221; }
+    border-color: #99aaba; }
 
 #sln-salon.sln-salon--s .sln-input input[type="text"] {
   margin-bottom: 2em; }
@@ -3392,7 +3392,7 @@ body.modal-open {
   display: inline-block; }
 
 #sln-salon-my-account .success {
-  background-color: #5bc24c; }
+  background-color: #0277bd; }
 
 #sln-salon-my-account .warning,
 #sln-salon-my-account .info {
@@ -4797,11 +4797,11 @@ body:not(.sln-salon-page) .select2-container.select2-container--sln {
     border-radius: 50%;
     padding: 0.16667rem;
     background-color: #fff;
-    color: #d22221;
+    color: #99aaba;
     opacity: 0.75;
     transition: opacity 200ms; }
     body:not(.sln-salon-page) .select2-container.select2-container--sln .select2-selection--multiple .select2-selection__choice__remove:hover {
-      color: #d22221;
+      color: #99aaba;
       opacity: 1; }
   body:not(.sln-salon-page) .select2-container.select2-container--sln .select2-selection--single:focus {
     outline: none; }
