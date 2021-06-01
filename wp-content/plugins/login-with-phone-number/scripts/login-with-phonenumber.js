@@ -84,7 +84,7 @@ jQuery(document).ready(function ($) {
 
         if (!$(this).valid()) return false;
 
-        if (typeof firebaseConfig !== 'undefined')return false;
+//        if (typeof firebaseConfig !== 'undefined')return false;
         $('p.status', this).show().text(idehweb_lwp.loadingmessage);
         var action = 'lwp_ajax_login';
         var username = $('.lwp_username').val();
@@ -108,7 +108,7 @@ jQuery(document).ready(function ($) {
 
                 $('p.status', ctrl).text(data.message);
                 if (data.success == true) {
-                    $('#lwp_login_email').fadeOut(10);
+/*                    $('#lwp_login_email').fadeOut(10);
                     $('#lwp_login').fadeOut(10);
                     idehweb_lwp.UserId = data.ID;
                     if (data.authWithPass) {
@@ -126,8 +126,10 @@ jQuery(document).ready(function ($) {
                         console.log('xdwcef543');
 
 
-                    }
-                    //     document.location.href = idehweb_lwp.redirecturl;
+                    }*/
+			//console.log(idehweb_lwp.redirecturl);
+                    //document.location.href = idehweb_lwp.redirecturl;
+			window.location.reload();
                 }
             }
         });

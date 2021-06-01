@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'feelnailsspa' );
+define( 'DB_NAME', 'salon' );
 
 /** MySQL database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'salon1' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', '#MGe@Hr75H3mhe' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );

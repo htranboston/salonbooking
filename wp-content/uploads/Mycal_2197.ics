@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+UID:08aa1fb0deba78efb31e7d65f9b7e539
+SUMMARY:Salon Booking Demo - 01 Jun 2021 9:00am
+DTSTART;TZID=America/New_York:20210601T090000
+DTEND;TZID=America/New_York:20210601T093000
+DESCRIPTION:Salon name: Salon Booking Demo \n\nSalon address: 75 North Main Street\nRandolph\, MA 02368 \n\nSalon phone: 6178988070 \n\nSalon email: info.htswipe@gmail.com \n\nBooked services:\nBasic Madicure: 9:00am ➝ 9:30am - Lily Ngo\n\nBooking notes:\nNone\n\nBooking status: Confirmed
+LOCATION:75 North Main Street\nRandolph\, MA 02368
+END:VEVENT
+END:VCALENDAR
